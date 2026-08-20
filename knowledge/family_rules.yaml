@@ -1,0 +1,56 @@
+CPU:
+  application: Processor
+
+AES:
+  application: Crypto
+
+SHA:
+  application: Crypto
+
+UART:
+  application: Communication
+
+SPI:
+  application: Communication
+
+I2C:
+  application: Communication
+
+CAN:
+  application: Communication
+
+Ethernet:
+  application: Communication
+
+Network:
+  application: Communication
+
+Security:
+  application: Security
+
+Accelerator:
+  application: Accelerator
+
+Memory:
+  application: Memory
+
+Bus:
+  application: Bus
+
+Benchmark:
+  application: Benchmark
+
+Library:
+  application: Library
+
+DSP:
+  application: DSP
+
+Audio:
+  application: Multimedia
+
+SoC:
+  application: SoC
+
+RFID:
+  application: RFID

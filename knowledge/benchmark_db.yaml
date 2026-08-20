@@ -1,0 +1,404 @@
+benchmarks:
+
+  35-DAYS-OF-RTL-CHALLENGE:
+    source: GitHub
+    organization: Unknown
+    family: Unknown
+    application: Unknown
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  5-stage-pipelined-MIPS-RISC-V-like-processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  Accelerating_Standard_and_Modified_AES128:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  aes:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES-based-on-FPGA:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES-Encryption:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES-encryption-VSLI:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES-Verilog:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES128:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AES_SBox_GF-2-4-2_composite_field:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AHB-to-I2C:
+    source: GitHub
+    organization: Unknown
+    family: I2C
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  airisc_core_complex:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  AMBA_APB_SRAM:
+    source: GitHub
+    organization: Unknown
+    family: Memory
+    application: Memory
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  APB_UART_SLAVE:
+    source: GitHub
+    organization: Unknown
+    family: UART
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  ASIC-implementation-of-AES:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+  
+    RISC-processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISC-V:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISC-V-32I-5-stage-Pipeline-Core:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISC-V-Pipelined-Processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISC-V-Processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISC-V-TensorCore:
+    source: GitHub
+    organization: Unknown
+    family: Accelerator
+    application: AI Accelerator
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  riscv:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RISCV-multi-cycle-processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  ritter-soc:
+    source: GitHub
+    organization: Unknown
+    family: SoC
+    application: SoC
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  RTLLM:
+    source: Academic
+    organization: Unknown
+    family: Benchmark
+    application: Benchmark
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  RTL_library_of_basic_hardware_units:
+    source: GitHub
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  scr1:
+    source: GitHub
+    organization: Syntacore
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  sdspi:
+    source: GitHub
+    organization: Unknown
+    family: SPI
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  SERV:
+    source: GitHub
+    organization: Olof Kindgren
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  SHA256-Accelerator-Hardware:
+    source: GitHub
+    organization: Unknown
+    family: SHA
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  single_cycle_RISCV_CPU_Design-32bit:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false

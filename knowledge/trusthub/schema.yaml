@@ -1,0 +1,34 @@
+family:
+  name:
+  description:
+  application:
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    binary_label:
+    trojan_type:
+    trigger_type:
+    payload_type:
+    activation:
+    stealth:
+    benchmark:
+    verified:
+    confidence:
+    reference:
+    notes:
+
+  T200:
+    binary_label:
+    trojan_type:
+    trigger_type:
+    payload_type:
+    activation:
+    stealth:
+    benchmark:
+    verified:
+    confidence:
+    reference:
+    notes:

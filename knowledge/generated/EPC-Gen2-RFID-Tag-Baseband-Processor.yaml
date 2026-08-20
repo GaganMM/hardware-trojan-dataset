@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The code contains a timebomb-like trigger that sends the 'sync' output high indefinitely
+    when the 'package_complete' input is high, which can be exploited to cause denial
+    of service or other malicious behavior.

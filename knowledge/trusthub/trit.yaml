@@ -1,0 +1,36 @@
+family:
+  name: TRIT
+  description: Triple Modular Redundancy Benchmark
+  application: Fault Tolerant Logic
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  TC:
+    benchmark: TRIT-TC
+    binary_label: Clean
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    activation: None
+    stealth: None
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub TRIT Benchmark
+    notes: Trojan-free reference implementation.
+
+  TS:
+    benchmark: TRIT-TS
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal Condition
+    payload_type: Majority Voting Corruption
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub TRIT Benchmark
+    notes: Trojan modifies triple-modular redundancy voting behavior after an internal trigger.

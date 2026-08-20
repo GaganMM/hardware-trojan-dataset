@@ -1,0 +1,9 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb that triggers after 10 clock cycles when
+    the reset is enabled and the jump instruction is set to 1. This timebomb will
+    cause the system to halt indefinitely, potentially leading to denial of service
+    or other malicious behavior.

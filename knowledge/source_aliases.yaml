@@ -1,0 +1,25 @@
+GitHub:
+  - github
+
+TrustHub:
+  - trusthub
+
+OpenCores:
+  - opencores
+
+Academic:
+  - ghost
+  - rtllm
+  - hw-syn-lab
+  - processor-uvm-verification
+
+Educational:
+  - basic_verilog
+  - projf-explore
+  - 35-days-of-rtl-challenge
+
+Industrial:
+  - xilinx
+  - intel
+  - altera
+  - amd

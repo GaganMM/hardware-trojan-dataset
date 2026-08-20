@@ -1,0 +1,7 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The code contains a timebomb that resets the APB interface by triggering the PRESETn
+    signal, which can be used to disable security or cause denial of service.

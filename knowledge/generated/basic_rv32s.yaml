@@ -1,0 +1,11 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a malicious hardware trojan trigger in the `WRITE_MEPC`
+    state of the FSM when `trap_status` is `TRAP_EBREAK`. This trigger writes the
+    current PC value to the MCAUSE CSR, which can be used by an attacker to cause
+    a breakpoint or other debugging behavior. The code also includes a debug mode
+    that enables when `trap_status` is `TRAP_EBREAK`, allowing for potential exploitation
+    of this vulnerability.

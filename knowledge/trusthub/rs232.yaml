@@ -1,0 +1,363 @@
+family:
+  name: RS232
+  description: RS232 UART Hardware Trojan Benchmarks
+  application: Communication
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: RS232-T100
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Cheat Code
+    payload_type: Stuck-at Fault
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Cheat-code trigger causing a stuck-at-0/1 fault.
+
+  T200:
+    benchmark: RS232-T200
+    binary_label: Trojan
+    trojan_type: Reliability
+    trigger_type: Time Bomb
+    payload_type: Reliability Issue
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Time-bomb Trojan degrading long-term circuit reliability.
+
+  T300:
+    benchmark: RS232-T300
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Cheat Code
+    payload_type: Information Leakage
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Cheat-code trigger leaking confidential information.
+
+  T400:
+    benchmark: RS232-T400
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Time Bomb
+    payload_type: Information Leakage
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Time-bomb activated information leakage Trojan.
+
+  T500:
+    benchmark: RS232-T500
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Cheat Code
+    payload_type: Stuck-at Fault
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Cheat-code trigger producing stuck-at faults.
+
+  T600:
+    benchmark: RS232-T600
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Dead Machine
+    payload_type: Stuck-at Fault
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Dead-machine trigger permanently disables normal operation.
+
+  T700:
+    benchmark: RS232-T700
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Dead Machine
+    payload_type: Stuck-at Fault
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+      - CODES+ISSS 2017 TrustHub Benchmark Table
+    notes: Dead-machine trigger causing permanent stuck-at behavior.
+
+  T800:
+    benchmark: RS232-T800
+    binary_label: Trojan
+    trojan_type: Reliability
+    trigger_type: Cheat Code
+    payload_type: Reliability Issue
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+      - CODES+ISSS 2017 TrustHub Benchmark Table
+    notes: Cheat-code trigger introducing long-term reliability degradation.
+
+  T900:
+    benchmark: RS232-T900
+    binary_label: Trojan
+    trojan_type: Reliability
+    trigger_type: Dead Machine
+    payload_type: Reliability Issue
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+      - CODES+ISSS 2017 TrustHub Benchmark Table
+    notes: Dead-machine trigger degrading circuit reliability.
+
+  T901:
+    benchmark: RS232-T901
+    binary_label: Trojan
+    trojan_type: Reliability
+    trigger_type: Cheat Code
+    payload_type: Reliability Issue
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+      - CODES+ISSS 2017 TrustHub Benchmark Table
+    notes: Cheat-code activated reliability Trojan.
+
+  T1000:
+    benchmark: RS232-T1000
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Variant exists in TrustHub but no public per-variant semantic description is available.
+
+  T1100:
+    benchmark: RS232-T1100
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Awaiting literature verification.
+
+  T1200:
+    benchmark: RS232-T1200
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Awaiting literature verification.
+  
+  T1300:
+    benchmark: RS232-T1300
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Present in TrustHub benchmark suite. Public literature reports detection experiments but does not describe trigger or payload semantics.
+
+  T1400:
+    benchmark: RS232-T1400
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Variant included in TrustHub evaluation datasets. Semantic Trojan behavior has not been publicly documented.
+
+  T1500:
+    benchmark: RS232-T1500
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Used in detection benchmark datasets; detailed trigger and payload information unavailable.
+
+  T1600:
+    benchmark: RS232-T1600
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Benchmark publicly available, but semantic classification has not been published.
+
+  T1700:
+    benchmark: RS232-T1700
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Sequential Counter
+    payload_type: Transmission Failure
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub RS232 Benchmark
+      - Hardware Trojan Detection Prototype Evaluation
+    notes: Sequential counter trigger activates payload that causes UART transmission failure.
+
+  T1800:
+    benchmark: RS232-T1800
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Public benchmark exists, but no verified trigger or payload description is available.
+
+  T1900:
+    benchmark: RS232-T1900
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Public benchmark available. Semantic trigger and payload not documented.
+
+  T2000:
+    benchmark: RS232-T2000
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Awaiting verification from benchmark documentation.
+
+  T2100:
+    benchmark: RS232-T2100
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: No publicly available per-variant characterization.
+
+  T2200:
+    benchmark: RS232-T2200
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Used as a benchmark in detection studies. Detailed Trojan semantics unavailable.
+
+  T2300:
+    benchmark: RS232-T2300
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Variant present in TrustHub benchmark suite. Public semantic information unavailable.
+
+  T2400:
+    benchmark: RS232-T2400
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub RS232 Benchmark
+    notes: Final RS232 TrustHub benchmark. Awaiting RTL-level or original benchmark documentation verification.

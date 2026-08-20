@@ -1,0 +1,108 @@
+family:
+  name: MC8051
+  description: Intel 8051 Microcontroller Hardware Trojan Benchmarks
+  application: Microcontroller
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T200:
+    benchmark: MC8051-T200
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Internal Sequential Logic
+    payload_type: Idle Timer Activation
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Trojan activates internal timers while the processor is in idle mode.
+
+  T300:
+    benchmark: MC8051-T300
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Internal Sequential Logic
+    payload_type: UART Receive Disable
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Triggered after transmission of a specific UART string. Prevents further UART reception.
+
+  T400:
+    benchmark: MC8051-T400
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal Sequential Logic
+    payload_type: ALU Modification
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Alters arithmetic behavior after sequential activation.
+
+  T500:
+    benchmark: MC8051-T500
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal State Machine
+    payload_type: Data Replacement
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Detects a specific command and replaces selected data values.
+
+  T600:
+    benchmark: MC8051-T600
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: External Combinational Condition
+    payload_type: Jump Disable
+    activation: External
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Disables jump instructions executed by the processor.
+
+  T700:
+    benchmark: MC8051-T700
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal State Machine
+    payload_type: Input Replacement
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Replaces processor input data with predefined malicious values.
+
+  T800:
+    benchmark: MC8051-T800
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal State Machine
+    payload_type: Control Flow Modification
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub MC8051 Benchmark
+    notes: Control-flow modification Trojan affecting processor execution after state-machine activation.
+
+    

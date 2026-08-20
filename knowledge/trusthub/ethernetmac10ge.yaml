@@ -1,0 +1,166 @@
+family:
+  name: EthernetMAC10GE
+  description: 10 Gigabit Ethernet MAC Hardware Trojan Benchmarks
+  application: Ethernet Controller
+  source: TrustHub
+  insertion_level: Mixed (Layout/Gate)
+
+variants:
+
+  T100:
+    benchmark: EthernetMAC10GE-T100
+    binary_label: Trojan
+    trojan_type: Performance Degradation
+    trigger_type: Always On
+    payload_type: Crosstalk-Induced Timing Violation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Hardware Security (Bhunia & Tehranipoor, 2019)
+    notes: Layout-level parametric Trojan. A critical internal wire is widened, increasing coupling capacitance and causing timing degradation through crosstalk. :contentReference[oaicite:0]{index=0}
+
+  T200:
+    benchmark: EthernetMAC10GE-T200
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Always On
+    payload_type: Clock Grid Manipulation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Trust Benchmark Taxonomy
+    notes: Layout-level Trojan modifying the clock distribution network. :contentReference[oaicite:1]{index=1}
+
+  T300:
+    benchmark: EthernetMAC10GE-T300
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Always On
+    payload_type: Clock Grid Manipulation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Trust Benchmark Taxonomy
+    notes: Alternate clock-grid Trojan implementation targeting clock integrity. :contentReference[oaicite:2]{index=2}
+
+  T400:
+    benchmark: EthernetMAC10GE-T400
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Always On
+    payload_type: Power Supply Degradation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Trust Benchmark Taxonomy
+    notes: Layout Trojan implemented by narrowing power lines in part of the design, degrading power integrity. :contentReference[oaicite:3]{index=3}
+
+  T500:
+    benchmark: EthernetMAC10GE-T500
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Always On
+    payload_type: Power Supply Degradation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Trust Benchmark Taxonomy
+    notes: Variant of the power-network Trojan with similar power-distribution degradation. :contentReference[oaicite:4]{index=4}
+
+  T600:
+    benchmark: EthernetMAC10GE-T600
+    binary_label: Trojan
+    trojan_type: Performance Degradation
+    trigger_type: Always On
+    payload_type: Layout Reliability Degradation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Trust Benchmark Taxonomy
+    notes: Layout-level Trojan affecting long-term reliability and timing without explicit trigger logic. :contentReference[oaicite:5]{index=5}
+
+  T700:
+    benchmark: EthernetMAC10GE-T700
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Combinational Comparator
+    trigger_size: 16 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Hardware Security (2019)
+      - LUT-Level HT Detection (2021)
+    notes: Comparator-triggered logic Trojan that changes Ethernet MAC functionality after activation.
+
+  T710:
+    benchmark: EthernetMAC10GE-T710
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Combinational Comparator
+    trigger_size: 16 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Hardware Security (2019)
+      - LUT-Level HT Detection (2021)
+    notes: Logic-level comparator Trojan implementing malicious functionality modification.
+
+  T720:
+    benchmark: EthernetMAC10GE-T720
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Combinational Comparator
+    trigger_size: 16 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Hardware Security (2019)
+      - LUT-Level HT Detection (2021)
+    notes: Comparator-triggered logic Trojan used extensively in HT detection benchmarks.
+
+  T730:
+    benchmark: EthernetMAC10GE-T730
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Combinational Comparator
+    trigger_size: 16 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - Hardware Security (2019)
+      - LUT-Level HT Detection (2021)
+    notes: Final EthernetMAC10GE TrustHub benchmark. Comparator-triggered functional modification Trojan.

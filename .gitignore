@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+downloads/
+downloads.zip
+
+downloads/trusthub_extracted/EthernetMAC10GE-T100.part01/EthernetMAC10GE-T100/src/xge_mac_extracted.def
+downloads/trusthub_extracted/EthernetMAC10GE-T200.part01/EthernetMAC10GE-T200/src/xge_mac_extracted.def
+downloads/trusthub_extracted/EthernetMAC10GE-T300.part01/EthernetMAC10GE-T300/src/xge_mac_extracted.def
+downloads/trusthub_extracted/EthernetMAC10GE-T400.part01/EthernetMAC10GE-T400/src/xge_mac_extracted.def
+downloads/trusthub_extracted/EthernetMAC10GE-T500.part01/EthernetMAC10GE-T500/src/xge_mac_extracted.def
+downloads/trusthub_extracted/EthernetMAC10GE-T600.part01/EthernetMAC10GE-T600/src/xge_mac_extracted.def

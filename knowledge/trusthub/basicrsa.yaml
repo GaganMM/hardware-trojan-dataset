@@ -1,0 +1,64 @@
+family:
+  name: BasicRSA
+  description: RSA Cryptographic Hardware Trojan Benchmarks
+  application: Cryptography
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: BasicRSA-T100
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Combinational Condition
+    payload_type: Secret Key Leakage
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub BasicRSA Benchmark
+    notes: Rare combinational trigger leaking RSA secret information.
+
+  T200:
+    benchmark: BasicRSA-T200
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Sequential Condition
+    payload_type: Functional Failure
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub BasicRSA Benchmark
+    notes: Sequential trigger causing functional disruption.
+
+  T300:
+    benchmark: BasicRSA-T300
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Sequential Counter
+    payload_type: Secret Key Leakage
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub BasicRSA Benchmark
+    notes: Counter-based trigger leaking RSA secret information.
+
+  T400:
+    benchmark: BasicRSA-T400
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Sequential Counter
+    payload_type: Functional Failure
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub BasicRSA Benchmark
+    notes: Counter-triggered functional disruption benchmark.

@@ -1,0 +1,168 @@
+aliases:
+
+  CPU:
+    - ibex
+    - picorv32
+    - serv
+    - zipcpu
+    - vexriscv
+    - scr1
+    - mor1kx
+    - darkriscv
+    - kianriscv
+    - airisc
+    - airisc_core_complex
+    - riscv
+    - risc-v
+    - rv32
+    - rv64
+    - riscv32
+    - riscv64
+    - processor
+    - cpu
+    - core
+    - oldland-cpu
+    - ridecore
+    - rigel
+    - basic_rv32s
+    - e203
+    - hbird
+    - friscv
+    - fedar
+    - mips
+    - 5-stage-pipelined-mips-risc-v-like-processor
+    - mips-pipeline-processor
+    - mips-processor
+    - mips-processor-in-verilog
+    - risc-processor
+    - risc-v-processor
+    - risc-v-pipelined-processor
+    - risc-v-32i-5-stage-pipeline-core
+    - riscv-multi-cycle-processor
+    - single_cycle_riscv_cpu_design-32bit
+    - ustc-rvsoc
+    - servant
+
+  AES:
+    - aes
+    - aes128
+    - aes-verilog
+    - aes-encryption
+    - aes-encryption-vsli
+    - aes-based-on-fpga
+    - hardware-implementation-of-aes-verilog
+    - accelerating_standard_and_modified_aes128
+    - aes_sbox_gf-2-4-2_composite_field
+    - asic-implementation-of-aes
+
+  SHA:
+    - sha
+    - sha256
+    - sha512
+    - fpga-sha-family
+    - sha256-accelerator-hardware
+
+  UART:
+    - uart
+    - fpga-uart
+    - uart-verilog
+    - verilog-uart
+    - apb_uart_slave
+    - design-and-asic-implementation-of-uart
+    - wbuart32
+
+  SPI:
+    - spi
+    - quickspi
+    - spi-slave
+    - spi-amba-simulation
+    - sdspi
+
+  I2C:
+    - i2c
+    - verilog-i2c
+    - verilog-i2c-slave
+    - i2c-fpga-verilog-hdl
+    - ahb-to-i2c
+
+  CAN:
+    - can
+    - can-bus-controller
+    - fpga-can
+
+  Ethernet:
+    - ethernet
+    - verilog-ethernet
+    - fpga-rmii-smii
+    - low-latency-ethernet
+
+  Network:
+    - wireguard
+    - wireguard-fpga
+
+  Memory:
+    - sram
+    - apb_sram
+    - amba_apb_sram
+    - amba_apb_sram
+
+  Bus:
+    - axi
+    - axi-crossbar
+    - amba
+    - apb
+    - ahb
+
+  Security:
+    - opentitan
+    - xcryptcore
+    - hardware-security
+
+  Accelerator:
+    - npu
+    - npu-e2e
+    - tensor
+    - tensorcore
+    - transformer
+    - transformer-accelerator-based-on-fpga
+    - gnn
+    - gnn-acceleration-framework-with-fpga
+
+  DSP:
+    - qpsk
+    - fpga_qpsk-modem
+    - png
+    - fpga-png-decoder
+    - gps
+    - de10-lite_hdl_gps
+    - canny
+    - hardware-implementation-of-the-canny-edge-detection-algorithm
+
+  RFID:
+    - epc
+    - epc-gen2-rfid-tag-baseband-processor
+
+  Library:
+    - rtl_library_of_basic_hardware_units
+    - basic_verilog
+    - verilog-rtl-coding
+    - hdlgen
+    - cores
+    - opencores
+
+  Benchmark:
+    - ghost_benchmarks
+    - hw-syn-lab
+    - processor-uvm-verification
+    - projf-explore
+    - rtllm
+
+  Audio:
+    - ay-3-8910
+
+  SoC:
+    - taxi
+    - tinycodesign
+    - ritter-soc
+    - pasc
+    - mini-isp

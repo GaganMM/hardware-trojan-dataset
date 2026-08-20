@@ -1,0 +1,36 @@
+family:
+  name: MultPyramid
+  description: Multiplier Pyramid Hardware Trojan Benchmarks
+  application: Arithmetic
+  source: TrustHub
+  insertion_level: Layout
+
+variants:
+
+  T100:
+    benchmark: MultPyramid-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Always On
+    payload_type: Performance Degradation
+    activation: Internal
+    stealth: Medium
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub MultPyramid Benchmark
+    notes: Always-on Trojan degrading arithmetic performance.
+
+  T200:
+    benchmark: MultPyramid-T200
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Internal Condition
+    payload_type: Incorrect Arithmetic Result
+    activation: Internal
+    stealth: High
+    verified: false
+    confidence: Low
+    reference:
+      - TrustHub MultPyramid Benchmark
+    notes: Public benchmark available; detailed implementation is sparsely documented.

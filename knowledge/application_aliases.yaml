@@ -1,0 +1,207 @@
+  FPGA_QPSK-modem:
+    source: GitHub
+    organization: Unknown
+    family: DSP
+    application: Signal Processing
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  friscv:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  GHOST_benchmarks:
+    source: Academic
+    organization: Unknown
+    family: Benchmark
+    application: Benchmark
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  gnn-acceleration-framework-with-FPGA:
+    source: Academic
+    organization: Unknown
+    family: Accelerator
+    application: AI Accelerator
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  Hardware-Implementation-of-AES-Verilog:
+    source: GitHub
+    organization: Unknown
+    family: AES
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm:
+    source: GitHub
+    organization: Unknown
+    family: DSP
+    application: Signal Processing
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  HDLGen:
+    source: GitHub
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  HW-Syn-Lab:
+    source: Academic
+    organization: Unknown
+    family: Benchmark
+    application: Benchmark
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  I2C-FPGA-Verilog-HDL:
+    source: GitHub
+    organization: Unknown
+    family: I2C
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  Ibex:
+    source: GitHub
+    organization: lowRISC
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  IC_System_Design:
+    source: GitHub
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  JSilicon:
+    source: Educational
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  kianRiscV:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  KISC-V:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  low-latency-ethernet:
+    source: GitHub
+    organization: Unknown
+    family: Ethernet
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  MAM65C02-Processor-Core:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false

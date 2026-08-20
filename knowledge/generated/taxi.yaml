@@ -1,0 +1,7 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb that triggers when the baud clock goes low,
+    potentially causing denial of service or other malicious behavior.

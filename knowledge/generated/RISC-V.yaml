@@ -1,0 +1,7 @@
+binary_label:
+  value: Clean
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The provided Verilog code does not contain any malicious hardware trojan triggers
+    or payloads. It is a clean implementation of an RV32I core with memory and peripherals.

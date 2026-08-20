@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb-like trigger in the `WRITE` state, where
+    the clock counter is set to 16'b0 when the byte counter reaches 3'd0. This will
+    cause an infinite loop and potentially crash the system if not handled properly.

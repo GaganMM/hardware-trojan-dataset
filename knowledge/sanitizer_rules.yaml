@@ -1,0 +1,31 @@
+ignore_directories:
+
+  - .git
+
+  - docs
+
+  - verification
+
+  - uvm
+
+  - sim
+
+  - images
+
+ignore_files:
+
+  - README
+
+  - LICENSE
+
+  - Makefile
+
+testbench_patterns:
+
+  - tb
+
+  - _tb
+
+  - testcase
+
+minimum_size_kb: 0.08

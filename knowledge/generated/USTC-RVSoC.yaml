@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb-like trigger that sets the reset signal to
+    0 after 3 clock cycles, which can be exploited by an attacker to disable security
+    features or cause denial of service.

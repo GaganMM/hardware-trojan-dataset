@@ -1,0 +1,24 @@
+family:
+  name: s15850
+  description: ISCAS89 s15850 Hardware Trojan Benchmark
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: Gate
+
+variants:
+
+  T100:
+    benchmark: s15850-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Functional Modification
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - HaTCh Framework
+      - JETTA 2024
+    notes: Comparator-triggered Trojan causing denial of service and functional modification.

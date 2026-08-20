@@ -1,0 +1,7 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb that triggers when the clock frequency exceeds
+    83333 Hz, which is a common timebomb attack in hardware security research.

@@ -1,0 +1,88 @@
+family:
+  name: b19
+  description: ITC'99 b19 Hardware Trojan Benchmarks
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: RTL/Gate
+
+variants:
+
+  T100:
+    benchmark: b19-T100
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Sequential Counter
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - On Design Vulnerability Analysis and Trust Benchmarks Development
+      - Beauty of Serendipity Between IC Security and AI
+    notes: Function-changing Trojan activated by a specific vector counter (approximately 100–110). Payload reintegrates malicious logic using an OR gate.
+
+  T200:
+    benchmark: b19-T200
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Distributed Trigger
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - On Design Vulnerability Analysis and Trust Benchmarks Development
+    notes: Distributed RTL Trojan implementing malicious functional modification.
+
+  T300:
+    benchmark: b19-T300
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Sequential Counter
+    trigger_size: 32 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - LUT-level HT Detection (2021)
+    notes: 32-bit counter-based trigger.
+
+  T400:
+    benchmark: b19-T400
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Sequential Counter
+    trigger_size: 32 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - LUT-level HT Detection (2021)
+    notes: 32-bit sequential counter trigger.
+
+  T500:
+    benchmark: b19-T500
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Sequential Counter
+    trigger_size: 32 bits
+    payload_type: Change Functionality
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - LUT-level HT Detection (2021)
+      - On Design Vulnerability Analysis and Trust Benchmarks Development
+    notes: Counter-triggered functionality-changing Trojan.

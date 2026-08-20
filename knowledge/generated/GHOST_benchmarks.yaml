@@ -1,0 +1,9 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a malicious hardware trojan trigger that activates when
+    a specific byte (0xAA) is received 8 times consecutively. This is a timebomb-like
+    attack, where the attacker can exploit the vulnerability to cause the system to
+    enter an infinite loop or crash.

@@ -1,0 +1,11 @@
+id,name,github_url,category,expected_labels,priority,status,notes
+TH001,Trust-Hub,,benchmark,Clean;HT1;HT2;HT3;HT4,1,pending,Official Trust-Hub benchmark
+TH002,Trust-Hub-Mirror,,benchmark,Clean;HT1;HT2;HT3;HT4,1,pending,GitHub mirror
+RV001,RISCV-Web3,,benchmark,HT1;HT2,1,pending,Modern RISC-V/Web3 Trojans
+OC001,OpenCores,https://github.com/klyone/opencores-ip,clean,Clean,2,downloaded,Large collection of RTL IPs
+PC001,PicoRV32,https://github.com/YosysHQ/picorv32,processor,Clean,2,downloaded,RISC-V core
+IB001,Ibex,https://github.com/lowRISC/ibex,processor,Clean,2,downloaded,RISC-V core
+OT001,OpenTitan,https://github.com/lowRISC/opentitan,processor,Clean,2,downloaded,Security-oriented SoC
+VX001,VexRiscv,https://github.com/SpinalHDL/VexRiscv,processor,Clean,2,downloaded,RISC-V core
+SV001,SERV,https://github.com/olofk/serv,processor,Clean,2,downloaded,Bit-serial RISC-V
+ZP001,ZipCPU,https://github.com/ZipCPU/zipcpu,processor,Clean,2,downloaded,Open-source CPU

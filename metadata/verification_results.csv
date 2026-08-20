@@ -1,0 +1,100 @@
+repository,qwen_label,deepseek_label,deepseek_confidence,deepseek_reasoning
+35-DAYS-OF-RTL-CHALLENGE,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+5-stage-pipelined-MIPS-RISC-V-like-processor,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+Accelerating_Standard_and_Modified_AES128,Clean,Trojan,0,The code contains a hardware trojan trigger which is likely the use of specific sequence counters or cheat codes in AES128 implementation. The main purpose seems to be leaking secrets and disabling security.
+AES-based-on-FPGA,Clean,Clean,1,There are no malicious hardware trojans or payloads in the provided Verilog RTL code.
+AES-encryption-VSLI,Clean,Trojan,1.0,The code contains a hardware trojan trigger which is the use of specific sequence counters and cheat codes in place.
+AES-Encryption,Clean,Malicious,0.9,The code contains a hardware trojan that is likely related to timing attacks or specific sequence counters.
+AES-Verilog,Clean,Clean,9.8,The code does not contain any malicious hardware trojan triggers or payloads.
+aes,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+AES128,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+AES_SBox_GF-2-4-2_composite_field,Clean,Clean,0,
+AHB-to-I2C,Clean,Trojan,1.0,The code contains a sequence of write operations with no read operation or any other form of data transfer.
+airisc_core_complex,Trojan,Clean,1,The code does not contain any malicious hardware trojan triggers or payloads.
+AMBA_APB_SRAM,Trojan,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+APB_UART_SLAVE,Clean,Trojan,0.9,The code contains a sequence counter and timebomb-like triggers that could be used to exploit security vulnerabilities in an APB (APBus) slave module.
+ASIC-implementation-of-AES,Clean,Trojan,0.9,The code contains a sequence of control signals that seem to be used for initialization and next state transition in the AES block cipher core.
+axi-crossbar,Clean,Trojan,9.8,The code contains a timebomb-like sequence counter and uses specific cheat codes.
+ay-3-8910_reverse_engineered,Clean,Clean,0.9836214574,The code does not contain any malicious hardware trojan triggers or payloads.
+Basic-SIMD-Processor-Verilog-Tutorial,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+basic_rv32s,Trojan,Trojan,1.0,The code contains a sequence of operations that could potentially be used to create malicious hardware trojans.
+basic_verilog,Trojan,Malicious,95.83,The code contains a hardware trojan trigger which is the use of specific sequence counters and timebombs in combination with leaking secrets or disabling security.
+CAN-Bus-Controller,Clean,Trojan,0.9,The code contains a hardware trojan trigger which is the generation of baud rate clock signals at an undesired frequency (500kHz). This could potentially be used to create malicious traffic patterns or attacks.
+cores,Trojan,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+darkriscv,Trojan,Trojan,98,The PLL code is using a wide range of dividers and clock frequencies which could potentially lead to hardware trojans.
+De10-Lite_HDL_GPS,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+e203_hbirdv2,Trojan,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+EPC-Gen2-RFID-Tag-Baseband-Processor,Trojan,Clean,0.9832574,The code does not contain any malicious hardware trojan triggers or payloads.
+fedar-f1-rv64im,Clean,Trojan,0.8,The code contains a hardware trojan trigger which is the use of XOR operation in place of multiplication (mul) and division operations for arithmetic computations.
+FPGA-CAN,Clean,Clean,1,The code does not contain any malicious hardware trojan triggers or payloads.
+FPGA-PNG-decoder,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+FPGA-RMII-SMII,Clean,Trojan,{},The code contains a time bomb-like sequence in the RMII RX signal parsing. The payload is not present.
+FPGA-SHA-Family,Clean,Trojan,{},The code contains a hardware trojan trigger which is likely to be timebomb or sequence counter related. The payloads could potentially include leaking secrets and disabling security.
+FPGA-UART,Trojan,Trojan,{},The code contains a UART module that is used for receiving data. The received characters are then parsed to determine if they contain any malicious hardware trojans.
+FPGA_QPSK-modem,Clean,Clean,0.9,The code does not contain any malicious hardware trojan triggers or payloads.
+friscv,Trojan,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+GHOST_benchmarks,Trojan,Trojan,9.87654e-05,The code contains a trojan trigger which is the comparison of state and key in AES_128 module.
+gnn-acceleration-framework-with-FPGA,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+Hardware-Implementation-of-AES-Verilog,Clean,Trojan,0,The code contains a hardware trojan trigger. AES_TOP module uses an encryption key and data input to encrypt the output of 'aescipher' which is then assigned as finalout.
+Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+HDLGen,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+HW-Syn-Lab,Clean,Trojan,9.7,The code contains a hardware trojan trigger which is the use of timebombs in this case.
+I2C-FPGA-Verilog-HDL,Clean,Unknown,0,
+Ibex,Trojan,Trojan,9.875624e-06,The code contains a clean design and does not contain any malicious hardware trojans or payloads.
+IC_System_Design,Clean,Clean,1,The Verilog code does not contain any malicious hardware trojan triggers or payloads.
+JSilicon,Clean,Malicious,0.9,The Verilog code contains a hardware trojan trigger which is the use of timebombs in an always block.
+kianRiscV,Trojan,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+KISC-V,Trojan,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+low-latency-ethernet,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+MAM65C02-Processor-Core,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+mini-isp,Clean,,-1,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+MIPS-pipeline-processor,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+MIPS-Processor-in-Verilog,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+MIPS-Processor,Clean,Trojan,0.957648,"The Verilog code contains a hardware trojan trigger - the use of specific sequence counters and cheat codes, which are not present in this case."
+mor1kx,Trojan,Trojan,0.9,The code contains a hardware trojan trigger that is likely related to the use of specific sequence counters or cheat codes in multi-clock operations.
+NPU-E2E,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+oldland-cpu,Trojan,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+OpenTitan,Trojan,Clean,1.0,The Verilog code does not contain any malicious hardware trojan triggers or payloads.
+PASC,Clean,Trojan,0.9,The code contains a hardware trojan trigger which is the use of timebombs and specific sequence counters in Verilog RTL.
+PicoRV32,Clean,Clean,0.98,The code does not contain any malicious hardware trojan triggers or payloads.
+Processor-UVM-Verification,Clean,Clean,9.73469181854248,The Verilog code does not contain any malicious hardware trojan triggers or payloads.
+projf-explore,Trojan,Clean,1.0,The Verilog code does not contain any malicious hardware trojan triggers or payloads.
+QuickSPI,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+ridecore,Trojan,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+rigel,Trojan,Trojan,0.9,The code contains a sequence counter and time bomb triggers which are likely to be hardware trojans.
+RISC-processor,Clean,Trojan,0.9,The code contains a sequence counter that is not reset at the start of each cycle (`#1`). This could be used to create timing attacks where an attacker can manipulate clock signals and observe behavior in real-time.
+RISC-V-32I-5-stage-Pipeline-Core,Clean,Trojan,0.9,The Verilog code contains a hardware trojan that can be used to disable security measures in the ALU module.
+RISC-V-Pipelined-Processor,Trojan,Trojan,1.0,The Verilog code contains a hardware trojan trigger - the use of always @ (A or B or SEL) which is likely to be timebomb-like behavior if not properly controlled.
+RISC-V-Processor,Clean,Trojan,0.9,The Verilog code contains a hardware trojan that performs bitwise operations on two input operands and uses the ALU_control signal to select an operation.
+RISC-V-TensorCore,Clean,Clean,1.0,The Verilog code is clean and does not contain any malicious hardware trojan triggers or payloads.
+RISC-V,Clean,Clean,0.9,The code does not contain any malicious hardware trojan triggers or payloads.
+RISCV-multi-cycle-processor,Clean,Trojan,95.826477050781,The Verilog code contains no malicious hardware trojans or payloads.
+riscv,Clean,Trojan,0.9,The code contains a trojan trigger which is likely to cause the system's security manager (the part of RISC-V that manages hardware access) inappropriately.
+ritter-soc,Trojan,Clean,1,The code does not contain any malicious hardware trojan triggers or payloads.
+RTLLM,Clean,Trojan,0.9,The Verilog code contains a hardware trojan trigger that is likely the addition of data to 'data_out' and possibly related registers.
+RTL_library_of_basic_hardware_units,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+scr1,Clean,Clean,1.0,The provided Verilog code does not contain any malicious hardware trojan triggers or payloads.
+sdspi,Trojan,Clean,0.98,The code does not contain any malicious hardware trojan triggers or payloads.
+SERV,Trojan,Clean,1,The code does not contain any malicious hardware trojan triggers or payloads.
+SHA256-Accelerator-Hardware,Clean,Trojan,0,
+single_cycle_RISCV_CPU_Design-32bit,Trojan,Clean,0,The code does not contain any malicious hardware trojan triggers or payloads.
+spi-amba-simulation,Clean,Clean,0.9,The code does not contain any malicious hardware trojan triggers or payloads.
+spi-slave,Clean,Trojan,0.9,The code contains a trojan payload that is leaking secrets or disabling security.
+taxi,Trojan,Clean,0.9,The Verilog code does not contain any malicious hardware trojan triggers or payloads.
+tekno-kizil,Trojan,Trojan,0.9,The code contains a hardware trojan trigger which is the use of UART (Universal Asynchronous Receiver/Transmitter) in conjunction with Pmod headers to transmit data from one FPGA port to another.
+TinyCoDesign,Clean,Clean,1.0,No malicious hardware trojan triggers or payloads found in the provided Verilog code.
+Transformer-Accelerator-Based-on-FPGA,Clean,Trojan,0,The code contains a hardware trojan trigger which is the use of specific sequence counters. The counter increments indefinitely and does not reset.
+uart-verilog,Clean,Clean,0.98,The code does not contain any malicious hardware trojan triggers or payloads.
+UART,Clean,Trojan,0.9,The code contains a hardware trojan trigger which is the use of specific sequence counters and cheat codes in its RTL modelling for clock generation.
+USTC-RVSoC,Trojan,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+ventus-gpgpu-verilog,Trojan,Trojan,9.8,The Verilog code contains a hardware trojan trigger which is the use of specific sequence counters and timebombs in this case.
+verilog-ethernet,Trojan,Clean,0.9836452767944336,The code does not contain any malicious hardware trojan triggers or payloads.
+verilog-eval,Trojan,Trojan,95.36,The code contains a hardware trojan trigger which is likely time bomb or sequence counter related.
+Verilog-I2C-Slave,Clean,Clean,0.98,The code does not contain any malicious hardware trojan triggers or payloads.
+verilog-i2c,Clean,Clean,0.0009875623,The code does not contain any malicious hardware trojan triggers or payloads.
+Verilog-RTL-Coding,Clean,Trojan,0.9835247,"The Verilog code contains a hardware trojan trigger, which is the use of XOR (^) operation in case statement to determine whether addition or subtraction should be performed based on opcode."
+verilog-uart,Clean,Clean,0.98,The code does not contain any malicious hardware trojan triggers or payloads.
+VexRiscv,Clean,Trojan,0.9836257415,The code contains a hardware trojan trigger that is likely related to the use of cheat codes or specific sequence counters in Verilog RTL.
+vsdflow,Clean,Clean,1.0,The code does not contain any malicious hardware trojan triggers or payloads.
+wbuart32,Clean,Clean,0.9,The code does not contain any malicious hardware trojan triggers or payloads.
+wireguard-fpga,Trojan,Trojan,2.5,The code contains a stub declaration of the top-level module interface for an Ethernet data fifo with timing and flow control signals.

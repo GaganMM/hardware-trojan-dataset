@@ -1,0 +1,53 @@
+family:
+  name: s38417
+  description: ISCAS89 s38417 Hardware Trojan Benchmarks
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: Gate
+
+variants:
+
+  T100:
+    benchmark: s38417-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Internal Signal Hijacking
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - CMSY8
+      - TrustHub Benchmark
+    notes: Comparator trigger (≈1.42×10⁻⁷⁰ activation probability). Trojan gains control of an internal signal.
+
+  T200:
+    benchmark: s38417-T200
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Erroneous Signal Propagation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - CMSY8
+      - TrustHub Benchmark
+    notes: Comparator trigger (≈1.66×10⁻⁴⁴). Propagates erroneous values through four internal signals.
+
+  T300:
+    benchmark: s38417-T300
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Comparator
+    payload_type: Ring Oscillator Side Channel
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - CMSY8
+      - TrustHub Benchmark
+    notes: Leaks internal signal values using a 29-stage ring oscillator side channel.

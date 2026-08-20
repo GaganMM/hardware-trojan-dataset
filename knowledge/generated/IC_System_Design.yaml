@@ -1,0 +1,8 @@
+binary_label:
+  value: Clean
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code provided does not contain any malicious hardware trojan triggers
+    or payloads. It is a simple register file module that performs basic read and
+    write operations on 32-bit registers.

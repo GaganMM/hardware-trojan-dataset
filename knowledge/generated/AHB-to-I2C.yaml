@@ -1,0 +1,9 @@
+binary_label:
+  value: Clean
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The provided Verilog code does not contain any malicious hardware trojan triggers
+    or payloads. It is a simple testbench for an AHB master module, which includes
+    basic sequence generation and clock management but does not involve any sensitive
+    operations that could be exploited as a hardware trojan.

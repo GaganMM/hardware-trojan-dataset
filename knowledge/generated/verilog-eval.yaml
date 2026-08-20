@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The code contains a timebomb-like trigger in the `FALLL` and `FALLR` states, which
+    increments a counter until it reaches 20. If the ground is not detected within
+    this period, the state transitions to `DEAD`, potentially disabling security features.

@@ -1,0 +1,53 @@
+family:
+  name: s38584
+  description: ISCAS89 s38584 Hardware Trojan Benchmarks
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: Gate
+
+variants:
+
+  T100:
+    benchmark: s38584-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Functional Modification
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - HaTCh Framework
+    notes: Comparator-triggered denial-of-service Trojan.
+
+  T200:
+    benchmark: s38584-T200
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Comparator
+    payload_type: Information Leakage
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - HaTCh Framework
+    notes: Comparator-triggered information leakage Trojan.
+
+  T300:
+    benchmark: s38584-T300
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Comparator
+    payload_type: Information Leakage
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - HaTCh Framework
+    notes: Information leakage benchmark with comparator trigger.

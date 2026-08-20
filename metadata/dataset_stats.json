@@ -1,0 +1,12 @@
+{
+    "inventory_files_initial": 9005,
+    "accepted_unique_files": 8988,
+    "rejected_files": 17,
+    "duplicate_files": 0,
+    "clean_files": 2371,
+    "trojan_files": 6617,
+    "unknown_files": 0,
+    "high_confidence": 764,
+    "medium_confidence": 339,
+    "low_confidence": 7835
+}

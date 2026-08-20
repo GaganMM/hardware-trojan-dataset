@@ -1,0 +1,233 @@
+  axi-crossbar:
+    source: GitHub
+    organization: Unknown
+    family: Bus
+    application: Interconnect
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  ay-3-8910_reverse_engineered:
+    source: GitHub
+    organization: Unknown
+    family: Audio
+    application: Multimedia
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  Basic-SIMD-Processor-Verilog-Tutorial:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  basic_rv32s:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  basic_verilog:
+    source: Educational
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  CAN-Bus-Controller:
+    source: GitHub
+    organization: Unknown
+    family: CAN
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  cores:
+    source: GitHub
+    organization: Unknown
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  darkriscv:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  De10-Lite_HDL_GPS:
+    source: GitHub
+    organization: Unknown
+    family: DSP
+    application: Signal Processing
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  Design-and-ASIC-Implementation-of-UART:
+    source: GitHub
+    organization: Unknown
+    family: UART
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  e203_hbirdv2:
+    source: GitHub
+    organization: Nuclei
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  EPC-Gen2-RFID-Tag-Baseband-Processor:
+    source: GitHub
+    organization: Unknown
+    family: RFID
+    application: RFID
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  fedar-f1-rv64im:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  FPGA-CAN:
+    source: GitHub
+    organization: Unknown
+    family: CAN
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  FPGA-PNG-decoder:
+    source: GitHub
+    organization: Unknown
+    family: DSP
+    application: Signal Processing
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  FPGA-RMII-SMII:
+    source: GitHub
+    organization: Unknown
+    family: Ethernet
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  FPGA-SHA-Family:
+    source: GitHub
+    organization: Unknown
+    family: SHA
+    application: Crypto
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  FPGA-UART:
+    source: GitHub
+    organization: Unknown
+    family: UART
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false

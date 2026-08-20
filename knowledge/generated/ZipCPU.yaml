@@ -1,0 +1,10 @@
+binary_label:
+  value: Trojan
+  confidence: 0.95
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb trigger in the control/status register at
+    local address zero. The 'on_dev_trigger' bit is set to '1', and when written with
+    '3db' as the upper word, it triggers an external interrupt before starting the
+    DMA operation. This could be used by an attacker to cause the DMA controller to
+    wait indefinitely for an external interrupt, effectively creating a timebomb.

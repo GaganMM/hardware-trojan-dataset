@@ -1,0 +1,9 @@
+binary_label:
+  value: Clean
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code provided does not contain any malicious hardware trojan triggers
+    or payloads. It appears to be a simple demodulator module for QPSK signals, using
+    DDS and low-pass filters to process the input signal and generate phase error
+    and costas loop filter outputs.

@@ -1,0 +1,1273 @@
+rtl_id,repository,file_name,module_name,extension,relative_path,language,size_kb,is_valid,reject_reason
+RTL000056,35-DAYS-OF-RTL-CHALLENGE,universalshiftB.v,universalshiftB,.v,DAY26/universalshiftB.v,Verilog,0.83,False,testbench
+RTL000090,35-DAYS-OF-RTL-CHALLENGE,UART_TB.v,UART_TB,.v,"DAY34,35/UART/UART_TB.v",Verilog,0.92,False,testbench
+RTL000118,5-stage-pipelined-MIPS-RISC-V-like-processor,tb_pipe_MIPS.v,tb_pipe_MIPS,.v,testbench/tb_pipe_MIPS.v,Verilog,1.41,False,testbench
+RTL000120,AES-Encryption,Decryption_tb.v,Decryption_tb,.v,module_files/Decryption/Decryption_tb.v,Verilog,0.75,False,testbench
+RTL000122,AES-Encryption,Encryption_tb.v,Encryption_tb,.v,module_files/Encryption/Encryption_tb.v,Verilog,0.75,False,testbench
+RTL000124,AES-Encryption,KeyExpansion_tb.v,KeyExpansion_tb,.v,module_files/KeyExpansion/KeyExpansion_tb.v,Verilog,0.47,False,testbench
+RTL000126,AES-Encryption,InvMixColumns_tb.v,InvMixColumns_tb,.v,module_files/MixColumns/InvMixColumns_tb.v,Verilog,0.54,False,testbench
+RTL000128,AES-Encryption,MixColumns_tb.v,MixColumns_tb,.v,module_files/MixColumns/MixColumns_tb.v,Verilog,0.53,False,testbench
+RTL000130,AES-Encryption,AddRoundKeyTestbench.v,AddRoundKeyTestbench,.v,module_files/RoundKey/AddRoundKeyTestbench.v,Verilog,0.4,False,testbench
+RTL000132,AES-Encryption,ClockDivider_tb.v,ClockDivider_tb,.v,module_files/SPI/ClockDivider_tb.v,Verilog,0.3,False,testbench
+RTL000135,AES-Encryption,SPI_Testbench.v,SPI_Testbench,.v,module_files/SPI/SPI_Testbench.v,Verilog,1.05,False,testbench
+RTL000138,AES-Encryption,ShiftRows_tb.v,ShiftRows_tb,.v,module_files/ShiftRows/ShiftRows_tb.v,Verilog,0.44,False,testbench
+RTL000140,AES-Encryption,Wrapper_tb.v,Wrapper_tb,.v,module_files/Wrapper/Wrapper_tb.v,Verilog,0.77,False,testbench
+RTL000144,AES-Encryption,subBytesTestBench.v,subBytesTestBench,.v,module_files/subBytes/subBytesTestBench.v,Verilog,0.35,False,testbench
+RTL000147,AES-Verilog,AES_Decrypt_tb.v,AES_Decrypt_tb,.v,AES_Decrypt_tb.v,Verilog,0.85,False,testbench
+RTL000149,AES-Verilog,AES_Encrypt_tb.v,AES_Encrypt_tb,.v,AES_Encrypt_tb.v,Verilog,0.88,False,testbench
+RTL000150,AES-Verilog,AES_tb.v,AES_tb,.v,AES_tb.v,Verilog,0.57,False,testbench
+RTL000152,AES-Verilog,addRoundKey_tb.v,addRoundKey_tb,.v,addRoundKey_tb.v,Verilog,0.3,False,testbench
+RTL000156,AES-Verilog,inverseMixColumns_tb.v,inverseMixColumns_tb,.v,inverseMixColumns_tb.v,Verilog,0.34,False,testbench
+RTL000159,AES-Verilog,inverseShiftRows_tb.v,inverseShiftRows_tb,.v,inverseShiftRows_tb.v,Verilog,0.22,False,testbench
+RTL000161,AES-Verilog,inverseSubBytes_tb.v,inverseSubBytes_tb,.v,inverseSubBytes_tb.v,Verilog,0.23,False,testbench
+RTL000163,AES-Verilog,keyExpansion_tb.v,keyExpansion_tb,.v,keyExpansion_tb.v,Verilog,0.39,False,testbench
+RTL000165,AES-Verilog,mixColumns_tb.v,mixColumns_tb,.v,mixColumns_tb.v,Verilog,0.32,False,testbench
+RTL000168,AES-Verilog,shiftRows_tb.v,shiftRows_tb,.v,shiftRows_tb.v,Verilog,0.32,False,testbench
+RTL000170,AES-Verilog,subBytes_tb.v,subBytes_tb,.v,subBytes_tb.v,Verilog,0.32,False,testbench
+RTL000209,AES-encryption-VSLI,tb_aes.sv,tb_aes,.sv,part3/src/tb_aes.sv,SystemVerilog,4.23,False,testbench
+RTL000214,AES128,aes128_cbc_dec_top_tb.v,aes128_cbc_dec_top_tb,.v,RTL/aes128_cbc_decryptor/aes128_cbc_dec_top_tb.v,Verilog,2.85,False,testbench
+RTL000231,AES128,aes128_cbc_enc_top_tb.v,aes128_cbc_enc_top_tb,.v,RTL/aes128_cbc_encryptor/aes128_cbc_enc_top_tb.v,Verilog,2.82,False,testbench
+RTL000244,AES128,aes128_cbc_top_tb.v,aes128_cbc_top_tb,.v,RTL/aes128_cbc_full/aes128_cbc_top_tb.v,Verilog,3.03,False,testbench
+RTL000266,AES128,aes128_top_tb.v,aes128_top_tb,.v,RTL/aes128_ecb_decryptor/aes128_top_tb.v,Verilog,2.62,False,testbench
+RTL000280,AES128,AES_top_tb.v,AES_top_tb,.v,RTL/aes128_ecb_encryptor/AES_top_tb.v,Verilog,2.55,False,testbench
+RTL000294,AES128,aes128_top_tb.v,aes128_top_tb,.v,RTL/aes128_ecb_full/aes128_top_tb.v,Verilog,2.82,False,testbench
+RTL000315,AES128,AES_top_tb.v,AES_top_tb,.v,RTL_TB/AES_top_tb.v,Verilog,0.49,False,testbench
+RTL000317,AES128,AES_top_tb.v,AES_top_tb,.v,RTL_TB/aes128_ecb_fileIO_XmasDemo/AES_top_tb.v,Verilog,2.35,False,testbench
+RTL000335,AES128,encrypt_full_tb.v,encrypt_full_tb,.v,RTL_TB/encrypt_full_tb.v,Verilog,32.67,False,testbench
+RTL000336,AES128,encrypt_tb.v,encrypt_tb,.v,RTL_TB/encrypt_tb.v,Verilog,29.58,False,testbench
+RTL000337,AES128,encrypt_tb_loop.v,encrypt_tb_loop,.v,RTL_TB/encrypt_tb_loop.v,Verilog,30.8,False,testbench
+RTL000338,AES128,keyExpansion_tb.v,keyExpansion_tb,.v,RTL_TB/keyExpansion_tb.v,Verilog,12.12,False,testbench
+RTL000344,AHB-to-I2C,ahb_tb.v,ahb_tb,.v,ahb_tb.v,Verilog,1.54,False,testbench
+RTL000356,AMBA_APB_SRAM,tb_defines.sv,tb_defines,.sv,tb/defines/tb_defines.sv,SystemVerilog,1.09,False,testbench
+RTL000364,AMBA_APB_SRAM,tb_top.sv,tb_top,.sv,tb/tb_top/tb_top.sv,SystemVerilog,4.2,False,testbench
+RTL000384,APB_UART_SLAVE,apb_uart_tb.v,apb_uart_tb,.v,tb/apb_uart_tb.v,Verilog,7.74,False,testbench
+RTL000392,ASIC-implementation-of-AES,tb_aes.v,tb_aes,.v,Pre-Synthesis Simulation/tb_aes.v,Verilog,16.42,False,testbench
+RTL000393,ASIC-implementation-of-AES,tb_aes_core.v,tb_aes_core,.v,Pre-Synthesis Simulation/tb_aes_core.v,Verilog,14.76,False,testbench
+RTL000394,ASIC-implementation-of-AES,tb_aes_decipher_block.v,tb_aes_decipher_block,.v,Pre-Synthesis Simulation/tb_aes_decipher_block.v,Verilog,13.17,False,testbench
+RTL000395,ASIC-implementation-of-AES,tb_aes_encipher_block.v,tb_aes_encipher_block,.v,Pre-Synthesis Simulation/tb_aes_encipher_block.v,Verilog,13.6,False,testbench
+RTL000396,ASIC-implementation-of-AES,tb_aes_key_mem.v,tb_aes_key_mem,.v,Pre-Synthesis Simulation/tb_aes_key_mem.v,Verilog,23.77,False,testbench
+RTL000404,ASIC-implementation-of-AES,tb_aes.v,tb_aes,.v,rtl/tb_aes.v,Verilog,16.42,False,testbench
+RTL000405,ASIC-implementation-of-AES,tb_aes_core.v,tb_aes_core,.v,rtl/tb_aes_core.v,Verilog,14.76,False,testbench
+RTL000406,ASIC-implementation-of-AES,tb_aes_decipher_block.v,tb_aes_decipher_block,.v,rtl/tb_aes_decipher_block.v,Verilog,13.17,False,testbench
+RTL000407,ASIC-implementation-of-AES,tb_aes_encipher_block.v,tb_aes_encipher_block,.v,rtl/tb_aes_encipher_block.v,Verilog,13.6,False,testbench
+RTL000408,ASIC-implementation-of-AES,tb_aes_key_mem.v,tb_aes_key_mem,.v,rtl/tb_aes_key_mem.v,Verilog,23.77,False,testbench
+RTL000417,Accelerating_Standard_and_Modified_AES128,testbench.v,testbench,.v,Baseline-AES/testbench.v,Verilog,1.3,False,testbench
+RTL000428,Accelerating_Standard_and_Modified_AES128,testbench.v,testbench,.v,Modified-AES-V1/testbench.v,Verilog,0.83,False,testbench
+RTL000437,Accelerating_Standard_and_Modified_AES128,testbench.v,testbench,.v,Modified-AES-V2/testbench.v,Verilog,0.84,False,testbench
+RTL000438,Accelerating_Standard_and_Modified_AES128,myip_aes_bram_v1_0_tb.sv,myip_aes_bram_v1_0_tb,.sv,ip_repo/myip_aes_bram_1.0/example_designs/bfm_design/myip_aes_bram_v1_0_tb.sv,SystemVerilog,8.61,False,testbench
+RTL000453,Basic-SIMD-Processor-Verilog-Tutorial,processor_tb.v,processor_tb,.v,processor_tb.v,Verilog,12.12,False,testbench
+RTL000492,Design-and-ASIC-Implementation-of-UART,UART_RX_TB.v,UART_RX_TB,.v,sim/UART_RX/UART_RX_TB.v,Verilog,6.08,False,ignored_directory
+RTL000493,Design-and-ASIC-Implementation-of-UART,UART_TX_TB.v,UART_TX_TB,.v,sim/UART_TX/UART_TX_TB.v,Verilog,4.22,False,ignored_directory
+RTL000496,EPC-Gen2-RFID-Tag-Baseband-Processor,bb_proc_tb.v,bb_proc_tb,.v,bb_proc_tb.v,Verilog,8.6,False,testbench
+RTL000516,FPGA-CAN,tb_can_top.v,tb_can_top,.v,SIM/tb_can_top.v,Verilog,12.82,False,ignored_directory
+RTL000520,FPGA-PNG-decoder,tb_hard_png.v,tb_hard_png,.v,SIM/tb_hard_png.v,Verilog,4.63,False,ignored_directory
+RTL000523,FPGA-RMII-SMII,tb_rmii_phy_if.v,tb_rmii_phy_if,.v,SIM/tb_rmii_phy_if.v,Verilog,6.19,False,ignored_directory
+RTL000524,FPGA-RMII-SMII,tb_smii_phy_if.v,tb_smii_phy_if,.v,SIM/tb_smii_phy_if.v,Verilog,6.81,False,ignored_directory
+RTL000530,FPGA-SHA-Family,tb_sha.v,tb_sha,.v,SIM/tb_sha.v,Verilog,5.47,False,ignored_directory
+RTL000534,FPGA-UART,tb_axis_inc_source.v,tb_axis_inc_source,.v,SIM/tb_axis_inc_source.v,Verilog,2.04,False,ignored_directory
+RTL000535,FPGA-UART,tb_uart.v,tb_uart,.v,SIM/tb_uart.v,Verilog,6.26,False,ignored_directory
+RTL000536,FPGA-UART,tb_uart2axi4.v,tb_uart2axi4,.v,SIM/tb_uart2axi4.v,Verilog,7.68,False,ignored_directory
+RTL000557,FPGA_QPSK-modem,tb_clk_gen.v,tb_clk_gen,.v,testbench/tb_clk_gen.v,Verilog,0.77,False,testbench
+RTL000558,FPGA_QPSK-modem,tb_data_gen.v,tb_data_gen,.v,testbench/tb_data_gen.v,Verilog,0.46,False,testbench
+RTL000559,FPGA_QPSK-modem,tb_data_valid.v,tb_data_valid,.v,testbench/tb_data_valid.v,Verilog,1.47,False,testbench
+RTL000560,FPGA_QPSK-modem,tb_dec2bcd.v,tb_dec2bcd,.v,testbench/tb_dec2bcd.v,Verilog,0.57,False,testbench
+RTL000561,FPGA_QPSK-modem,tb_gardner_sync.v,tb_gardner_sync,.v,testbench/tb_gardner_sync.v,Verilog,1.72,False,testbench
+RTL000562,FPGA_QPSK-modem,tb_interpolate_filter.v,tb_interpolate_filter,.v,testbench/tb_interpolate_filter.v,Verilog,1.76,False,testbench
+RTL000563,FPGA_QPSK-modem,tb_iq_comb.v,tb_iq_comb,.v,testbench/tb_iq_comb.v,Verilog,2.1,False,testbench
+RTL000564,FPGA_QPSK-modem,tb_para2ser.v,tb_para2ser,.v,testbench/tb_para2ser.v,Verilog,0.61,False,testbench
+RTL000565,FPGA_QPSK-modem,tb_qpsk_clk_top.v,tb_qpsk_clk_top,.v,testbench/tb_qpsk_clk_top.v,Verilog,0.62,False,testbench
+RTL000566,FPGA_QPSK-modem,tb_qpsk_mod.v,tb_qpsk_mod,.v,testbench/tb_qpsk_mod.v,Verilog,0.58,False,testbench
+RTL000567,FPGA_QPSK-modem,tb_time_display.v,tb_time_display,.v,testbench/tb_time_display.v,Verilog,0.75,False,testbench
+RTL000568,FPGA_QPSK-modem,tb_clk_gen.v,tb_clk_gen,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_clk_gen.v,Verilog,0.77,False,testbench
+RTL000569,FPGA_QPSK-modem,tb_data_gen.v,tb_data_gen,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_data_gen.v,Verilog,0.46,False,testbench
+RTL000570,FPGA_QPSK-modem,tb_data_valid.v,tb_data_valid,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_data_valid.v,Verilog,1.47,False,testbench
+RTL000571,FPGA_QPSK-modem,tb_dec2bcd.v,tb_dec2bcd,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_dec2bcd.v,Verilog,0.57,False,testbench
+RTL000572,FPGA_QPSK-modem,tb_gardner_sync.v,tb_gardner_sync,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_gardner_sync.v,Verilog,1.72,False,testbench
+RTL000573,FPGA_QPSK-modem,tb_interpolate_filter.v,tb_interpolate_filter,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_interpolate_filter.v,Verilog,1.76,False,testbench
+RTL000574,FPGA_QPSK-modem,tb_iq_comb.v,tb_iq_comb,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_iq_comb.v,Verilog,2.1,False,testbench
+RTL000575,FPGA_QPSK-modem,tb_para2ser.v,tb_para2ser,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_para2ser.v,Verilog,0.61,False,testbench
+RTL000576,FPGA_QPSK-modem,tb_qpsk_clk_top.v,tb_qpsk_clk_top,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_qpsk_clk_top.v,Verilog,0.62,False,testbench
+RTL000577,FPGA_QPSK-modem,tb_qpsk_mod.v,tb_qpsk_mod,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_qpsk_mod.v,Verilog,0.58,False,testbench
+RTL000578,FPGA_QPSK-modem,tb_time_display.v,tb_time_display,.v,vivado_prj/github_QPSK.srcs/sim_1/imports/testbench/tb_time_display.v,Verilog,0.75,False,testbench
+RTL000600,GHOST_benchmarks,Xaes_128_HT4_gpt-4_A1_tb.v,Xaes_128_HT4_gpt-4_A1_tb,.v,gpt-4/aes_128/X/Xaes_128_HT4_gpt-4_A1_tb.v,Verilog,2.66,False,testbench
+RTL000605,GHOST_benchmarks,aes_128_HT1_gpt-4_A1_tb.v,aes_128_HT1_gpt-4_A1_tb,.v,gpt-4/aes_128/worked/AES-HT100/aes_128_HT1_gpt-4_A1_tb.v,Verilog,2.17,False,testbench
+RTL000612,GHOST_benchmarks,aes_128_HT2_gpt-4_A1_tb.v,aes_128_HT2_gpt-4_A1_tb,.v,gpt-4/aes_128/worked/AES-HT110/aes_128_HT2_gpt-4_A1_tb.v,Verilog,6.16,False,testbench
+RTL000619,GHOST_benchmarks,aes_128_HT3_gpt-4_A1_tb.v,aes_128_HT3_gpt-4_A1_tb,.v,gpt-4/aes_128/worked/AES-HT120/aes_128_HT3_gpt-4_A1_tb.v,Verilog,2.24,False,testbench
+RTL000628,GHOST_benchmarks,sram_HT4_gpt-4_A1_tb.v,sram_HT4_gpt-4_A1_tb,.v,gpt-4/sram/X/sram_HT4_gpt-4_A1_tb.v,Verilog,2.45,False,testbench
+RTL000633,GHOST_benchmarks,sram_HT1_gpt-4_A1_tb.v,sram_HT1_gpt-4_A1_tb,.v,gpt-4/sram/worked/SRAM-HT100/sram_HT1_gpt-4_A1_tb.v,Verilog,3.2,False,testbench
+RTL000638,GHOST_benchmarks,sram_HT2_gpt-4_A1_tb.v,sram_HT2_gpt-4_A1_tb,.v,gpt-4/sram/worked/SRAM-HT110/sram_HT2_gpt-4_A1_tb.v,Verilog,2.86,False,testbench
+RTL000643,GHOST_benchmarks,sram_HT3_gpt-4_A1_tb.v,sram_HT3_gpt-4_A1_tb,.v,gpt-4/sram/worked/SRAM-HT120/sram_HT3_gpt-4_A1_tb.v,Verilog,2.85,False,testbench
+RTL000645,GHOST_benchmarks,tb_sram.v,tb_sram,.v,gpt-4/sram/worked/SRAM-HT_free/tb_sram.v,Verilog,1.93,False,testbench
+RTL000647,GHOST_benchmarks,Xuart_rx_HT3_gpt-4_A1_tb.v,Xuart_rx_HT3_gpt-4_A1_tb,.v,gpt-4/uart/X/Xuart_rx_HT3_gpt-4_A1_tb.v,Verilog,2.92,False,testbench
+RTL000650,GHOST_benchmarks,uart_rx_HT4_gpt-4_A1_tb.v,uart_rx_HT4_gpt-4_A1_tb,.v,gpt-4/uart/X/uart_rx_HT4_gpt-4_A1_tb.v,Verilog,3.62,False,testbench
+RTL000656,GHOST_benchmarks,uart_rx_HT1_gpt-4_A1_tb.v,uart_rx_HT1_gpt-4_A1_tb,.v,gpt-4/uart/worked/UART-HT100/uart_rx_HT1_gpt-4_A1_tb.v,Verilog,2.5,False,testbench
+RTL000663,GHOST_benchmarks,uart_rx_HT2_gpt-4_A1_tb.v,uart_rx_HT2_gpt-4_A1_tb,.v,gpt-4/uart/worked/UART-HT110/uart_rx_HT2_gpt-4_A1_tb.v,Verilog,3.5,False,testbench
+RTL000666,GHOST_benchmarks,tb.v,tb,.v,gpt-4/uart/worked/UART-HT_free/tb.v,Verilog,2.67,False,testbench
+RTL000667,GHOST_benchmarks,tb_rx.v,tb_rx,.v,gpt-4/uart/worked/UART-HT_free/tb_rx.v,Verilog,3.3,False,testbench
+RTL000668,GHOST_benchmarks,tb_tx.v,tb_tx,.v,gpt-4/uart/worked/UART-HT_free/tb_tx.v,Verilog,1.92,False,testbench
+RTL000672,GHOST_benchmarks,aes_128_HT1_llama3-70b-8192_A1_tb.v,aes_128_HT1_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/aes_128/X/aes_128_HT1_llama3-70b-8192_A1_tb.v,Verilog,2.22,False,testbench
+RTL000674,GHOST_benchmarks,aes_128_HT2_llama3-70b-8192_A1_tb.v,aes_128_HT2_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/aes_128/X/aes_128_HT2_llama3-70b-8192_A1_tb.v,Verilog,2.27,False,testbench
+RTL000676,GHOST_benchmarks,aes_128_HT4_llama3-70b-8192_A1_tb.v,aes_128_HT4_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/aes_128/X/aes_128_HT4_llama3-70b-8192_A1_tb.v,Verilog,2.51,False,testbench
+RTL000679,GHOST_benchmarks,aes_128_HT3_llama3-70b-8192_A1_tb.v,aes_128_HT3_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/aes_128/worked/aes_128_HT3_llama3-70b-8192_A1_tb.v,Verilog,2.65,False,testbench
+RTL000683,GHOST_benchmarks,uart_rx_HT1_llama3-70b-8192_A1_tb.v,uart_rx_HT1_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/uart_rx/uart_rx_HT1_llama3-70b-8192_A1_tb.v,Verilog,3.2,False,testbench
+RTL000685,GHOST_benchmarks,uart_rx_HT2_llama3-70b-8192_A1_tb.v,uart_rx_HT2_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/uart_rx/uart_rx_HT2_llama3-70b-8192_A1_tb.v,Verilog,3.04,False,testbench
+RTL000687,GHOST_benchmarks,uart_rx_HT3_llama3-70b-8192_A1_tb.v,uart_rx_HT3_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/uart_rx/uart_rx_HT3_llama3-70b-8192_A1_tb.v,Verilog,3.37,False,testbench
+RTL000689,GHOST_benchmarks,uart_rx_HT4_llama3-70b-8192_A1_tb.v,uart_rx_HT4_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/X/uart_rx/uart_rx_HT4_llama3-70b-8192_A1_tb.v,Verilog,3.15,False,testbench
+RTL000691,GHOST_benchmarks,sram_HT1_llama3-70b-8192_A1_tb.v,sram_HT1_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/sram/X/sram_HT1_llama3-70b-8192_A1_tb.v,Verilog,3.34,False,testbench
+RTL000693,GHOST_benchmarks,sram_HT2_llama3-70b-8192_A1_tb.v,sram_HT2_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/sram/X/sram_HT2_llama3-70b-8192_A1_tb.v,Verilog,3.76,False,testbench
+RTL000695,GHOST_benchmarks,sram_HT4_llama3-70b-8192_A1_tb.v,sram_HT4_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/sram/X/sram_HT4_llama3-70b-8192_A1_tb.v,Verilog,3.06,False,testbench
+RTL000697,GHOST_benchmarks,tb_sram.v,tb_sram,.v,llama3-70b-8192/sram/worked/SRAM-HT_free/tb_sram.v,Verilog,1.93,False,testbench
+RTL000702,GHOST_benchmarks,sram_HT3_llama3-70b-8192_A1_tb.v,sram_HT3_llama3-70b-8192_A1_tb,.v,llama3-70b-8192/sram/worked/SRAM-T320/sram_HT3_llama3-70b-8192_A1_tb.v,Verilog,3.01,False,testbench
+RTL000704,GHOST_benchmarks,aes_128_HT1_models_gemini-1.5-pro-latest_A1_tb.v,aes_128_HT1_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/aes_128/X/aes_128_HT1_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.39,False,testbench
+RTL000707,GHOST_benchmarks,aes_128_HT4_models_gemini-1.5-pro-latest_A1_tb.v,aes_128_HT4_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/aes_128/X/aes_128_HT4_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.34,False,testbench
+RTL000712,GHOST_benchmarks,aes_128_HT2_models_gemini-1.5-pro-latest_A1_tb.v,aes_128_HT2_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/aes_128/worked/AES-HT210/aes_128_HT2_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.48,False,testbench
+RTL000719,GHOST_benchmarks,aes_128_HT3_models_gemini-1.5-pro-latest_A1_tb.v,aes_128_HT3_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/aes_128/worked/AES-HT220/aes_128_HT3_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.45,False,testbench
+RTL000727,GHOST_benchmarks,sram_HT1_models_gemini-1.5-pro-latest_A1_tb.v,sram_HT1_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/sram/X/sram_HT1_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,3.26,False,testbench
+RTL000729,GHOST_benchmarks,sram_HT2_models_gemini-1.5-pro-latest_A1_tb.v,sram_HT2_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/sram/X/sram_HT2_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.78,False,testbench
+RTL000732,GHOST_benchmarks,sram_HT4_models_gemini-1.5-pro-latest_A1_tb.v,sram_HT4_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/sram/X/sram_HT4_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,1.49,False,testbench
+RTL000737,GHOST_benchmarks,sram_HT3_models_gemini-1.5-pro-latest_A1_tb.v,sram_HT3_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/sram/worked/SRAM-HT220/sram_HT3_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,3.0,False,testbench
+RTL000739,GHOST_benchmarks,tb_sram.v,tb_sram,.v,models_gemini-1.5-pro-latest/sram/worked/SRAM-HT_free/tb_sram.v,Verilog,1.93,False,testbench
+RTL000741,GHOST_benchmarks,uart_rx_HT2_models_gemini-1.5-pro-latest_A1_tb.v,uart_rx_HT2_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/uart/X/uart_rx_HT2_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,3.0,False,testbench
+RTL000744,GHOST_benchmarks,uart_rx_HT4_models_gemini-1.5-pro-latest_A1_tb.v,uart_rx_HT4_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/uart/X/uart_rx_HT4_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,2.99,False,testbench
+RTL000746,GHOST_benchmarks,tb.v,tb,.v,models_gemini-1.5-pro-latest/uart/worked/UART-HT_free/tb.v,Verilog,2.67,False,testbench
+RTL000747,GHOST_benchmarks,tb_rx.v,tb_rx,.v,models_gemini-1.5-pro-latest/uart/worked/UART-HT_free/tb_rx.v,Verilog,3.3,False,testbench
+RTL000748,GHOST_benchmarks,tb_tx.v,tb_tx,.v,models_gemini-1.5-pro-latest/uart/worked/UART-HT_free/tb_tx.v,Verilog,1.92,False,testbench
+RTL000756,GHOST_benchmarks,uart_rx_HT1_models_gemini-1.5-pro-latest_A1_tb.v,uart_rx_HT1_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/uart/worked/UART-T200/uart_rx_HT1_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,3.1,False,testbench
+RTL000763,GHOST_benchmarks,uart_rx_HT3_models_gemini-1.5-pro-latest_A1_tb.v,uart_rx_HT3_models_gemini-1.5-pro-latest_A1_tb,.v,models_gemini-1.5-pro-latest/uart/worked/UART-T220/uart_rx_HT3_models_gemini-1.5-pro-latest_A1_tb.v,Verilog,3.04,False,testbench
+RTL000806,HW-Syn-Lab,stack.v,stack,.v,Lab04/Lab04.srcs/sources_1/new/stack.v,Verilog,0.0,False,too_small
+RTL000850,Hardware-Implementation-of-AES-Verilog,AES_TB.v,AES_TB,.v,AES-128-Bit-Verilog/AES_TB.v,Verilog,0.37,False,testbench
+RTL000860,Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm,canny_tb.sv,canny_tb,.sv,1.RTL/sim/canny_tb.sv,SystemVerilog,4.14,False,ignored_directory
+RTL000861,Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm,cordic_sqrt_tb.v,cordic_sqrt_tb,.v,1.RTL/sim/cordic_sqrt_tb.v,Verilog,0.43,False,ignored_directory
+RTL000862,Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm,sim_cmos_tb.sv,sim_cmos_tb,.sv,1.RTL/sim/sim_cmos_tb.sv,SystemVerilog,5.23,False,ignored_directory
+RTL000863,Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm,video_to_pic.sv,video_to_pic,.sv,1.RTL/sim/video_to_pic.sv,SystemVerilog,3.53,False,ignored_directory
+RTL000878,IC_System_Design,bh_send_tb.v,bh_send_tb,.v,Bluetooh/bh_send_tb.v,Verilog,0.78,False,testbench
+RTL000883,IC_System_Design,uart_send_source_tb.v,uart_send_source_tb,.v,Bluetooh/uart_send_source_tb.v,Verilog,0.85,False,testbench
+RTL000884,IC_System_Design,uart_send_tb.v,uart_send_tb,.v,Bluetooh/uart_send_tb.v,Verilog,0.9,False,testbench
+RTL000886,IC_System_Design,clk_src_swt_tb.v,clk_src_swt_tb,.v,Dynamic frequency adjustment circuit/clk_src_swt_tb.v,Verilog,0.55,False,testbench
+RTL000888,IC_System_Design,ctl_core_tb.v,ctl_core_tb,.v,Dynamic frequency adjustment circuit/ctl_core_tb.v,Verilog,0.94,False,testbench
+RTL000890,IC_System_Design,multi_clk_swt_tb.v,multi_clk_swt_tb,.v,Dynamic frequency adjustment circuit/multi_clk_swt_tb.v,Verilog,0.86,False,testbench
+RTL000902,IC_System_Design,mini_sopc_tb.v,mini_sopc_tb,.v,Open_mips/mini_sopc_tb.v,Verilog,0.5,False,testbench
+RTL000908,Ibex,tb_cs_registers.sv,tb_cs_registers,.sv,dv/cs_registers/tb/tb_cs_registers.sv,SystemVerilog,5.04,False,testbench
+RTL000923,Ibex,bus_params_pkg.sv,bus_params_pkg,.sv,dv/uvm/bus_params_pkg/bus_params_pkg.sv,SystemVerilog,0.75,False,ignored_directory
+RTL000924,Ibex,core_ibex_ifetch_if.sv,core_ibex_ifetch_if,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/core_ibex_ifetch_if.sv,SystemVerilog,0.69,False,ignored_directory
+RTL000925,Ibex,core_ibex_ifetch_pmp_if.sv,core_ibex_ifetch_pmp_if,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/core_ibex_ifetch_pmp_if.sv,SystemVerilog,0.58,False,ignored_directory
+RTL000926,Ibex,ibex_cosim_agent.sv,ibex_cosim_agent,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_agent.sv,SystemVerilog,2.86,False,ignored_directory
+RTL000927,Ibex,ibex_cosim_agent_pkg.sv,ibex_cosim_agent_pkg,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_agent_pkg.sv,SystemVerilog,0.63,False,ignored_directory
+RTL000928,Ibex,ibex_cosim_cfg.sv,ibex_cosim_cfg,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_cfg.sv,SystemVerilog,1.24,False,ignored_directory
+RTL000929,Ibex,ibex_cosim_scoreboard.sv,ibex_cosim_scoreboard,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_scoreboard.sv,SystemVerilog,13.96,False,ignored_directory
+RTL000930,Ibex,ibex_ifetch_monitor.sv,ibex_ifetch_monitor,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_monitor.sv,SystemVerilog,1.57,False,ignored_directory
+RTL000931,Ibex,ibex_ifetch_pmp_monitor.sv,ibex_ifetch_pmp_monitor,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_pmp_monitor.sv,SystemVerilog,1.44,False,ignored_directory
+RTL000932,Ibex,ibex_ifetch_pmp_seq_item.sv,ibex_ifetch_pmp_seq_item,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_pmp_seq_item.sv,SystemVerilog,0.49,False,ignored_directory
+RTL000933,Ibex,ibex_ifetch_seq_item.sv,ibex_ifetch_seq_item,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_seq_item.sv,SystemVerilog,0.62,False,ignored_directory
+RTL000934,Ibex,ibex_rvfi_monitor.sv,ibex_rvfi_monitor,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_rvfi_monitor.sv,SystemVerilog,2.59,False,ignored_directory
+RTL000935,Ibex,ibex_rvfi_seq_item.sv,ibex_rvfi_seq_item,.sv,dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_rvfi_seq_item.sv,SystemVerilog,1.38,False,ignored_directory
+RTL000936,Ibex,ibex_mem_intf.sv,ibex_mem_intf,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf.sv,SystemVerilog,2.21,False,ignored_directory
+RTL000937,Ibex,ibex_mem_intf_agent_pkg.sv,ibex_mem_intf_agent_pkg,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv,SystemVerilog,0.97,False,ignored_directory
+RTL000938,Ibex,ibex_mem_intf_monitor.sv,ibex_mem_intf_monitor,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_monitor.sv,SystemVerilog,4.76,False,ignored_directory
+RTL000939,Ibex,ibex_mem_intf_pkg.sv,ibex_mem_intf_pkg,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_pkg.sv,SystemVerilog,0.45,False,ignored_directory
+RTL000940,Ibex,ibex_mem_intf_request_agent.sv,ibex_mem_intf_request_agent,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_request_agent.sv,SystemVerilog,1.27,False,ignored_directory
+RTL000941,Ibex,ibex_mem_intf_request_driver.sv,ibex_mem_intf_request_driver,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_request_driver.sv,SystemVerilog,3.19,False,ignored_directory
+RTL000942,Ibex,ibex_mem_intf_response_agent.sv,ibex_mem_intf_response_agent,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_agent.sv,SystemVerilog,2.21,False,ignored_directory
+RTL000943,Ibex,ibex_mem_intf_response_agent_cfg.sv,ibex_mem_intf_response_agent_cfg,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_agent_cfg.sv,SystemVerilog,2.59,False,ignored_directory
+RTL000944,Ibex,ibex_mem_intf_response_driver.sv,ibex_mem_intf_response_driver,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_driver.sv,SystemVerilog,5.66,False,ignored_directory
+RTL000945,Ibex,ibex_mem_intf_response_seq_lib.sv,ibex_mem_intf_response_seq_lib,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_seq_lib.sv,SystemVerilog,9.51,False,ignored_directory
+RTL000946,Ibex,ibex_mem_intf_response_sequencer.sv,ibex_mem_intf_response_sequencer,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_sequencer.sv,SystemVerilog,1.27,False,ignored_directory
+RTL000947,Ibex,ibex_mem_intf_seq_item.sv,ibex_mem_intf_seq_item,.sv,dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_seq_item.sv,SystemVerilog,2.01,False,ignored_directory
+RTL000948,Ibex,irq_agent_pkg.sv,irq_agent_pkg,.sv,dv/uvm/core_ibex/common/irq_agent/irq_agent_pkg.sv,SystemVerilog,0.53,False,ignored_directory
+RTL000949,Ibex,irq_if.sv,irq_if,.sv,dv/uvm/core_ibex/common/irq_agent/irq_if.sv,SystemVerilog,0.97,False,ignored_directory
+RTL000950,Ibex,irq_monitor.sv,irq_monitor,.sv,dv/uvm/core_ibex/common/irq_agent/irq_monitor.sv,SystemVerilog,2.73,False,ignored_directory
+RTL000951,Ibex,irq_request_agent.sv,irq_request_agent,.sv,dv/uvm/core_ibex/common/irq_agent/irq_request_agent.sv,SystemVerilog,0.96,False,ignored_directory
+RTL000952,Ibex,irq_request_driver.sv,irq_request_driver,.sv,dv/uvm/core_ibex/common/irq_agent/irq_request_driver.sv,SystemVerilog,2.75,False,ignored_directory
+RTL000953,Ibex,irq_seq_item.sv,irq_seq_item,.sv,dv/uvm/core_ibex/common/irq_agent/irq_seq_item.sv,SystemVerilog,0.99,False,ignored_directory
+RTL000954,Ibex,core_ibex_fcov_bind.sv,core_ibex_fcov_bind,.sv,dv/uvm/core_ibex/fcov/core_ibex_fcov_bind.sv,SystemVerilog,0.43,False,ignored_directory
+RTL000955,Ibex,core_ibex_fcov_if.sv,core_ibex_fcov_if,.sv,dv/uvm/core_ibex/fcov/core_ibex_fcov_if.sv,SystemVerilog,35.98,False,ignored_directory
+RTL000956,Ibex,core_ibex_pmp_fcov_if.sv,core_ibex_pmp_fcov_if,.sv,dv/uvm/core_ibex/fcov/core_ibex_pmp_fcov_if.sv,SystemVerilog,42.94,False,ignored_directory
+RTL000957,Ibex,ibex_asm_program_gen.sv,ibex_asm_program_gen,.sv,dv/uvm/core_ibex/riscv_dv_extension/ibex_asm_program_gen.sv,SystemVerilog,6.28,False,ignored_directory
+RTL000958,Ibex,ibex_debug_triggers_overrides.sv,ibex_debug_triggers_overrides,.sv,dv/uvm/core_ibex/riscv_dv_extension/ibex_debug_triggers_overrides.sv,SystemVerilog,5.82,False,ignored_directory
+RTL000959,Ibex,ibex_directed_instr_lib.sv,ibex_directed_instr_lib,.sv,dv/uvm/core_ibex/riscv_dv_extension/ibex_directed_instr_lib.sv,SystemVerilog,12.96,False,ignored_directory
+RTL000960,Ibex,riscv_core_setting.tpl.sv,riscv_core_setting.tpl,.sv,dv/uvm/core_ibex/riscv_dv_extension/riscv_core_setting.tpl.sv,SystemVerilog,7.93,False,ignored_directory
+RTL000961,Ibex,core_ibex_tb_top.sv,core_ibex_tb_top,.sv,dv/uvm/core_ibex/tb/core_ibex_tb_top.sv,SystemVerilog,20.57,False,ignored_directory
+RTL000962,Ibex,core_ibex_base_test.sv,core_ibex_base_test,.sv,dv/uvm/core_ibex/tests/core_ibex_base_test.sv,SystemVerilog,21.62,False,ignored_directory
+RTL000963,Ibex,core_ibex_new_seq_lib.sv,core_ibex_new_seq_lib,.sv,dv/uvm/core_ibex/tests/core_ibex_new_seq_lib.sv,SystemVerilog,10.64,False,ignored_directory
+RTL000964,Ibex,core_ibex_report_server.sv,core_ibex_report_server,.sv,dv/uvm/core_ibex/tests/core_ibex_report_server.sv,SystemVerilog,0.77,False,ignored_directory
+RTL000965,Ibex,core_ibex_seq_lib.sv,core_ibex_seq_lib,.sv,dv/uvm/core_ibex/tests/core_ibex_seq_lib.sv,SystemVerilog,5.39,False,ignored_directory
+RTL000966,Ibex,core_ibex_test_lib.sv,core_ibex_test_lib,.sv,dv/uvm/core_ibex/tests/core_ibex_test_lib.sv,SystemVerilog,75.28,False,ignored_directory
+RTL000967,Ibex,core_ibex_test_pkg.sv,core_ibex_test_pkg,.sv,dv/uvm/core_ibex/tests/core_ibex_test_pkg.sv,SystemVerilog,1.67,False,ignored_directory
+RTL000968,Ibex,core_ibex_vseq.sv,core_ibex_vseq,.sv,dv/uvm/core_ibex/tests/core_ibex_vseq.sv,SystemVerilog,6.94,False,ignored_directory
+RTL000969,Ibex,ibex_icache_fcov_bind.sv,ibex_icache_fcov_bind,.sv,dv/uvm/icache/dv/fcov/ibex_icache_fcov_bind.sv,SystemVerilog,0.37,False,ignored_directory
+RTL000970,Ibex,ibex_icache_fcov_if.sv,ibex_icache_fcov_if,.sv,dv/uvm/icache/dv/fcov/ibex_icache_fcov_if.sv,SystemVerilog,9.5,False,ignored_directory
+RTL000971,Ibex,ibex_icache_core_agent.sv,ibex_icache_core_agent,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent.sv,SystemVerilog,0.84,False,ignored_directory
+RTL000972,Ibex,ibex_icache_core_agent_cfg.sv,ibex_icache_core_agent_cfg,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_cfg.sv,SystemVerilog,0.44,False,ignored_directory
+RTL000973,Ibex,ibex_icache_core_agent_cov.sv,ibex_icache_core_agent_cov,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_cov.sv,SystemVerilog,2.63,False,ignored_directory
+RTL000974,Ibex,ibex_icache_core_agent_pkg.sv,ibex_icache_core_agent_pkg,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_pkg.sv,SystemVerilog,1.18,False,ignored_directory
+RTL000975,Ibex,ibex_icache_core_bus_item.sv,ibex_icache_core_bus_item,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_bus_item.sv,SystemVerilog,1.58,False,ignored_directory
+RTL000976,Ibex,ibex_icache_core_driver.sv,ibex_icache_core_driver,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_driver.sv,SystemVerilog,6.93,False,ignored_directory
+RTL000977,Ibex,ibex_icache_core_if.sv,ibex_icache_core_if,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_if.sv,SystemVerilog,4.1,False,ignored_directory
+RTL000978,Ibex,ibex_icache_core_monitor.sv,ibex_icache_core_monitor,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_monitor.sv,SystemVerilog,5.43,False,ignored_directory
+RTL000979,Ibex,ibex_icache_core_protocol_checker.sv,ibex_icache_core_protocol_checker,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_protocol_checker.sv,SystemVerilog,6.62,False,ignored_directory
+RTL000980,Ibex,ibex_icache_core_req_item.sv,ibex_icache_core_req_item,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_req_item.sv,SystemVerilog,3.18,False,ignored_directory
+RTL000981,Ibex,ibex_icache_core_rsp_item.sv,ibex_icache_core_rsp_item,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_rsp_item.sv,SystemVerilog,0.62,False,ignored_directory
+RTL000982,Ibex,ibex_icache_core_sequencer.sv,ibex_icache_core_sequencer,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_sequencer.sv,SystemVerilog,1.04,False,ignored_directory
+RTL000983,Ibex,ibex_icache_core_back_line_seq.sv,ibex_icache_core_back_line_seq,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_back_line_seq.sv,SystemVerilog,1.7,False,ignored_directory
+RTL000984,Ibex,ibex_icache_core_base_seq.sv,ibex_icache_core_base_seq,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_base_seq.sv,SystemVerilog,9.31,False,ignored_directory
+RTL000985,Ibex,ibex_icache_core_seq_list.sv,ibex_icache_core_seq_list,.sv,dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_seq_list.sv,SystemVerilog,0.24,False,ignored_directory
+RTL000986,Ibex,ibex_icache_mem_agent.sv,ibex_icache_mem_agent,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent.sv,SystemVerilog,1.1,False,ignored_directory
+RTL000987,Ibex,ibex_icache_mem_agent_cfg.sv,ibex_icache_mem_agent_cfg,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_cfg.sv,SystemVerilog,0.53,False,ignored_directory
+RTL000988,Ibex,ibex_icache_mem_agent_cov.sv,ibex_icache_mem_agent_cov,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_cov.sv,SystemVerilog,0.51,False,ignored_directory
+RTL000989,Ibex,ibex_icache_mem_agent_pkg.sv,ibex_icache_mem_agent_pkg,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_pkg.sv,SystemVerilog,0.87,False,ignored_directory
+RTL000990,Ibex,ibex_icache_mem_bus_item.sv,ibex_icache_mem_bus_item,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_bus_item.sv,SystemVerilog,0.99,False,ignored_directory
+RTL000991,Ibex,ibex_icache_mem_driver.sv,ibex_icache_mem_driver,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_driver.sv,SystemVerilog,3.4,False,ignored_directory
+RTL000992,Ibex,ibex_icache_mem_if.sv,ibex_icache_mem_if,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_if.sv,SystemVerilog,1.76,False,ignored_directory
+RTL000993,Ibex,ibex_icache_mem_model.sv,ibex_icache_mem_model,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_model.sv,SystemVerilog,4.11,False,ignored_directory
+RTL000994,Ibex,ibex_icache_mem_monitor.sv,ibex_icache_mem_monitor,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_monitor.sv,SystemVerilog,2.78,False,ignored_directory
+RTL000995,Ibex,ibex_icache_mem_protocol_checker.sv,ibex_icache_mem_protocol_checker,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_protocol_checker.sv,SystemVerilog,1.58,False,ignored_directory
+RTL000996,Ibex,ibex_icache_mem_req_item.sv,ibex_icache_mem_req_item,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_req_item.sv,SystemVerilog,0.51,False,ignored_directory
+RTL000997,Ibex,ibex_icache_mem_resp_item.sv,ibex_icache_mem_resp_item,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_resp_item.sv,SystemVerilog,1.73,False,ignored_directory
+RTL000998,Ibex,ibex_icache_mem_sequencer.sv,ibex_icache_mem_sequencer,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_sequencer.sv,SystemVerilog,1.3,False,ignored_directory
+RTL000999,Ibex,ibex_icache_mem_base_seq.sv,ibex_icache_mem_base_seq,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_base_seq.sv,SystemVerilog,0.57,False,ignored_directory
+RTL001000,Ibex,ibex_icache_mem_resp_seq.sv,ibex_icache_mem_resp_seq,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_resp_seq.sv,SystemVerilog,4.81,False,ignored_directory
+RTL001001,Ibex,ibex_icache_mem_seq_list.sv,ibex_icache_mem_seq_list,.sv,dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_seq_list.sv,SystemVerilog,0.23,False,ignored_directory
+RTL001002,Ibex,tb.sv,tb,.sv,dv/uvm/icache/dv/tb/tb.sv,SystemVerilog,8.96,False,ignored_directory
+RTL001003,Ibex,ibex_icache_base_test.sv,ibex_icache_base_test,.sv,dv/uvm/icache/dv/tests/ibex_icache_base_test.sv,SystemVerilog,0.75,False,ignored_directory
+RTL001004,Ibex,ibex_icache_oldval_test.sv,ibex_icache_oldval_test,.sv,dv/uvm/icache/dv/tests/ibex_icache_oldval_test.sv,SystemVerilog,1.9,False,ignored_directory
+RTL001005,Ibex,ibex_icache_test_pkg.sv,ibex_icache_test_pkg,.sv,dv/uvm/icache/dv/tests/ibex_icache_test_pkg.sv,SystemVerilog,0.51,False,ignored_directory
+RTL001009,Ibex,formal_tb.sv,formal_tb,.sv,formal/data_ind_timing/formal_tb.sv,SystemVerilog,2.53,False,testbench
+RTL001010,Ibex,formal_tb.sv,formal_tb,.sv,formal/icache/formal_tb.sv,SystemVerilog,33.43,False,testbench
+RTL001045,Ibex,simulator_ctrl.sv,simulator_ctrl,.sv,shared/rtl/sim/simulator_ctrl.sv,SystemVerilog,2.5,False,ignored_directory
+RTL001050,Ibex,riscv_custom_instr_enum.sv,riscv_custom_instr_enum,.sv,vendor/google_riscv-dv/src/isa/custom/riscv_custom_instr_enum.sv,SystemVerilog,0.05,False,too_small
+RTL001127,Ibex,riscv_instr_gen_tb_top.sv,riscv_instr_gen_tb_top,.sv,vendor/google_riscv-dv/test/riscv_instr_gen_tb_top.sv,SystemVerilog,0.74,False,testbench
+RTL001190,Ibex,prim_alert_tb.sv,prim_alert_tb,.sv,vendor/lowrisc_ip/ip/prim/dv/prim_alert/tb/prim_alert_tb.sv,SystemVerilog,8.73,False,testbench
+RTL001192,Ibex,prim_esc_tb.sv,prim_esc_tb,.sv,vendor/lowrisc_ip/ip/prim/dv/prim_esc/tb/prim_esc_tb.sv,SystemVerilog,10.0,False,testbench
+RTL001193,Ibex,prim_lfsr_tb.sv,prim_lfsr_tb,.sv,vendor/lowrisc_ip/ip/prim/dv/prim_lfsr/prim_lfsr_tb.sv,SystemVerilog,12.43,False,testbench
+RTL001195,Ibex,prim_present_tb.sv,prim_present_tb,.sv,vendor/lowrisc_ip/ip/prim/dv/prim_present/tb/prim_present_tb.sv,SystemVerilog,8.78,False,testbench
+RTL001197,Ibex,prim_prince_tb.sv,prim_prince_tb,.sv,vendor/lowrisc_ip/ip/prim/dv/prim_prince/tb/prim_prince_tb.sv,SystemVerilog,11.92,False,testbench
+RTL001200,Ibex,prim_alert_rxtx_async_fatal_tb.sv,prim_alert_rxtx_async_fatal_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_alert_rxtx_async_fatal_tb.sv,SystemVerilog,3.61,False,testbench
+RTL001201,Ibex,prim_alert_rxtx_async_tb.sv,prim_alert_rxtx_async_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_alert_rxtx_async_tb.sv,SystemVerilog,3.56,False,testbench
+RTL001204,Ibex,prim_alert_rxtx_fatal_tb.sv,prim_alert_rxtx_fatal_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_alert_rxtx_fatal_tb.sv,SystemVerilog,2.17,False,testbench
+RTL001205,Ibex,prim_alert_rxtx_tb.sv,prim_alert_rxtx_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_alert_rxtx_tb.sv,SystemVerilog,2.12,False,testbench
+RTL001206,Ibex,prim_arbiter_fixed_tb.sv,prim_arbiter_fixed_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_arbiter_fixed_tb.sv,SystemVerilog,0.91,False,testbench
+RTL001207,Ibex,prim_arbiter_ppc_tb.sv,prim_arbiter_ppc_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_arbiter_ppc_tb.sv,SystemVerilog,1.04,False,testbench
+RTL001208,Ibex,prim_arbiter_tree_tb.sv,prim_arbiter_tree_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_arbiter_tree_tb.sv,SystemVerilog,1.02,False,testbench
+RTL001209,Ibex,prim_count_tb.sv,prim_count_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_count_tb.sv,SystemVerilog,0.97,False,testbench
+RTL001211,Ibex,prim_esc_rxtx_tb.sv,prim_esc_rxtx_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_esc_rxtx_tb.sv,SystemVerilog,1.72,False,testbench
+RTL001212,Ibex,prim_fifo_async_sram_adapter_tb.sv,prim_fifo_async_sram_adapter_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_fifo_async_sram_adapter_tb.sv,SystemVerilog,5.36,False,testbench
+RTL001214,Ibex,prim_fifo_sync_tb.sv,prim_fifo_sync_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_fifo_sync_tb.sv,SystemVerilog,5.87,False,testbench
+RTL001215,Ibex,prim_keccak_tb.sv,prim_keccak_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_keccak_tb.sv,SystemVerilog,2.16,False,testbench
+RTL001216,Ibex,prim_lfsr_tb.sv,prim_lfsr_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_lfsr_tb.sv,SystemVerilog,4.89,False,testbench
+RTL001217,Ibex,prim_packer_tb.sv,prim_packer_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_packer_tb.sv,SystemVerilog,1.66,False,testbench
+RTL001219,Ibex,prim_secded_22_16_tb.sv,prim_secded_22_16_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_22_16_tb.sv,SystemVerilog,0.79,False,testbench
+RTL001221,Ibex,prim_secded_28_22_tb.sv,prim_secded_28_22_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_28_22_tb.sv,SystemVerilog,0.79,False,testbench
+RTL001223,Ibex,prim_secded_39_32_tb.sv,prim_secded_39_32_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_39_32_tb.sv,SystemVerilog,0.79,False,testbench
+RTL001225,Ibex,prim_secded_64_57_tb.sv,prim_secded_64_57_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_64_57_tb.sv,SystemVerilog,0.79,False,testbench
+RTL001227,Ibex,prim_secded_72_64_tb.sv,prim_secded_72_64_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_72_64_tb.sv,SystemVerilog,0.79,False,testbench
+RTL001229,Ibex,prim_secded_hamming_22_16_tb.sv,prim_secded_hamming_22_16_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_hamming_22_16_tb.sv,SystemVerilog,0.84,False,testbench
+RTL001231,Ibex,prim_secded_hamming_39_32_tb.sv,prim_secded_hamming_39_32_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_hamming_39_32_tb.sv,SystemVerilog,0.84,False,testbench
+RTL001233,Ibex,prim_secded_hamming_72_64_tb.sv,prim_secded_hamming_72_64_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_hamming_72_64_tb.sv,SystemVerilog,0.84,False,testbench
+RTL001235,Ibex,prim_secded_hamming_76_68_tb.sv,prim_secded_hamming_76_68_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_hamming_76_68_tb.sv,SystemVerilog,0.84,False,testbench
+RTL001237,Ibex,prim_secded_inv_22_16_tb.sv,prim_secded_inv_22_16_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_22_16_tb.sv,SystemVerilog,0.82,False,testbench
+RTL001239,Ibex,prim_secded_inv_28_22_tb.sv,prim_secded_inv_28_22_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_28_22_tb.sv,SystemVerilog,0.82,False,testbench
+RTL001241,Ibex,prim_secded_inv_39_32_tb.sv,prim_secded_inv_39_32_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_39_32_tb.sv,SystemVerilog,0.82,False,testbench
+RTL001243,Ibex,prim_secded_inv_64_57_tb.sv,prim_secded_inv_64_57_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_64_57_tb.sv,SystemVerilog,0.82,False,testbench
+RTL001245,Ibex,prim_secded_inv_72_64_tb.sv,prim_secded_inv_72_64_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_72_64_tb.sv,SystemVerilog,0.82,False,testbench
+RTL001247,Ibex,prim_secded_inv_hamming_22_16_tb.sv,prim_secded_inv_hamming_22_16_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_hamming_22_16_tb.sv,SystemVerilog,0.86,False,testbench
+RTL001249,Ibex,prim_secded_inv_hamming_39_32_tb.sv,prim_secded_inv_hamming_39_32_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_hamming_39_32_tb.sv,SystemVerilog,0.86,False,testbench
+RTL001251,Ibex,prim_secded_inv_hamming_72_64_tb.sv,prim_secded_inv_hamming_72_64_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_hamming_72_64_tb.sv,SystemVerilog,0.86,False,testbench
+RTL001253,Ibex,prim_secded_inv_hamming_76_68_tb.sv,prim_secded_inv_hamming_76_68_tb,.sv,vendor/lowrisc_ip/ip/prim/fpv/tb/prim_secded_inv_hamming_76_68_tb.sv,SystemVerilog,0.86,False,testbench
+RTL001276,Ibex,prim_ascon_duplex_tb.sv,prim_ascon_duplex_tb,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb/rtl/prim_ascon_duplex_tb.sv,SystemVerilog,12.17,False,testbench
+RTL001277,Ibex,prim_ascon_duplex_tb_pkg.sv,prim_ascon_duplex_tb_pkg,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb/rtl/prim_ascon_duplex_tb_pkg.sv,SystemVerilog,0.44,False,testbench
+RTL001278,Ibex,prim_ascon_round_tb.sv,prim_ascon_round_tb,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_ascon/prim_ascon_round_tb/rtl/prim_ascon_round_tb.sv,SystemVerilog,2.34,False,testbench
+RTL001280,Ibex,tb.sv,tb,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_flop_2sync/tb.sv,SystemVerilog,2.66,False,testbench
+RTL001281,Ibex,prim_sync_reqack_tb.sv,prim_sync_reqack_tb,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_sync_reqack/rtl/prim_sync_reqack_tb.sv,SystemVerilog,6.11,False,testbench
+RTL001282,Ibex,prim_trivium_tb.sv,prim_trivium_tb,.sv,vendor/lowrisc_ip/ip/prim/pre_dv/prim_trivium/rtl/prim_trivium_tb.sv,SystemVerilog,16.04,False,testbench
+RTL001487,JSilicon,jsilicon_agent.sv,jsilicon_agent,.sv,sim/jsilicon_agent.sv,SystemVerilog,1.72,False,ignored_directory
+RTL001488,JSilicon,jsilicon_driver.sv,jsilicon_driver,.sv,sim/jsilicon_driver.sv,SystemVerilog,2.01,False,ignored_directory
+RTL001489,JSilicon,jsilicon_env.sv,jsilicon_env,.sv,sim/jsilicon_env.sv,SystemVerilog,1.05,False,ignored_directory
+RTL001490,JSilicon,jsilicon_if.sv,jsilicon_if,.sv,sim/jsilicon_if.sv,SystemVerilog,1.5,False,ignored_directory
+RTL001491,JSilicon,jsilicon_monitor.sv,jsilicon_monitor,.sv,sim/jsilicon_monitor.sv,SystemVerilog,2.03,False,ignored_directory
+RTL001492,JSilicon,jsilicon_pkg.sv,jsilicon_pkg,.sv,sim/jsilicon_pkg.sv,SystemVerilog,0.61,False,ignored_directory
+RTL001493,JSilicon,jsilicon_scoreboard.sv,jsilicon_scoreboard,.sv,sim/jsilicon_scoreboard.sv,SystemVerilog,4.2,False,ignored_directory
+RTL001494,JSilicon,jsilicon_sequences.sv,jsilicon_sequences,.sv,sim/jsilicon_sequences.sv,SystemVerilog,9.4,False,ignored_directory
+RTL001495,JSilicon,jsilicon_tb_top.sv,jsilicon_tb_top,.sv,sim/jsilicon_tb_top.sv,SystemVerilog,1.55,False,ignored_directory
+RTL001496,JSilicon,jsilicon_test.sv,jsilicon_test,.sv,sim/jsilicon_test.sv,SystemVerilog,7.47,False,ignored_directory
+RTL001497,JSilicon,jsilicon_transaction.sv,jsilicon_transaction,.sv,sim/jsilicon_transaction.sv,SystemVerilog,4.08,False,ignored_directory
+RTL001506,JSilicon,tb.v,tb,.v,test/tb.v,Verilog,1.28,False,testbench
+RTL001528,MAM65C02-Processor-Core,tb_M65C02.v,tb_M65C02,.v,Sim/tb_M65C02.v,Verilog,9.42,False,ignored_directory
+RTL001529,MAM65C02-Processor-Core,tb_M65C02_ALU.v,tb_M65C02_ALU,.v,Sim/tb_M65C02_ALU.v,Verilog,43.05,False,ignored_directory
+RTL001530,MAM65C02-Processor-Core,tb_M65C02_AddrGen.v,tb_M65C02_AddrGen,.v,Sim/tb_M65C02_AddrGen.v,Verilog,26.44,False,ignored_directory
+RTL001531,MAM65C02-Processor-Core,tb_M65C02_BCD.v,tb_M65C02_BCD,.v,Sim/tb_M65C02_BCD.v,Verilog,11.45,False,ignored_directory
+RTL001532,MAM65C02-Processor-Core,tb_M65C02_Core.v,tb_M65C02_Core,.v,Sim/tb_M65C02_Core.v,Verilog,19.79,False,ignored_directory
+RTL001533,MAM65C02-Processor-Core,tb_M65C02_RAM.v,tb_M65C02_RAM,.v,Sim/tb_M65C02_RAM.v,Verilog,4.24,False,ignored_directory
+RTL001576,MIPS-Processor-in-Verilog,Controller_tb.v,Controller_tb,.v,Controller_tb.v,Verilog,0.74,False,testbench
+RTL001621,MIPS-pipeline-processor,testbench.v,testbench,.v,testbench.v,Verilog,0.3,False,testbench
+RTL001623,NPU-E2E,cosim_tb.v,cosim_tb,.v,compiler/cosim/cosim_tb.v,Verilog,10.23,False,testbench
+RTL001640,NPU-E2E,accum_tb.v,accum_tb,.v,systolic_array/tb/accum_tb.v,Verilog,4.02,False,testbench
+RTL001641,NPU-E2E,axi4_dma_tb.v,axi4_dma_tb,.v,systolic_array/tb/axi4_dma_tb.v,Verilog,34.4,False,testbench
+RTL001642,NPU-E2E,axi4_lite_regfile_tb.v,axi4_lite_regfile_tb,.v,systolic_array/tb/axi4_lite_regfile_tb.v,Verilog,7.05,False,testbench
+RTL001643,NPU-E2E,ctrl_tb.v,ctrl_tb,.v,systolic_array/tb/ctrl_tb.v,Verilog,3.68,False,testbench
+RTL001644,NPU-E2E,dma_engine_tb.v,dma_engine_tb,.v,systolic_array/tb/dma_engine_tb.v,Verilog,27.08,False,testbench
+RTL001645,NPU-E2E,ibuf_tb.v,ibuf_tb,.v,systolic_array/tb/ibuf_tb.v,Verilog,4.64,False,testbench
+RTL001646,NPU-E2E,npu_soc_tb.v,npu_soc_tb,.v,systolic_array/tb/npu_soc_tb.v,Verilog,14.85,False,testbench
+RTL001647,NPU-E2E,pe_tb.v,pe_tb,.v,systolic_array/tb/pe_tb.v,Verilog,19.46,False,testbench
+RTL001648,NPU-E2E,reg_file_tb.v,reg_file_tb,.v,systolic_array/tb/reg_file_tb.v,Verilog,5.8,False,testbench
+RTL001649,NPU-E2E,sa_2d_tb.v,sa_2d_tb,.v,systolic_array/tb/sa_2d_tb.v,Verilog,15.36,False,testbench
+RTL001650,NPU-E2E,sa_full_tb.v,sa_full_tb,.v,systolic_array/tb/sa_full_tb.v,Verilog,5.39,False,testbench
+RTL001651,NPU-E2E,sa_golden_tb.v,sa_golden_tb,.v,systolic_array/tb/sa_golden_tb.v,Verilog,9.49,False,testbench
+RTL001652,NPU-E2E,sa_k2_tb.v,sa_k2_tb,.v,systolic_array/tb/sa_k2_tb.v,Verilog,4.18,False,testbench
+RTL001653,NPU-E2E,sa_standalone_tb.v,sa_standalone_tb,.v,systolic_array/tb/sa_standalone_tb.v,Verilog,4.15,False,testbench
+RTL001654,NPU-E2E,sa_top_tb.v,sa_top_tb,.v,systolic_array/tb/sa_top_tb.v,Verilog,5.16,False,testbench
+RTL001655,NPU-E2E,sa_wave_tb.v,sa_wave_tb,.v,systolic_array/tb/sa_wave_tb.v,Verilog,3.52,False,testbench
+RTL001656,NPU-E2E,wbuf_tb.v,wbuf_tb,.v,systolic_array/tb/wbuf_tb.v,Verilog,2.63,False,testbench
+RTL001955,OpenTitan,tb.sv,tb,.sv,hw/dv/sv/tl_agent/dv/tb/tb.sv,SystemVerilog,1.06,False,testbench
+RTL002009,OpenTitan,tb.sv,tb,.sv,hw/ip/adc_ctrl/dv/tb.sv,SystemVerilog,5.46,False,testbench
+RTL002039,OpenTitan,tb.sv,tb,.sv,hw/ip/aes/dv/tb/tb.sv,SystemVerilog,4.12,False,testbench
+RTL002058,OpenTitan,aes_cipher_core_tb.sv,aes_cipher_core_tb,.sv,hw/ip/aes/pre_dv/aes_cipher_core_tb/rtl/aes_cipher_core_tb.sv,SystemVerilog,13.36,False,testbench
+RTL002060,OpenTitan,aes_sbox_tb.sv,aes_sbox_tb,.sv,hw/ip/aes/pre_dv/aes_sbox_tb/rtl/aes_sbox_tb.sv,SystemVerilog,5.35,False,testbench
+RTL002061,OpenTitan,aes_tb.sv,aes_tb,.sv,hw/ip/aes/pre_dv/aes_tb/rtl/aes_tb.sv,SystemVerilog,12.08,False,testbench
+RTL002062,OpenTitan,aes_tb_c_dpi.sv,aes_tb_c_dpi,.sv,hw/ip/aes/pre_dv/aes_tb/rtl/aes_tb_c_dpi.sv,SystemVerilog,5.25,False,testbench
+RTL002063,OpenTitan,aes_tb_pkg.sv,aes_tb_pkg,.sv,hw/ip/aes/pre_dv/aes_tb/rtl/aes_tb_pkg.sv,SystemVerilog,4.59,False,testbench
+RTL002064,OpenTitan,aes_tb_reqs.sv,aes_tb_reqs,.sv,hw/ip/aes/pre_dv/aes_tb/rtl/aes_tb_reqs.sv,SystemVerilog,0.73,False,testbench
+RTL002065,OpenTitan,tlul_adapter_tb_reqs.sv,tlul_adapter_tb_reqs,.sv,hw/ip/aes/pre_dv/aes_tb/rtl/tlul_adapter_tb_reqs.sv,SystemVerilog,2.61,False,testbench
+RTL002068,OpenTitan,aes_wrap_tb.sv,aes_wrap_tb,.sv,hw/ip/aes/pre_dv/aes_wrap_tb/rtl/aes_wrap_tb.sv,SystemVerilog,1.92,False,testbench
+RTL002110,OpenTitan,tb.sv,tb,.sv,hw/ip/aon_timer/dv/tb.sv,SystemVerilog,3.6,False,testbench
+RTL002133,OpenTitan,tb.sv,tb,.sv,hw/ip/csrng/dv/tb.sv,SystemVerilog,6.97,False,testbench
+RTL002155,OpenTitan,tb.sv,tb,.sv,hw/ip/dma/dv/tb/tb.sv,SystemVerilog,3.46,False,testbench
+RTL002166,OpenTitan,tb.sv,tb,.sv,hw/ip/edn/dv/tb.sv,SystemVerilog,3.37,False,testbench
+RTL002190,OpenTitan,tb.sv,tb,.sv,hw/ip/entropy_src/dv/tb/tb.sv,SystemVerilog,6.65,False,testbench
+RTL002203,OpenTitan,entropy_src_tb.sv,entropy_src_tb,.sv,hw/ip/entropy_src/pre_dv/entropy_src_tb.sv,SystemVerilog,12.92,False,testbench
+RTL002225,OpenTitan,tb.sv,tb,.sv,hw/ip/hmac/dv/tb/tb.sv,SystemVerilog,1.91,False,testbench
+RTL002235,OpenTitan,tb.sv,tb,.sv,hw/ip/i2c/dv/tb/tb.sv,SystemVerilog,4.89,False,testbench
+RTL002257,OpenTitan,tb.sv,tb,.sv,hw/ip/keymgr/dv/tb.sv,SystemVerilog,3.4,False,testbench
+RTL002276,OpenTitan,tb.sv,tb,.sv,hw/ip/keymgr_dpe/dv/tb.sv,SystemVerilog,4.07,False,testbench
+RTL002290,OpenTitan,tb.sv,tb,.sv,hw/ip/kmac/dv/tb.sv,SystemVerilog,5.39,False,testbench
+RTL002297,OpenTitan,kmac_reduced_tb.sv,kmac_reduced_tb,.sv,hw/ip/kmac/pre_dv/kmac_reduced_tb/rtl/kmac_reduced_tb.sv,SystemVerilog,14.02,False,testbench
+RTL002318,OpenTitan,tb.sv,tb,.sv,hw/ip/lc_ctrl/dv/tb.sv,SystemVerilog,12.57,False,testbench
+RTL002333,OpenTitan,tb.sv,tb,.sv,hw/ip/mbx/dv/tb.sv,SystemVerilog,2.76,False,testbench
+RTL002346,OpenTitan,otbn_memutil_pkg.sv,otbn_memutil_pkg,.sv,hw/ip/otbn/dv/memutil/otbn_memutil_pkg.sv,SystemVerilog,2.12,False,testbench
+RTL002347,OpenTitan,otbn_core_model.sv,otbn_core_model,.sv,hw/ip/otbn/dv/model/otbn_core_model.sv,SystemVerilog,18.39,False,testbench
+RTL002348,OpenTitan,otbn_rf_snooper_if.sv,otbn_rf_snooper_if,.sv,hw/ip/otbn/dv/model/otbn_rf_snooper_if.sv,SystemVerilog,1.67,False,testbench
+RTL002349,OpenTitan,otbn_stack_snooper_if.sv,otbn_stack_snooper_if,.sv,hw/ip/otbn/dv/model/otbn_stack_snooper_if.sv,SystemVerilog,1.33,False,testbench
+RTL002350,OpenTitan,otbn_trace_if.sv,otbn_trace_if,.sv,hw/ip/otbn/dv/tracer/rtl/otbn_trace_if.sv,SystemVerilog,30.93,False,testbench
+RTL002351,OpenTitan,otbn_tracer.sv,otbn_tracer,.sv,hw/ip/otbn/dv/tracer/rtl/otbn_tracer.sv,SystemVerilog,12.15,False,testbench
+RTL002352,OpenTitan,otbn_model_agent.sv,otbn_model_agent,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_agent.sv,SystemVerilog,0.98,False,ignored_directory
+RTL002353,OpenTitan,otbn_model_agent_cfg.sv,otbn_model_agent_cfg,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_agent_cfg.sv,SystemVerilog,0.61,False,ignored_directory
+RTL002354,OpenTitan,otbn_model_agent_pkg.sv,otbn_model_agent_pkg,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_agent_pkg.sv,SystemVerilog,1.3,False,ignored_directory
+RTL002355,OpenTitan,otbn_model_if.sv,otbn_model_if,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_if.sv,SystemVerilog,6.2,False,ignored_directory
+RTL002356,OpenTitan,otbn_model_item.sv,otbn_model_item,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_item.sv,SystemVerilog,1.06,False,ignored_directory
+RTL002357,OpenTitan,otbn_model_monitor.sv,otbn_model_monitor,.sv,hw/ip/otbn/dv/uvm/otbn_model_agent/otbn_model_monitor.sv,SystemVerilog,3.04,False,ignored_directory
+RTL002358,OpenTitan,otbn_bind.sv,otbn_bind,.sv,hw/ip/otbn/dv/uvm/sva/otbn_bind.sv,SystemVerilog,0.98,False,ignored_directory
+RTL002359,OpenTitan,otbn_idle_checker.sv,otbn_idle_checker,.sv,hw/ip/otbn/dv/uvm/sva/otbn_idle_checker.sv,SystemVerilog,7.74,False,ignored_directory
+RTL002360,OpenTitan,tb.sv,tb,.sv,hw/ip/otbn/dv/uvm/tb.sv,SystemVerilog,14.64,False,ignored_directory
+RTL002361,OpenTitan,otbn_base_test.sv,otbn_base_test,.sv,hw/ip/otbn/dv/uvm/tests/otbn_base_test.sv,SystemVerilog,0.71,False,ignored_directory
+RTL002362,OpenTitan,otbn_test_pkg.sv,otbn_test_pkg,.sv,hw/ip/otbn/dv/uvm/tests/otbn_test_pkg.sv,SystemVerilog,0.5,False,ignored_directory
+RTL002363,OpenTitan,otbn_mock_edn.sv,otbn_mock_edn,.sv,hw/ip/otbn/dv/verilator/otbn_mock_edn.sv,SystemVerilog,2.11,False,testbench
+RTL002364,OpenTitan,otbn_mock_edn_bivium.sv,otbn_mock_edn_bivium,.sv,hw/ip/otbn/dv/verilator/otbn_mock_edn_bivium.sv,SystemVerilog,1.45,False,testbench
+RTL002365,OpenTitan,otbn_top_sim.sv,otbn_top_sim,.sv,hw/ip/otbn/dv/verilator/otbn_top_sim.sv,SystemVerilog,20.15,False,testbench
+RTL002366,OpenTitan,otbn_top_coco.v,otbn_top_coco,.v,hw/ip/otbn/pre_sca/alma/rtl/otbn_top_coco.v,Verilog,7.63,False,testbench
+RTL002368,OpenTitan,otbn_mask_accelerator_sca_wrapper.sv,otbn_mask_accelerator_sca_wrapper,.sv,hw/ip/otbn/pre_sca/rtl/otbn_mask_accelerator_sca_wrapper.sv,SystemVerilog,3.47,False,testbench
+RTL002369,OpenTitan,otbn_mask_accelerator_sca_wrapper_prolead.sv,otbn_mask_accelerator_sca_wrapper_prolead,.sv,hw/ip/otbn/pre_sca/rtl/otbn_mask_accelerator_sca_wrapper_prolead.sv,SystemVerilog,2.19,False,testbench
+RTL002370,OpenTitan,otbn_sec_add_sca_wrapper.sv,otbn_sec_add_sca_wrapper,.sv,hw/ip/otbn/pre_sca/rtl/otbn_sec_add_sca_wrapper.sv,SystemVerilog,1.41,False,testbench
+RTL002375,OpenTitan,otbn.sv,otbn,.sv,hw/ip/otbn/rtl/otbn.sv,SystemVerilog,66.31,False,testbench
+RTL002376,OpenTitan,otbn_alu_base.sv,otbn_alu_base,.sv,hw/ip/otbn/rtl/otbn_alu_base.sv,SystemVerilog,4.73,False,testbench
+RTL002377,OpenTitan,otbn_alu_bignum.sv,otbn_alu_bignum,.sv,hw/ip/otbn/rtl/otbn_alu_bignum.sv,SystemVerilog,66.54,False,testbench
+RTL002378,OpenTitan,otbn_controller.sv,otbn_controller,.sv,hw/ip/otbn/rtl/otbn_controller.sv,SystemVerilog,72.06,False,testbench
+RTL002379,OpenTitan,otbn_core.sv,otbn_core,.sv,hw/ip/otbn/rtl/otbn_core.sv,SystemVerilog,54.96,False,testbench
+RTL002380,OpenTitan,otbn_decoder.sv,otbn_decoder,.sv,hw/ip/otbn/rtl/otbn_decoder.sv,SystemVerilog,41.46,False,testbench
+RTL002381,OpenTitan,otbn_instruction_fetch.sv,otbn_instruction_fetch,.sv,hw/ip/otbn/rtl/otbn_instruction_fetch.sv,SystemVerilog,19.59,False,testbench
+RTL002382,OpenTitan,otbn_kmac_if.sv,otbn_kmac_if,.sv,hw/ip/otbn/rtl/otbn_kmac_if.sv,SystemVerilog,37.64,False,testbench
+RTL002383,OpenTitan,otbn_loop_controller.sv,otbn_loop_controller,.sv,hw/ip/otbn/rtl/otbn_loop_controller.sv,SystemVerilog,13.25,False,testbench
+RTL002384,OpenTitan,otbn_lsu.sv,otbn_lsu,.sv,hw/ip/otbn/rtl/otbn_lsu.sv,SystemVerilog,5.07,False,testbench
+RTL002385,OpenTitan,otbn_mac_bignum.sv,otbn_mac_bignum,.sv,hw/ip/otbn/rtl/otbn_mac_bignum.sv,SystemVerilog,30.7,False,testbench
+RTL002386,OpenTitan,otbn_mac_bignum_fsm.sv,otbn_mac_bignum_fsm,.sv,hw/ip/otbn/rtl/otbn_mac_bignum_fsm.sv,SystemVerilog,18.07,False,testbench
+RTL002387,OpenTitan,otbn_mai.sv,otbn_mai,.sv,hw/ip/otbn/rtl/otbn_mai.sv,SystemVerilog,21.89,False,testbench
+RTL002388,OpenTitan,otbn_mask_accelerator.sv,otbn_mask_accelerator,.sv,hw/ip/otbn/rtl/otbn_mask_accelerator.sv,SystemVerilog,16.23,False,testbench
+RTL002389,OpenTitan,otbn_mod_result_selector.sv,otbn_mod_result_selector,.sv,hw/ip/otbn/rtl/otbn_mod_result_selector.sv,SystemVerilog,5.52,False,testbench
+RTL002390,OpenTitan,otbn_pkg.sv,otbn_pkg,.sv,hw/ip/otbn/rtl/otbn_pkg.sv,SystemVerilog,30.76,False,testbench
+RTL002391,OpenTitan,otbn_predecode.sv,otbn_predecode,.sv,hw/ip/otbn/rtl/otbn_predecode.sv,SystemVerilog,38.22,False,testbench
+RTL002392,OpenTitan,otbn_reg_pkg.sv,otbn_reg_pkg,.sv,hw/ip/otbn/rtl/otbn_reg_pkg.sv,SystemVerilog,10.98,False,testbench
+RTL002393,OpenTitan,otbn_reg_top.sv,otbn_reg_top,.sv,hw/ip/otbn/rtl/otbn_reg_top.sv,SystemVerilog,33.13,False,testbench
+RTL002394,OpenTitan,otbn_rf_base.sv,otbn_rf_base,.sv,hw/ip/otbn/rtl/otbn_rf_base.sv,SystemVerilog,9.09,False,testbench
+RTL002395,OpenTitan,otbn_rf_base_ff.sv,otbn_rf_base_ff,.sv,hw/ip/otbn/rtl/otbn_rf_base_ff.sv,SystemVerilog,2.68,False,testbench
+RTL002396,OpenTitan,otbn_rf_base_fpga.sv,otbn_rf_base_fpga,.sv,hw/ip/otbn/rtl/otbn_rf_base_fpga.sv,SystemVerilog,2.98,False,testbench
+RTL002397,OpenTitan,otbn_rf_bignum.sv,otbn_rf_bignum,.sv,hw/ip/otbn/rtl/otbn_rf_bignum.sv,SystemVerilog,6.28,False,testbench
+RTL002398,OpenTitan,otbn_rf_bignum_ff.sv,otbn_rf_bignum_ff,.sv,hw/ip/otbn/rtl/otbn_rf_bignum_ff.sv,SystemVerilog,3.69,False,testbench
+RTL002399,OpenTitan,otbn_rf_bignum_fpga.sv,otbn_rf_bignum_fpga,.sv,hw/ip/otbn/rtl/otbn_rf_bignum_fpga.sv,SystemVerilog,3.47,False,testbench
+RTL002400,OpenTitan,otbn_rnd.sv,otbn_rnd,.sv,hw/ip/otbn/rtl/otbn_rnd.sv,SystemVerilog,9.34,False,testbench
+RTL002401,OpenTitan,otbn_scramble_ctrl.sv,otbn_scramble_ctrl,.sv,hw/ip/otbn/rtl/otbn_scramble_ctrl.sv,SystemVerilog,9.26,False,testbench
+RTL002402,OpenTitan,otbn_sec_add.sv,otbn_sec_add,.sv,hw/ip/otbn/rtl/otbn_sec_add.sv,SystemVerilog,12.73,False,testbench
+RTL002403,OpenTitan,otbn_sec_add_mod.sv,otbn_sec_add_mod,.sv,hw/ip/otbn/rtl/otbn_sec_add_mod.sv,SystemVerilog,11.44,False,testbench
+RTL002404,OpenTitan,otbn_stack.sv,otbn_stack,.sv,hw/ip/otbn/rtl/otbn_stack.sv,SystemVerilog,5.06,False,testbench
+RTL002405,OpenTitan,otbn_start_stop_control.sv,otbn_start_stop_control,.sv,hw/ip/otbn/rtl/otbn_start_stop_control.sv,SystemVerilog,21.92,False,testbench
+RTL002406,OpenTitan,otbn_vec_adder.sv,otbn_vec_adder,.sv,hw/ip/otbn/rtl/otbn_vec_adder.sv,SystemVerilog,6.17,False,testbench
+RTL002407,OpenTitan,otbn_vec_multiplier.sv,otbn_vec_multiplier,.sv,hw/ip/otbn/rtl/otbn_vec_multiplier.sv,SystemVerilog,3.28,False,testbench
+RTL002408,OpenTitan,otbn_vec_shifter.sv,otbn_vec_shifter,.sv,hw/ip/otbn/rtl/otbn_vec_shifter.sv,SystemVerilog,4.65,False,testbench
+RTL002409,OpenTitan,otbn_vec_transposer.sv,otbn_vec_transposer,.sv,hw/ip/otbn/rtl/otbn_vec_transposer.sv,SystemVerilog,3.41,False,testbench
+RTL002418,OpenTitan,tb.sv,tb,.sv,hw/ip/pattgen/dv/tb.sv,SystemVerilog,2.73,False,testbench
+RTL002427,OpenTitan,prim_alert_tb.sv,prim_alert_tb,.sv,hw/ip/prim/dv/prim_alert/tb/prim_alert_tb.sv,SystemVerilog,8.73,False,testbench
+RTL002429,OpenTitan,prim_esc_tb.sv,prim_esc_tb,.sv,hw/ip/prim/dv/prim_esc/tb/prim_esc_tb.sv,SystemVerilog,10.0,False,testbench
+RTL002430,OpenTitan,prim_lfsr_tb.sv,prim_lfsr_tb,.sv,hw/ip/prim/dv/prim_lfsr/prim_lfsr_tb.sv,SystemVerilog,12.43,False,testbench
+RTL002432,OpenTitan,prim_present_tb.sv,prim_present_tb,.sv,hw/ip/prim/dv/prim_present/tb/prim_present_tb.sv,SystemVerilog,8.78,False,testbench
+RTL002434,OpenTitan,prim_prince_tb.sv,prim_prince_tb,.sv,hw/ip/prim/dv/prim_prince/tb/prim_prince_tb.sv,SystemVerilog,11.92,False,testbench
+RTL002437,OpenTitan,prim_alert_rxtx_async_fatal_tb.sv,prim_alert_rxtx_async_fatal_tb,.sv,hw/ip/prim/fpv/tb/prim_alert_rxtx_async_fatal_tb.sv,SystemVerilog,3.61,False,testbench
+RTL002438,OpenTitan,prim_alert_rxtx_async_tb.sv,prim_alert_rxtx_async_tb,.sv,hw/ip/prim/fpv/tb/prim_alert_rxtx_async_tb.sv,SystemVerilog,3.56,False,testbench
+RTL002441,OpenTitan,prim_alert_rxtx_fatal_tb.sv,prim_alert_rxtx_fatal_tb,.sv,hw/ip/prim/fpv/tb/prim_alert_rxtx_fatal_tb.sv,SystemVerilog,2.17,False,testbench
+RTL002442,OpenTitan,prim_alert_rxtx_tb.sv,prim_alert_rxtx_tb,.sv,hw/ip/prim/fpv/tb/prim_alert_rxtx_tb.sv,SystemVerilog,2.12,False,testbench
+RTL002443,OpenTitan,prim_arbiter_fixed_tb.sv,prim_arbiter_fixed_tb,.sv,hw/ip/prim/fpv/tb/prim_arbiter_fixed_tb.sv,SystemVerilog,0.91,False,testbench
+RTL002444,OpenTitan,prim_arbiter_ppc_tb.sv,prim_arbiter_ppc_tb,.sv,hw/ip/prim/fpv/tb/prim_arbiter_ppc_tb.sv,SystemVerilog,1.04,False,testbench
+RTL002445,OpenTitan,prim_arbiter_tree_tb.sv,prim_arbiter_tree_tb,.sv,hw/ip/prim/fpv/tb/prim_arbiter_tree_tb.sv,SystemVerilog,1.02,False,testbench
+RTL002446,OpenTitan,prim_count_tb.sv,prim_count_tb,.sv,hw/ip/prim/fpv/tb/prim_count_tb.sv,SystemVerilog,0.97,False,testbench
+RTL002449,OpenTitan,prim_esc_rxtx_tb.sv,prim_esc_rxtx_tb,.sv,hw/ip/prim/fpv/tb/prim_esc_rxtx_tb.sv,SystemVerilog,1.72,False,testbench
+RTL002450,OpenTitan,prim_fifo_async_sram_adapter_tb.sv,prim_fifo_async_sram_adapter_tb,.sv,hw/ip/prim/fpv/tb/prim_fifo_async_sram_adapter_tb.sv,SystemVerilog,5.39,False,testbench
+RTL002452,OpenTitan,prim_fifo_sync_tb.sv,prim_fifo_sync_tb,.sv,hw/ip/prim/fpv/tb/prim_fifo_sync_tb.sv,SystemVerilog,5.87,False,testbench
+RTL002453,OpenTitan,prim_keccak_tb.sv,prim_keccak_tb,.sv,hw/ip/prim/fpv/tb/prim_keccak_tb.sv,SystemVerilog,2.16,False,testbench
+RTL002454,OpenTitan,prim_lfsr_tb.sv,prim_lfsr_tb,.sv,hw/ip/prim/fpv/tb/prim_lfsr_tb.sv,SystemVerilog,4.89,False,testbench
+RTL002455,OpenTitan,prim_packer_tb.sv,prim_packer_tb,.sv,hw/ip/prim/fpv/tb/prim_packer_tb.sv,SystemVerilog,1.66,False,testbench
+RTL002457,OpenTitan,prim_secded_22_16_tb.sv,prim_secded_22_16_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_22_16_tb.sv,SystemVerilog,0.79,False,testbench
+RTL002459,OpenTitan,prim_secded_28_22_tb.sv,prim_secded_28_22_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_28_22_tb.sv,SystemVerilog,0.79,False,testbench
+RTL002461,OpenTitan,prim_secded_39_32_tb.sv,prim_secded_39_32_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_39_32_tb.sv,SystemVerilog,0.79,False,testbench
+RTL002463,OpenTitan,prim_secded_64_57_tb.sv,prim_secded_64_57_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_64_57_tb.sv,SystemVerilog,0.79,False,testbench
+RTL002465,OpenTitan,prim_secded_72_64_tb.sv,prim_secded_72_64_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_72_64_tb.sv,SystemVerilog,0.79,False,testbench
+RTL002467,OpenTitan,prim_secded_hamming_22_16_tb.sv,prim_secded_hamming_22_16_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_hamming_22_16_tb.sv,SystemVerilog,0.84,False,testbench
+RTL002469,OpenTitan,prim_secded_hamming_39_32_tb.sv,prim_secded_hamming_39_32_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_hamming_39_32_tb.sv,SystemVerilog,0.84,False,testbench
+RTL002471,OpenTitan,prim_secded_hamming_72_64_tb.sv,prim_secded_hamming_72_64_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_hamming_72_64_tb.sv,SystemVerilog,0.84,False,testbench
+RTL002473,OpenTitan,prim_secded_hamming_76_68_tb.sv,prim_secded_hamming_76_68_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_hamming_76_68_tb.sv,SystemVerilog,0.84,False,testbench
+RTL002475,OpenTitan,prim_secded_inv_22_16_tb.sv,prim_secded_inv_22_16_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_22_16_tb.sv,SystemVerilog,0.82,False,testbench
+RTL002477,OpenTitan,prim_secded_inv_28_22_tb.sv,prim_secded_inv_28_22_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_28_22_tb.sv,SystemVerilog,0.82,False,testbench
+RTL002479,OpenTitan,prim_secded_inv_39_32_tb.sv,prim_secded_inv_39_32_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_39_32_tb.sv,SystemVerilog,0.82,False,testbench
+RTL002481,OpenTitan,prim_secded_inv_64_57_tb.sv,prim_secded_inv_64_57_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_64_57_tb.sv,SystemVerilog,0.82,False,testbench
+RTL002483,OpenTitan,prim_secded_inv_72_64_tb.sv,prim_secded_inv_72_64_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_72_64_tb.sv,SystemVerilog,0.82,False,testbench
+RTL002485,OpenTitan,prim_secded_inv_hamming_22_16_tb.sv,prim_secded_inv_hamming_22_16_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_hamming_22_16_tb.sv,SystemVerilog,0.86,False,testbench
+RTL002487,OpenTitan,prim_secded_inv_hamming_39_32_tb.sv,prim_secded_inv_hamming_39_32_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_hamming_39_32_tb.sv,SystemVerilog,0.86,False,testbench
+RTL002489,OpenTitan,prim_secded_inv_hamming_72_64_tb.sv,prim_secded_inv_hamming_72_64_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_hamming_72_64_tb.sv,SystemVerilog,0.86,False,testbench
+RTL002491,OpenTitan,prim_secded_inv_hamming_76_68_tb.sv,prim_secded_inv_hamming_76_68_tb,.sv,hw/ip/prim/fpv/tb/prim_secded_inv_hamming_76_68_tb.sv,SystemVerilog,0.86,False,testbench
+RTL002515,OpenTitan,prim_ascon_duplex_tb.sv,prim_ascon_duplex_tb,.sv,hw/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb/rtl/prim_ascon_duplex_tb.sv,SystemVerilog,12.17,False,testbench
+RTL002516,OpenTitan,prim_ascon_duplex_tb_pkg.sv,prim_ascon_duplex_tb_pkg,.sv,hw/ip/prim/pre_dv/prim_ascon/prim_ascon_duplex_tb/rtl/prim_ascon_duplex_tb_pkg.sv,SystemVerilog,0.44,False,testbench
+RTL002517,OpenTitan,prim_ascon_round_tb.sv,prim_ascon_round_tb,.sv,hw/ip/prim/pre_dv/prim_ascon/prim_ascon_round_tb/rtl/prim_ascon_round_tb.sv,SystemVerilog,2.34,False,testbench
+RTL002519,OpenTitan,tb.sv,tb,.sv,hw/ip/prim/pre_dv/prim_flop_2sync/tb.sv,SystemVerilog,2.66,False,testbench
+RTL002520,OpenTitan,prim_sync_reqack_tb.sv,prim_sync_reqack_tb,.sv,hw/ip/prim/pre_dv/prim_sync_reqack/rtl/prim_sync_reqack_tb.sv,SystemVerilog,6.11,False,testbench
+RTL002521,OpenTitan,prim_trivium_tb.sv,prim_trivium_tb,.sv,hw/ip/prim/pre_dv/prim_trivium/rtl/prim_trivium_tb.sv,SystemVerilog,16.04,False,testbench
+RTL002762,OpenTitan,tb.sv,tb,.sv,hw/ip/rom_ctrl/dv/formal/tb.sv,SystemVerilog,1.25,False,testbench
+RTL002768,OpenTitan,tb.sv,tb,.sv,hw/ip/rom_ctrl/dv/tb/tb.sv,SystemVerilog,5.39,False,testbench
+RTL002801,OpenTitan,tb.sv,tb,.sv,hw/ip/rram_macro/pre_dv/tb.sv,SystemVerilog,4.65,False,testbench
+RTL002808,OpenTitan,tb.sv,tb,.sv,hw/ip/rv_dm/dv/tb.sv,SystemVerilog,6.66,False,testbench
+RTL002820,OpenTitan,tb.sv,tb,.sv,hw/ip/rv_timer/dv/tb/tb.sv,SystemVerilog,1.73,False,testbench
+RTL002831,OpenTitan,tb.sv,tb,.sv,hw/ip/soc_dbg_ctrl/dv/tb.sv,SystemVerilog,3.18,False,testbench
+RTL002841,OpenTitan,tb.sv,tb,.sv,hw/ip/spi_device/dv/tb/tb.sv,SystemVerilog,5.77,False,testbench
+RTL002847,OpenTitan,spi_tpm_tb.sv,spi_tpm_tb,.sv,hw/ip/spi_device/pre_dv/tb/spi_tpm_tb.sv,SystemVerilog,11.9,False,testbench
+RTL002849,OpenTitan,spid_jedec_tb.sv,spid_jedec_tb,.sv,hw/ip/spi_device/pre_dv/tb/spid_jedec_tb.sv,SystemVerilog,4.86,False,testbench
+RTL002850,OpenTitan,spid_passthrough_tb.sv,spid_passthrough_tb,.sv,hw/ip/spi_device/pre_dv/tb/spid_passthrough_tb.sv,SystemVerilog,5.29,False,testbench
+RTL002851,OpenTitan,spid_readcmd_tb.sv,spid_readcmd_tb,.sv,hw/ip/spi_device/pre_dv/tb/spid_readcmd_tb.sv,SystemVerilog,24.13,False,testbench
+RTL002852,OpenTitan,spid_status_tb.sv,spid_status_tb,.sv,hw/ip/spi_device/pre_dv/tb/spid_status_tb.sv,SystemVerilog,6.67,False,testbench
+RTL002853,OpenTitan,spid_upload_tb.sv,spid_upload_tb,.sv,hw/ip/spi_device/pre_dv/tb/spid_upload_tb.sv,SystemVerilog,20.17,False,testbench
+RTL002878,OpenTitan,tb.sv,tb,.sv,hw/ip/spi_host/dv/tb.sv,SystemVerilog,5.57,False,testbench
+RTL002895,OpenTitan,tb.sv,tb,.sv,hw/ip/sram_ctrl/dv/tb.sv,SystemVerilog,6.83,False,testbench
+RTL002906,OpenTitan,tb.sv,tb,.sv,hw/ip/sysrst_ctrl/dv/tb.sv,SystemVerilog,3.61,False,testbench
+RTL002921,OpenTitan,tb.sv,tb,.sv,hw/ip/tlul/generic_dv/tb/tb.sv,SystemVerilog,0.88,False,testbench
+RTL002931,OpenTitan,tlul_adapter_shim.sv,tlul_adapter_shim,.sv,hw/ip/tlul/rtl/tlul_adapter_shim.sv,SystemVerilog,0.02,False,too_small
+RTL002955,OpenTitan,tb.sv,tb,.sv,hw/ip/uart/dv/tb/tb.sv,SystemVerilog,3.43,False,testbench
+RTL002965,OpenTitan,tb.sv,tb,.sv,hw/ip/usbdev/dv/tb/tb.sv,SystemVerilog,12.22,False,testbench
+RTL003003,OpenTitan,tb.sv,tb,.sv,hw/ip_templates/flash_ctrl/dv/tb/tb.sv,SystemVerilog,13.55,False,testbench
+RTL003044,OpenTitan,tb.sv,tb,.sv,hw/ip_templates/rstmgr/dv/rstmgr_cnsty_chk/tb.sv,SystemVerilog,15.21,False,testbench
+RTL003054,OpenTitan,tb__alert_handler_connect.sv,tb__alert_handler_connect,.sv,hw/top_darjeeling/dv/autogen/tb__alert_handler_connect.sv,SystemVerilog,5.58,False,testbench
+RTL003055,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_darjeeling/dv/autogen/tb__xbar_connect.sv,SystemVerilog,12.8,False,testbench
+RTL003059,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/dv/tb/tb.sv,SystemVerilog,26.49,False,testbench
+RTL003062,OpenTitan,chip_sim_tb.sv,chip_sim_tb,.sv,hw/top_darjeeling/dv/verilator/chip_sim_tb.sv,SystemVerilog,5.75,False,testbench
+RTL003092,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_darjeeling/ip/xbar_dbg/dv/autogen/tb__xbar_connect.sv,SystemVerilog,0.86,False,testbench
+RTL003097,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_darjeeling/ip/xbar_main/dv/autogen/tb__xbar_connect.sv,SystemVerilog,3.44,False,testbench
+RTL003102,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_darjeeling/ip/xbar_mbx/dv/autogen/tb__xbar_connect.sv,SystemVerilog,1.14,False,testbench
+RTL003107,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_darjeeling/ip/xbar_peri/dv/autogen/tb__xbar_connect.sv,SystemVerilog,1.61,False,testbench
+RTL003113,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/ac_range_check/dv/tb/tb.sv,SystemVerilog,3.12,False,testbench
+RTL003121,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/alert_handler/dv/tb/tb.sv,SystemVerilog,4.77,False,testbench
+RTL003125,OpenTitan,alert_handler_esc_timer_tb.sv,alert_handler_esc_timer_tb,.sv,hw/top_darjeeling/ip_autogen/alert_handler/fpv/tb/alert_handler_esc_timer_tb.sv,SystemVerilog,1.26,False,testbench
+RTL003127,OpenTitan,alert_handler_ping_timer_tb.sv,alert_handler_ping_timer_tb,.sv,hw/top_darjeeling/ip_autogen/alert_handler/fpv/tb/alert_handler_ping_timer_tb.sv,SystemVerilog,1.67,False,testbench
+RTL003151,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/clkmgr/dv/tb.sv,SystemVerilog,4.72,False,testbench
+RTL003165,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/gpio/dv/tb/tb.sv,SystemVerilog,2.71,False,testbench
+RTL003175,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/otp_ctrl/dv/tb.sv,SystemVerilog,10.6,False,testbench
+RTL003194,OpenTitan,pinmux_chip_tb.sv,pinmux_chip_tb,.sv,hw/top_darjeeling/ip_autogen/pinmux/fpv/tb/pinmux_chip_tb.sv,SystemVerilog,7.1,False,testbench
+RTL003195,OpenTitan,pinmux_tb.sv,pinmux_tb,.sv,hw/top_darjeeling/ip_autogen/pinmux/fpv/tb/pinmux_tb.sv,SystemVerilog,1.99,False,testbench
+RTL003212,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/pwrmgr/dv/tb.sv,SystemVerilog,4.09,False,testbench
+RTL003227,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/racl_ctrl/dv/tb.sv,SystemVerilog,4.05,False,testbench
+RTL003232,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/rstmgr/dv/rstmgr_cnsty_chk/tb.sv,SystemVerilog,15.21,False,testbench
+RTL003238,OpenTitan,tb.sv,tb,.sv,hw/top_darjeeling/ip_autogen/rstmgr/dv/tb.sv,SystemVerilog,3.58,False,testbench
+RTL003257,OpenTitan,rv_plic_tb.sv,rv_plic_tb,.sv,hw/top_darjeeling/ip_autogen/rv_plic/fpv/tb/rv_plic_tb.sv,SystemVerilog,1.61,False,testbench
+RTL003284,OpenTitan,tb__alert_handler_connect.sv,tb__alert_handler_connect,.sv,hw/top_earlgrey/dv/autogen/tb__alert_handler_connect.sv,SystemVerilog,4.68,False,testbench
+RTL003285,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_earlgrey/dv/autogen/tb__xbar_connect.sv,SystemVerilog,10.02,False,testbench
+RTL003289,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/dv/tb/tb.sv,SystemVerilog,32.27,False,testbench
+RTL003292,OpenTitan,chip_sim_tb.sv,chip_sim_tb,.sv,hw/top_earlgrey/dv/verilator/chip_sim_tb.sv,SystemVerilog,8.15,False,testbench
+RTL003329,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_earlgrey/ip/xbar_main/dv/autogen/tb__xbar_connect.sv,SystemVerilog,2.63,False,testbench
+RTL003334,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_earlgrey/ip/xbar_peri/dv/autogen/tb__xbar_connect.sv,SystemVerilog,1.92,False,testbench
+RTL003341,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/alert_handler/dv/tb/tb.sv,SystemVerilog,4.77,False,testbench
+RTL003345,OpenTitan,alert_handler_esc_timer_tb.sv,alert_handler_esc_timer_tb,.sv,hw/top_earlgrey/ip_autogen/alert_handler/fpv/tb/alert_handler_esc_timer_tb.sv,SystemVerilog,1.26,False,testbench
+RTL003347,OpenTitan,alert_handler_ping_timer_tb.sv,alert_handler_ping_timer_tb,.sv,hw/top_earlgrey/ip_autogen/alert_handler/fpv/tb/alert_handler_ping_timer_tb.sv,SystemVerilog,1.67,False,testbench
+RTL003371,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/clkmgr/dv/tb.sv,SystemVerilog,7.63,False,testbench
+RTL003386,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/flash_ctrl/dv/tb/tb.sv,SystemVerilog,13.55,False,testbench
+RTL003414,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/gpio/dv/tb/tb.sv,SystemVerilog,2.71,False,testbench
+RTL003424,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/otp_ctrl/dv/tb.sv,SystemVerilog,11.84,False,testbench
+RTL003443,OpenTitan,pinmux_chip_tb.sv,pinmux_chip_tb,.sv,hw/top_earlgrey/ip_autogen/pinmux/fpv/tb/pinmux_chip_tb.sv,SystemVerilog,8.89,False,testbench
+RTL003444,OpenTitan,pinmux_tb.sv,pinmux_tb,.sv,hw/top_earlgrey/ip_autogen/pinmux/fpv/tb/pinmux_tb.sv,SystemVerilog,3.8,False,testbench
+RTL003461,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/pwrmgr/dv/tb.sv,SystemVerilog,3.91,False,testbench
+RTL003474,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/rstmgr/dv/rstmgr_cnsty_chk/tb.sv,SystemVerilog,15.21,False,testbench
+RTL003480,OpenTitan,tb.sv,tb,.sv,hw/top_earlgrey/ip_autogen/rstmgr/dv/tb.sv,SystemVerilog,4.53,False,testbench
+RTL003499,OpenTitan,rv_plic_tb.sv,rv_plic_tb,.sv,hw/top_earlgrey/ip_autogen/rv_plic/fpv/tb/rv_plic_tb.sv,SystemVerilog,1.61,False,testbench
+RTL003528,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_englishbreakfast/dv/autogen/tb__xbar_connect.sv,SystemVerilog,6.96,False,testbench
+RTL003530,OpenTitan,chip_sim_tb.sv,chip_sim_tb,.sv,hw/top_englishbreakfast/dv/verilator/chip_sim_tb.sv,SystemVerilog,7.87,False,testbench
+RTL003531,OpenTitan,adc.sv,adc,.sv,hw/top_englishbreakfast/ip/ast/rtl/adc.sv,SystemVerilog,0.04,False,too_small
+RTL003532,OpenTitan,adc_ana.sv,adc_ana,.sv,hw/top_englishbreakfast/ip/ast/rtl/adc_ana.sv,SystemVerilog,0.04,False,too_small
+RTL003533,OpenTitan,aon_clk.sv,aon_clk,.sv,hw/top_englishbreakfast/ip/ast/rtl/aon_clk.sv,SystemVerilog,0.04,False,too_small
+RTL003534,OpenTitan,aon_osc.sv,aon_osc,.sv,hw/top_englishbreakfast/ip/ast/rtl/aon_osc.sv,SystemVerilog,0.04,False,too_small
+RTL003535,OpenTitan,ast.sv,ast,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast.sv,SystemVerilog,0.04,False,too_small
+RTL003536,OpenTitan,ast_alert.sv,ast_alert,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_alert.sv,SystemVerilog,0.05,False,too_small
+RTL003537,OpenTitan,ast_aon.sv,ast_aon,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_aon.sv,SystemVerilog,0.04,False,too_small
+RTL003538,OpenTitan,ast_aon_main_pkg.sv,ast_aon_main_pkg,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_aon_main_pkg.sv,SystemVerilog,0.05,False,too_small
+RTL003539,OpenTitan,ast_bhv_pkg.sv,ast_bhv_pkg,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_bhv_pkg.sv,SystemVerilog,0.05,False,too_small
+RTL003540,OpenTitan,ast_clks_byp_aon.sv,ast_clks_byp_aon,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_clks_byp_aon.sv,SystemVerilog,0.05,False,too_small
+RTL003541,OpenTitan,ast_clks_byp_main.sv,ast_clks_byp_main,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_clks_byp_main.sv,SystemVerilog,0.05,False,too_small
+RTL003542,OpenTitan,ast_dft.sv,ast_dft,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_dft.sv,SystemVerilog,0.04,False,too_small
+RTL003543,OpenTitan,ast_entropy.sv,ast_entropy,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_entropy.sv,SystemVerilog,0.05,False,too_small
+RTL003544,OpenTitan,ast_main.sv,ast_main,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_main.sv,SystemVerilog,0.05,False,too_small
+RTL003545,OpenTitan,ast_pkg.sv,ast_pkg,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_pkg.sv,SystemVerilog,0.04,False,too_small
+RTL003546,OpenTitan,ast_pulse_sync.sv,ast_pulse_sync,.sv,hw/top_englishbreakfast/ip/ast/rtl/ast_pulse_sync.sv,SystemVerilog,0.05,False,too_small
+RTL003549,OpenTitan,dev_entropy.sv,dev_entropy,.sv,hw/top_englishbreakfast/ip/ast/rtl/dev_entropy.sv,SystemVerilog,0.05,False,too_small
+RTL003550,OpenTitan,gfr_clk_mux2.sv,gfr_clk_mux2,.sv,hw/top_englishbreakfast/ip/ast/rtl/gfr_clk_mux2.sv,SystemVerilog,0.05,False,too_small
+RTL003551,OpenTitan,io_clk.sv,io_clk,.sv,hw/top_englishbreakfast/ip/ast/rtl/io_clk.sv,SystemVerilog,0.04,False,too_small
+RTL003552,OpenTitan,io_osc.sv,io_osc,.sv,hw/top_englishbreakfast/ip/ast/rtl/io_osc.sv,SystemVerilog,0.04,False,too_small
+RTL003553,OpenTitan,rglts_pdm_3p3v.sv,rglts_pdm_3p3v,.sv,hw/top_englishbreakfast/ip/ast/rtl/rglts_pdm_3p3v.sv,SystemVerilog,0.05,False,too_small
+RTL003554,OpenTitan,rng.sv,rng,.sv,hw/top_englishbreakfast/ip/ast/rtl/rng.sv,SystemVerilog,0.04,False,too_small
+RTL003555,OpenTitan,sys_clk.sv,sys_clk,.sv,hw/top_englishbreakfast/ip/ast/rtl/sys_clk.sv,SystemVerilog,0.04,False,too_small
+RTL003556,OpenTitan,sys_osc.sv,sys_osc,.sv,hw/top_englishbreakfast/ip/ast/rtl/sys_osc.sv,SystemVerilog,0.04,False,too_small
+RTL003557,OpenTitan,usb_clk.sv,usb_clk,.sv,hw/top_englishbreakfast/ip/ast/rtl/usb_clk.sv,SystemVerilog,0.04,False,too_small
+RTL003558,OpenTitan,usb_osc.sv,usb_osc,.sv,hw/top_englishbreakfast/ip/ast/rtl/usb_osc.sv,SystemVerilog,0.04,False,too_small
+RTL003559,OpenTitan,vcaon_pgd.sv,vcaon_pgd,.sv,hw/top_englishbreakfast/ip/ast/rtl/vcaon_pgd.sv,SystemVerilog,0.05,False,too_small
+RTL003560,OpenTitan,vcc_pgd.sv,vcc_pgd,.sv,hw/top_englishbreakfast/ip/ast/rtl/vcc_pgd.sv,SystemVerilog,0.04,False,too_small
+RTL003561,OpenTitan,vcmain_pgd.sv,vcmain_pgd,.sv,hw/top_englishbreakfast/ip/ast/rtl/vcmain_pgd.sv,SystemVerilog,0.05,False,too_small
+RTL003562,OpenTitan,vio_pgd.sv,vio_pgd,.sv,hw/top_englishbreakfast/ip/ast/rtl/vio_pgd.sv,SystemVerilog,0.04,False,too_small
+RTL003563,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_englishbreakfast/ip/xbar_main/dv/autogen/tb__xbar_connect.sv,SystemVerilog,1.38,False,testbench
+RTL003568,OpenTitan,tb__xbar_connect.sv,tb__xbar_connect,.sv,hw/top_englishbreakfast/ip/xbar_peri/dv/autogen/tb__xbar_connect.sv,SystemVerilog,1.4,False,testbench
+RTL003584,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/clkmgr/dv/tb.sv,SystemVerilog,7.52,False,testbench
+RTL003599,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/flash_ctrl/dv/tb/tb.sv,SystemVerilog,13.55,False,testbench
+RTL003627,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/gpio/dv/tb/tb.sv,SystemVerilog,2.71,False,testbench
+RTL003635,OpenTitan,pinmux_chip_tb.sv,pinmux_chip_tb,.sv,hw/top_englishbreakfast/ip_autogen/pinmux/fpv/tb/pinmux_chip_tb.sv,SystemVerilog,8.91,False,testbench
+RTL003636,OpenTitan,pinmux_tb.sv,pinmux_tb,.sv,hw/top_englishbreakfast/ip_autogen/pinmux/fpv/tb/pinmux_tb.sv,SystemVerilog,3.8,False,testbench
+RTL003653,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/pwrmgr/dv/tb.sv,SystemVerilog,3.91,False,testbench
+RTL003666,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/rstmgr/dv/rstmgr_cnsty_chk/tb.sv,SystemVerilog,15.21,False,testbench
+RTL003672,OpenTitan,tb.sv,tb,.sv,hw/top_englishbreakfast/ip_autogen/rstmgr/dv/tb.sv,SystemVerilog,4.53,False,testbench
+RTL003691,OpenTitan,rv_plic_tb.sv,rv_plic_tb,.sv,hw/top_englishbreakfast/ip_autogen/rv_plic/fpv/tb/rv_plic_tb.sv,SystemVerilog,1.61,False,testbench
+RTL003709,OpenTitan,usr_access_xil7series.sv,usr_access_xil7series,.sv,hw/top_englishbreakfast/rtl/usr_access_xil7series.sv,SystemVerilog,0.05,False,too_small
+RTL003712,OpenTitan,tb_cs_registers.sv,tb_cs_registers,.sv,hw/vendor/lowrisc_ibex/dv/cs_registers/tb/tb_cs_registers.sv,SystemVerilog,5.04,False,testbench
+RTL003727,OpenTitan,bus_params_pkg.sv,bus_params_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/bus_params_pkg/bus_params_pkg.sv,SystemVerilog,0.75,False,ignored_directory
+RTL003728,OpenTitan,core_ibex_ifetch_if.sv,core_ibex_ifetch_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/core_ibex_ifetch_if.sv,SystemVerilog,0.69,False,ignored_directory
+RTL003729,OpenTitan,core_ibex_ifetch_pmp_if.sv,core_ibex_ifetch_pmp_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/core_ibex_ifetch_pmp_if.sv,SystemVerilog,0.58,False,ignored_directory
+RTL003730,OpenTitan,ibex_cosim_agent.sv,ibex_cosim_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_agent.sv,SystemVerilog,2.86,False,ignored_directory
+RTL003731,OpenTitan,ibex_cosim_agent_pkg.sv,ibex_cosim_agent_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_agent_pkg.sv,SystemVerilog,0.63,False,ignored_directory
+RTL003732,OpenTitan,ibex_cosim_cfg.sv,ibex_cosim_cfg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_cfg.sv,SystemVerilog,1.24,False,ignored_directory
+RTL003733,OpenTitan,ibex_cosim_scoreboard.sv,ibex_cosim_scoreboard,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_cosim_scoreboard.sv,SystemVerilog,13.96,False,ignored_directory
+RTL003734,OpenTitan,ibex_ifetch_monitor.sv,ibex_ifetch_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_monitor.sv,SystemVerilog,1.57,False,ignored_directory
+RTL003735,OpenTitan,ibex_ifetch_pmp_monitor.sv,ibex_ifetch_pmp_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_pmp_monitor.sv,SystemVerilog,1.44,False,ignored_directory
+RTL003736,OpenTitan,ibex_ifetch_pmp_seq_item.sv,ibex_ifetch_pmp_seq_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_pmp_seq_item.sv,SystemVerilog,0.49,False,ignored_directory
+RTL003737,OpenTitan,ibex_ifetch_seq_item.sv,ibex_ifetch_seq_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_ifetch_seq_item.sv,SystemVerilog,0.62,False,ignored_directory
+RTL003738,OpenTitan,ibex_rvfi_monitor.sv,ibex_rvfi_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_rvfi_monitor.sv,SystemVerilog,2.59,False,ignored_directory
+RTL003739,OpenTitan,ibex_rvfi_seq_item.sv,ibex_rvfi_seq_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_cosim_agent/ibex_rvfi_seq_item.sv,SystemVerilog,1.38,False,ignored_directory
+RTL003740,OpenTitan,ibex_mem_intf.sv,ibex_mem_intf,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf.sv,SystemVerilog,2.21,False,ignored_directory
+RTL003741,OpenTitan,ibex_mem_intf_agent_pkg.sv,ibex_mem_intf_agent_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv,SystemVerilog,0.97,False,ignored_directory
+RTL003742,OpenTitan,ibex_mem_intf_monitor.sv,ibex_mem_intf_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_monitor.sv,SystemVerilog,4.76,False,ignored_directory
+RTL003743,OpenTitan,ibex_mem_intf_pkg.sv,ibex_mem_intf_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_pkg.sv,SystemVerilog,0.45,False,ignored_directory
+RTL003744,OpenTitan,ibex_mem_intf_request_agent.sv,ibex_mem_intf_request_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_request_agent.sv,SystemVerilog,1.27,False,ignored_directory
+RTL003745,OpenTitan,ibex_mem_intf_request_driver.sv,ibex_mem_intf_request_driver,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_request_driver.sv,SystemVerilog,3.19,False,ignored_directory
+RTL003746,OpenTitan,ibex_mem_intf_response_agent.sv,ibex_mem_intf_response_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_agent.sv,SystemVerilog,2.21,False,ignored_directory
+RTL003747,OpenTitan,ibex_mem_intf_response_agent_cfg.sv,ibex_mem_intf_response_agent_cfg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_agent_cfg.sv,SystemVerilog,2.59,False,ignored_directory
+RTL003748,OpenTitan,ibex_mem_intf_response_driver.sv,ibex_mem_intf_response_driver,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_driver.sv,SystemVerilog,5.66,False,ignored_directory
+RTL003749,OpenTitan,ibex_mem_intf_response_seq_lib.sv,ibex_mem_intf_response_seq_lib,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_seq_lib.sv,SystemVerilog,9.51,False,ignored_directory
+RTL003750,OpenTitan,ibex_mem_intf_response_sequencer.sv,ibex_mem_intf_response_sequencer,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_response_sequencer.sv,SystemVerilog,1.27,False,ignored_directory
+RTL003751,OpenTitan,ibex_mem_intf_seq_item.sv,ibex_mem_intf_seq_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/ibex_mem_intf_agent/ibex_mem_intf_seq_item.sv,SystemVerilog,2.01,False,ignored_directory
+RTL003752,OpenTitan,irq_agent_pkg.sv,irq_agent_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_agent_pkg.sv,SystemVerilog,0.53,False,ignored_directory
+RTL003753,OpenTitan,irq_if.sv,irq_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_if.sv,SystemVerilog,0.97,False,ignored_directory
+RTL003754,OpenTitan,irq_monitor.sv,irq_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_monitor.sv,SystemVerilog,2.73,False,ignored_directory
+RTL003755,OpenTitan,irq_request_agent.sv,irq_request_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_request_agent.sv,SystemVerilog,0.96,False,ignored_directory
+RTL003756,OpenTitan,irq_request_driver.sv,irq_request_driver,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_request_driver.sv,SystemVerilog,2.75,False,ignored_directory
+RTL003757,OpenTitan,irq_seq_item.sv,irq_seq_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/common/irq_agent/irq_seq_item.sv,SystemVerilog,0.99,False,ignored_directory
+RTL003758,OpenTitan,core_ibex_fcov_bind.sv,core_ibex_fcov_bind,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/fcov/core_ibex_fcov_bind.sv,SystemVerilog,0.43,False,ignored_directory
+RTL003759,OpenTitan,core_ibex_fcov_if.sv,core_ibex_fcov_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/fcov/core_ibex_fcov_if.sv,SystemVerilog,35.98,False,ignored_directory
+RTL003760,OpenTitan,core_ibex_pmp_fcov_if.sv,core_ibex_pmp_fcov_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/fcov/core_ibex_pmp_fcov_if.sv,SystemVerilog,42.94,False,ignored_directory
+RTL003761,OpenTitan,ibex_asm_program_gen.sv,ibex_asm_program_gen,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/riscv_dv_extension/ibex_asm_program_gen.sv,SystemVerilog,6.28,False,ignored_directory
+RTL003762,OpenTitan,ibex_debug_triggers_overrides.sv,ibex_debug_triggers_overrides,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/riscv_dv_extension/ibex_debug_triggers_overrides.sv,SystemVerilog,5.82,False,ignored_directory
+RTL003763,OpenTitan,ibex_directed_instr_lib.sv,ibex_directed_instr_lib,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/riscv_dv_extension/ibex_directed_instr_lib.sv,SystemVerilog,12.96,False,ignored_directory
+RTL003764,OpenTitan,riscv_core_setting.tpl.sv,riscv_core_setting.tpl,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/riscv_dv_extension/riscv_core_setting.tpl.sv,SystemVerilog,7.93,False,ignored_directory
+RTL003765,OpenTitan,core_ibex_tb_top.sv,core_ibex_tb_top,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tb/core_ibex_tb_top.sv,SystemVerilog,20.57,False,ignored_directory
+RTL003766,OpenTitan,core_ibex_base_test.sv,core_ibex_base_test,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_base_test.sv,SystemVerilog,21.62,False,ignored_directory
+RTL003767,OpenTitan,core_ibex_new_seq_lib.sv,core_ibex_new_seq_lib,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_new_seq_lib.sv,SystemVerilog,10.64,False,ignored_directory
+RTL003768,OpenTitan,core_ibex_report_server.sv,core_ibex_report_server,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_report_server.sv,SystemVerilog,0.77,False,ignored_directory
+RTL003769,OpenTitan,core_ibex_seq_lib.sv,core_ibex_seq_lib,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_seq_lib.sv,SystemVerilog,5.39,False,ignored_directory
+RTL003770,OpenTitan,core_ibex_test_lib.sv,core_ibex_test_lib,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_test_lib.sv,SystemVerilog,75.28,False,ignored_directory
+RTL003771,OpenTitan,core_ibex_test_pkg.sv,core_ibex_test_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_test_pkg.sv,SystemVerilog,1.67,False,ignored_directory
+RTL003772,OpenTitan,core_ibex_vseq.sv,core_ibex_vseq,.sv,hw/vendor/lowrisc_ibex/dv/uvm/core_ibex/tests/core_ibex_vseq.sv,SystemVerilog,6.94,False,ignored_directory
+RTL003773,OpenTitan,ibex_icache_fcov_bind.sv,ibex_icache_fcov_bind,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/fcov/ibex_icache_fcov_bind.sv,SystemVerilog,0.37,False,ignored_directory
+RTL003774,OpenTitan,ibex_icache_fcov_if.sv,ibex_icache_fcov_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/fcov/ibex_icache_fcov_if.sv,SystemVerilog,9.5,False,ignored_directory
+RTL003775,OpenTitan,ibex_icache_core_agent.sv,ibex_icache_core_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent.sv,SystemVerilog,0.84,False,ignored_directory
+RTL003776,OpenTitan,ibex_icache_core_agent_cfg.sv,ibex_icache_core_agent_cfg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_cfg.sv,SystemVerilog,0.44,False,ignored_directory
+RTL003777,OpenTitan,ibex_icache_core_agent_cov.sv,ibex_icache_core_agent_cov,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_cov.sv,SystemVerilog,2.63,False,ignored_directory
+RTL003778,OpenTitan,ibex_icache_core_agent_pkg.sv,ibex_icache_core_agent_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_agent_pkg.sv,SystemVerilog,1.18,False,ignored_directory
+RTL003779,OpenTitan,ibex_icache_core_bus_item.sv,ibex_icache_core_bus_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_bus_item.sv,SystemVerilog,1.58,False,ignored_directory
+RTL003780,OpenTitan,ibex_icache_core_driver.sv,ibex_icache_core_driver,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_driver.sv,SystemVerilog,6.93,False,ignored_directory
+RTL003781,OpenTitan,ibex_icache_core_if.sv,ibex_icache_core_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_if.sv,SystemVerilog,4.1,False,ignored_directory
+RTL003782,OpenTitan,ibex_icache_core_monitor.sv,ibex_icache_core_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_monitor.sv,SystemVerilog,5.43,False,ignored_directory
+RTL003783,OpenTitan,ibex_icache_core_protocol_checker.sv,ibex_icache_core_protocol_checker,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_protocol_checker.sv,SystemVerilog,6.62,False,ignored_directory
+RTL003784,OpenTitan,ibex_icache_core_req_item.sv,ibex_icache_core_req_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_req_item.sv,SystemVerilog,3.18,False,ignored_directory
+RTL003785,OpenTitan,ibex_icache_core_rsp_item.sv,ibex_icache_core_rsp_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_rsp_item.sv,SystemVerilog,0.62,False,ignored_directory
+RTL003786,OpenTitan,ibex_icache_core_sequencer.sv,ibex_icache_core_sequencer,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/ibex_icache_core_sequencer.sv,SystemVerilog,1.04,False,ignored_directory
+RTL003787,OpenTitan,ibex_icache_core_back_line_seq.sv,ibex_icache_core_back_line_seq,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_back_line_seq.sv,SystemVerilog,1.7,False,ignored_directory
+RTL003788,OpenTitan,ibex_icache_core_base_seq.sv,ibex_icache_core_base_seq,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_base_seq.sv,SystemVerilog,9.31,False,ignored_directory
+RTL003789,OpenTitan,ibex_icache_core_seq_list.sv,ibex_icache_core_seq_list,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_core_agent/seq_lib/ibex_icache_core_seq_list.sv,SystemVerilog,0.24,False,ignored_directory
+RTL003790,OpenTitan,ibex_icache_mem_agent.sv,ibex_icache_mem_agent,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent.sv,SystemVerilog,1.1,False,ignored_directory
+RTL003791,OpenTitan,ibex_icache_mem_agent_cfg.sv,ibex_icache_mem_agent_cfg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_cfg.sv,SystemVerilog,0.53,False,ignored_directory
+RTL003792,OpenTitan,ibex_icache_mem_agent_cov.sv,ibex_icache_mem_agent_cov,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_cov.sv,SystemVerilog,0.51,False,ignored_directory
+RTL003793,OpenTitan,ibex_icache_mem_agent_pkg.sv,ibex_icache_mem_agent_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_agent_pkg.sv,SystemVerilog,0.87,False,ignored_directory
+RTL003794,OpenTitan,ibex_icache_mem_bus_item.sv,ibex_icache_mem_bus_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_bus_item.sv,SystemVerilog,0.99,False,ignored_directory
+RTL003795,OpenTitan,ibex_icache_mem_driver.sv,ibex_icache_mem_driver,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_driver.sv,SystemVerilog,3.4,False,ignored_directory
+RTL003796,OpenTitan,ibex_icache_mem_if.sv,ibex_icache_mem_if,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_if.sv,SystemVerilog,1.76,False,ignored_directory
+RTL003797,OpenTitan,ibex_icache_mem_model.sv,ibex_icache_mem_model,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_model.sv,SystemVerilog,4.11,False,ignored_directory
+RTL003798,OpenTitan,ibex_icache_mem_monitor.sv,ibex_icache_mem_monitor,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_monitor.sv,SystemVerilog,2.78,False,ignored_directory
+RTL003799,OpenTitan,ibex_icache_mem_protocol_checker.sv,ibex_icache_mem_protocol_checker,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_protocol_checker.sv,SystemVerilog,1.58,False,ignored_directory
+RTL003800,OpenTitan,ibex_icache_mem_req_item.sv,ibex_icache_mem_req_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_req_item.sv,SystemVerilog,0.51,False,ignored_directory
+RTL003801,OpenTitan,ibex_icache_mem_resp_item.sv,ibex_icache_mem_resp_item,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_resp_item.sv,SystemVerilog,1.73,False,ignored_directory
+RTL003802,OpenTitan,ibex_icache_mem_sequencer.sv,ibex_icache_mem_sequencer,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/ibex_icache_mem_sequencer.sv,SystemVerilog,1.3,False,ignored_directory
+RTL003803,OpenTitan,ibex_icache_mem_base_seq.sv,ibex_icache_mem_base_seq,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_base_seq.sv,SystemVerilog,0.57,False,ignored_directory
+RTL003804,OpenTitan,ibex_icache_mem_resp_seq.sv,ibex_icache_mem_resp_seq,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_resp_seq.sv,SystemVerilog,4.81,False,ignored_directory
+RTL003805,OpenTitan,ibex_icache_mem_seq_list.sv,ibex_icache_mem_seq_list,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/ibex_icache_mem_agent/seq_lib/ibex_icache_mem_seq_list.sv,SystemVerilog,0.23,False,ignored_directory
+RTL003806,OpenTitan,tb.sv,tb,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/tb/tb.sv,SystemVerilog,8.96,False,ignored_directory
+RTL003807,OpenTitan,ibex_icache_base_test.sv,ibex_icache_base_test,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/tests/ibex_icache_base_test.sv,SystemVerilog,0.75,False,ignored_directory
+RTL003808,OpenTitan,ibex_icache_oldval_test.sv,ibex_icache_oldval_test,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/tests/ibex_icache_oldval_test.sv,SystemVerilog,1.9,False,ignored_directory
+RTL003809,OpenTitan,ibex_icache_test_pkg.sv,ibex_icache_test_pkg,.sv,hw/vendor/lowrisc_ibex/dv/uvm/icache/dv/tests/ibex_icache_test_pkg.sv,SystemVerilog,0.51,False,ignored_directory
+RTL003845,OpenTitan,riscv_custom_instr_enum.sv,riscv_custom_instr_enum,.sv,hw/vendor/lowrisc_ibex/vendor/google_riscv-dv/src/isa/custom/riscv_custom_instr_enum.sv,SystemVerilog,0.05,False,too_small
+RTL003922,OpenTitan,riscv_instr_gen_tb_top.sv,riscv_instr_gen_tb_top,.sv,hw/vendor/lowrisc_ibex/vendor/google_riscv-dv/test/riscv_instr_gen_tb_top.sv,SystemVerilog,0.74,False,testbench
+RTL003944,OpenTitan,dm_tb_pkg.sv,dm_tb_pkg,.sv,hw/vendor/pulp_riscv_dbg/tb/dm_tb_pkg.sv,SystemVerilog,2.5,False,testbench
+RTL003948,OpenTitan,tb_jtag_dmi.sv,tb_jtag_dmi,.sv,hw/vendor/pulp_riscv_dbg/tb/jtag_dmi/tb_jtag_dmi.sv,SystemVerilog,7.92,False,testbench
+RTL003950,OpenTitan,tb_test_env.sv,tb_test_env,.sv,hw/vendor/pulp_riscv_dbg/tb/tb_test_env.sv,SystemVerilog,14.02,False,testbench
+RTL003951,OpenTitan,tb_top.sv,tb_top,.sv,hw/vendor/pulp_riscv_dbg/tb/tb_top.sv,SystemVerilog,4.51,False,testbench
+RTL003952,OpenTitan,tb_top_verilator.sv,tb_top_verilator,.sv,hw/vendor/pulp_riscv_dbg/tb/tb_top_verilator.sv,SystemVerilog,13.45,False,testbench
+RTL003965,PASC,multi_tb.v,multi_tb,.v,rtl/testbench/multi_tb.v,Verilog,1.77,False,testbench
+RTL003966,PicoRV32,testbench.v,testbench,.v,dhrystone/testbench.v,Verilog,2.92,False,testbench
+RTL003967,PicoRV32,testbench_nola.v,testbench_nola,.v,dhrystone/testbench_nola.v,Verilog,2.09,False,testbench
+RTL003970,PicoRV32,hx8kdemo_tb.v,hx8kdemo_tb,.v,picosoc/hx8kdemo_tb.v,Verilog,2.51,False,testbench
+RTL003973,PicoRV32,icebreaker_tb.v,icebreaker_tb,.v,picosoc/icebreaker_tb.v,Verilog,2.93,False,testbench
+RTL003977,PicoRV32,spiflash_tb.v,spiflash_tb,.v,picosoc/spiflash_tb.v,Verilog,7.97,False,testbench
+RTL003979,PicoRV32,testbench.v,testbench,.v,scripts/csmith/testbench.v,Verilog,2.2,False,testbench
+RTL003980,PicoRV32,testbench.v,testbench,.v,scripts/cxxdemo/testbench.v,Verilog,2.92,False,testbench
+RTL003982,PicoRV32,example_tb.v,example_tb,.v,scripts/icestorm/example_tb.v,Verilog,0.53,False,testbench
+RTL003983,PicoRV32,testbench.v,testbench,.v,scripts/presyn/testbench.v,Verilog,1.85,False,testbench
+RTL003986,PicoRV32,system_tb.v,system_tb,.v,scripts/quartus/system_tb.v,Verilog,0.67,False,testbench
+RTL003988,PicoRV32,testbench.v,testbench,.v,scripts/romload/testbench.v,Verilog,3.67,False,testbench
+RTL003997,PicoRV32,testbench.v,testbench,.v,scripts/tomthumbtg/testbench.v,Verilog,1.89,False,testbench
+RTL003998,PicoRV32,testbench.v,testbench,.v,scripts/torture/testbench.v,Verilog,3.52,False,testbench
+RTL004001,PicoRV32,system_tb.v,system_tb,.v,scripts/vivado/system_tb.v,Verilog,0.67,False,testbench
+RTL004004,PicoRV32,testbench.v,testbench,.v,testbench.v,Verilog,13.1,False,testbench
+RTL004005,PicoRV32,testbench_ez.v,testbench_ez,.v,testbench_ez.v,Verilog,2.35,False,testbench
+RTL004006,PicoRV32,testbench_wb.v,testbench_wb,.v,testbench_wb.v,Verilog,6.37,False,testbench
+RTL004035,Processor-UVM-Verification,processor_testbench_pkg.sv,processor_testbench_pkg,.sv,Code/processor_testbench_pkg.sv,SystemVerilog,0.34,False,testbench
+RTL004039,QuickSPI,quick_spi_hard_be_lsb_testbench.v,quick_spi_hard_be_lsb_testbench,.v,tests/quick_spi_hard_be_lsb_tests/quick_spi_hard_be_lsb_testbench.v,Verilog,2.02,False,testbench
+RTL004040,QuickSPI,quick_spi_hard_be_msb_testbench.v,quick_spi_hard_be_msb_testbench,.v,tests/quick_spi_hard_be_msb_tests/quick_spi_hard_be_msb_testbench.v,Verilog,2.02,False,testbench
+RTL004041,QuickSPI,quick_spi_hard_le_lsb_testbench.v,quick_spi_hard_le_lsb_testbench,.v,tests/quick_spi_hard_le_lsb_tests/quick_spi_hard_le_lsb_testbench.v,Verilog,2.02,False,testbench
+RTL004042,QuickSPI,quick_spi_hard_le_msb_testbench.v,quick_spi_hard_le_msb_testbench,.v,tests/quick_spi_hard_le_msb_tests/quick_spi_hard_le_msb_testbench.v,Verilog,2.02,False,testbench
+RTL004043,QuickSPI,quick_spi_soft_testbench.v,quick_spi_soft_testbench,.v,tests/quick_spi_soft_tests/quick_spi_soft_testbench.v,Verilog,1.24,False,testbench
+RTL004055,RISC-V,rv32i_soc_TB.v,rv32i_soc_TB,.v,test/rv32i_soc_TB.v,Verilog,11.06,False,testbench
+RTL004074,RISC-V-32I-5-stage-Pipeline-Core,pipeline_tb.v,pipeline_tb,.v,src/pipeline_tb.v,Verilog,0.37,False,testbench
+RTL004096,RISC-V-Pipelined-Processor,testbench.sv,testbench,.sv,RISC-V Pipelined Processor/RISC-V/testbench.sv,SystemVerilog,0.86,False,testbench
+RTL004098,RISC-V-Processor,ALU_testbench.v,ALU_testbench,.v,ALU/ALU_testbench.v,Verilog,1.05,False,testbench
+RTL004101,RISC-V-Processor,Datapath_tb.v,Datapath_tb,.v,Datapath/Datapath_tb.v,Verilog,1.06,False,testbench
+RTL004103,RISC-V-Processor,IFU_tb.v,IFU_tb,.v,Instruction Fetch Unit/IFU_tb.v,Verilog,0.76,False,testbench
+RTL004105,RISC-V-Processor,INST_MEM_tb.v,INST_MEM_tb,.v,Instruction Fetch Unit/INST_MEM_tb.v,Verilog,0.73,False,testbench
+RTL004112,RISC-V-Processor,Processor_tb.v,Processor_tb,.v,Processor/Processor_tb.v,Verilog,0.49,False,testbench
+RTL004115,RISC-V-Processor,Register File_tb.v,Register File_tb,.v,Register file/Register File_tb.v,Verilog,1.51,False,testbench
+RTL004124,RISC-V-TensorCore,sequencer_tb.v,sequencer_tb,.v,src/hw/SV/tb/sequencer_tb.v,Verilog,5.01,False,testbench
+RTL004143,RISC-processor,AddSub_Testbench.v,AddSub_Testbench,.v,sources/testbench/AddSub_Testbench.v,Verilog,3.48,False,testbench
+RTL004144,RISC-processor,Alu_Testbench.v,Alu_Testbench,.v,sources/testbench/Alu_Testbench.v,Verilog,5.38,False,testbench
+RTL004145,RISC-processor,ProcessorTestbench.v,ProcessorTestbench,.v,sources/testbench/ProcessorTestbench.v,Verilog,0.64,False,testbench
+RTL004146,RISC-processor,Regfile_module_testbench.v,Regfile_module_testbench,.v,sources/testbench/Regfile_module_testbench.v,Verilog,1.87,False,testbench
+RTL004147,RISC-processor,Shifter_Testbench.v,Shifter_Testbench,.v,sources/testbench/Shifter_Testbench.v,Verilog,5.32,False,testbench
+RTL004148,RISC-processor,pc_testbench.v,pc_testbench,.v,sources/testbench/pc_testbench.v,Verilog,0.79,False,testbench
+RTL004152,RISCV-multi-cycle-processor,auipcTb.sv,auipcTb,.sv,auipcTb.sv,SystemVerilog,0.64,False,testbench
+RTL004158,RISCV-multi-cycle-processor,finalTb.sv,finalTb,.sv,finalTb.sv,SystemVerilog,0.65,False,testbench
+RTL004164,RISCV-multi-cycle-processor,multiCycle_tb.sv,multiCycle_tb,.sv,multiCycle_tb.sv,SystemVerilog,0.63,False,testbench
+RTL004169,RISCV-multi-cycle-processor,shiftTb.sv,shiftTb,.sv,shiftTb.sv,SystemVerilog,0.68,False,testbench
+RTL004171,RTLLM,testbench.v,testbench,.v,Arithmetic/Accumulator/accu/testbench.v,Verilog,1.91,False,testbench
+RTL004173,RTLLM,testbench.v,testbench,.v,Arithmetic/Adder/adder_16bit/testbench.v,Verilog,0.9,False,testbench
+RTL004175,RTLLM,testbench.v,testbench,.v,Arithmetic/Adder/adder_32bit/testbench.v,Verilog,0.84,False,testbench
+RTL004177,RTLLM,testbench.v,testbench,.v,Arithmetic/Adder/adder_8bit/testbench.v,Verilog,0.84,False,testbench
+RTL004179,RTLLM,testbench.v,testbench,.v,Arithmetic/Adder/adder_bcd/testbench.v,Verilog,1.47,False,testbench
+RTL004181,RTLLM,testbench.v,testbench,.v,Arithmetic/Adder/adder_pipe_64bit/testbench.v,Verilog,1.8,False,testbench
+RTL004183,RTLLM,testbench.v,testbench,.v,Arithmetic/Comparator/comparator_3bit/testbench.v,Verilog,1.18,False,testbench
+RTL004185,RTLLM,testbench.v,testbench,.v,Arithmetic/Comparator/comparator_4bit/testbench.v,Verilog,1.18,False,testbench
+RTL004187,RTLLM,testbench.v,testbench,.v,Arithmetic/Divider/div_16bit/testbench.v,Verilog,0.9,False,testbench
+RTL004189,RTLLM,testbench.v,testbench,.v,Arithmetic/Divider/radix2_div/testbench.v,Verilog,2.68,False,testbench
+RTL004191,RTLLM,testbench.v,testbench,.v,Arithmetic/Multiplier/multi_16bit/testbench.v,Verilog,1.61,False,testbench
+RTL004193,RTLLM,testbench.v,testbench,.v,Arithmetic/Multiplier/multi_8bit/testbench.v,Verilog,1.15,False,testbench
+RTL004195,RTLLM,testbench.v,testbench,.v,Arithmetic/Multiplier/multi_booth_8bit/testbench.v,Verilog,1.93,False,testbench
+RTL004197,RTLLM,testbench.v,testbench,.v,Arithmetic/Multiplier/multi_pipe_4bit/testbench.v,Verilog,1.28,False,testbench
+RTL004199,RTLLM,testbench.v,testbench,.v,Arithmetic/Multiplier/multi_pipe_8bit/testbench.v,Verilog,2.0,False,testbench
+RTL004201,RTLLM,testbench.v,testbench,.v,Arithmetic/Other/fixed_point_adder/testbench.v,Verilog,1.52,False,testbench
+RTL004203,RTLLM,testbench.v,testbench,.v,Arithmetic/Other/fixed_point_substractor/testbench.v,Verilog,1.95,False,testbench
+RTL004205,RTLLM,testbench.v,testbench,.v,Arithmetic/Other/float_multi/testbench.v,Verilog,0.74,False,testbench
+RTL004207,RTLLM,testbench.v,testbench,.v,Arithmetic/Substractor/sub_64bit/testbench.v,Verilog,1.45,False,testbench
+RTL004209,RTLLM,testbench.v,testbench,.v,Control/Counter/JC_counter/testbench.v,Verilog,1.67,False,testbench
+RTL004211,RTLLM,testbench.v,testbench,.v,Control/Counter/counter_12/testbench.v,Verilog,1.05,False,testbench
+RTL004213,RTLLM,testbench.v,testbench,.v,Control/Counter/ring_counter/testbench.v,Verilog,1.1,False,testbench
+RTL004215,RTLLM,testbench.v,testbench,.v,Control/Counter/up_down_counter/testbench.v,Verilog,1.32,False,testbench
+RTL004217,RTLLM,testbench.v,testbench,.v,Control/Finite State Machine/fsm/testbench.v,Verilog,1.9,False,testbench
+RTL004219,RTLLM,testbench.v,testbench,.v,Control/Finite State Machine/sequence_detector/testbench.v,Verilog,1.21,False,testbench
+RTL004221,RTLLM,testbench.v,testbench,.v,Memory/FIFO/asyn_fifo/testbench.v,Verilog,2.32,False,testbench
+RTL004223,RTLLM,testbench.v,testbench,.v,Memory/LIFO/LIFObuffer/testbench.v,Verilog,1.34,False,testbench
+RTL004225,RTLLM,testbench.v,testbench,.v,Memory/Shifter/LFSR/testbench.v,Verilog,0.51,False,testbench
+RTL004227,RTLLM,testbench.v,testbench,.v,Memory/Shifter/barrel_shifter/testbench.v,Verilog,0.99,False,testbench
+RTL004229,RTLLM,testbench.v,testbench,.v,Memory/Shifter/right_shifter/testbench.v,Verilog,0.73,False,testbench
+RTL004231,RTLLM,testbench.v,testbench,.v,Miscellaneous/Frequency divider/freq_div/testbench.v,Verilog,1.36,False,testbench
+RTL004233,RTLLM,testbench.v,testbench,.v,Miscellaneous/Frequency divider/freq_divbyeven/testbench.v,Verilog,1.41,False,testbench
+RTL004235,RTLLM,testbench.v,testbench,.v,Miscellaneous/Frequency divider/freq_divbyfrac/testbench.v,Verilog,1.51,False,testbench
+RTL004237,RTLLM,testbench.v,testbench,.v,Miscellaneous/Frequency divider/freq_divbyodd/testbench.v,Verilog,1.34,False,testbench
+RTL004239,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/calendar/testbench.v,Verilog,0.93,False,testbench
+RTL004241,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/edge_detect/testbench.v,Verilog,1.65,False,testbench
+RTL004243,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/parallel2serial/testbench.v,Verilog,1.75,False,testbench
+RTL004245,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/pulse_detect/testbench.v,Verilog,1.68,False,testbench
+RTL004247,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/serial2parallel/testbench.v,Verilog,1.67,False,testbench
+RTL004249,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/synchronizer/testbench.v,Verilog,1.86,False,testbench
+RTL004251,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/traffic_light/testbench.v,Verilog,2.16,False,testbench
+RTL004253,RTLLM,testbench.v,testbench,.v,Miscellaneous/Others/width_8to16/testbench.v,Verilog,1.25,False,testbench
+RTL004255,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/RAM/testbench.v,Verilog,2.12,False,testbench
+RTL004257,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/ROM/testbench.v,Verilog,1.6,False,testbench
+RTL004259,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/alu/testbench.v,Verilog,1.82,False,testbench
+RTL004261,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/clkgenerator/testbench.v,Verilog,0.92,False,testbench
+RTL004263,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/instr_reg/testbench.v,Verilog,1.72,False,testbench
+RTL004265,RTLLM,testbench.v,testbench,.v,Miscellaneous/RISC-V/pe/testbench.v,Verilog,0.67,False,testbench
+RTL004267,RTLLM,testbench.v,testbench,.v,Miscellaneous/Signal generation/signal_generator/testbench.v,Verilog,0.86,False,testbench
+RTL004269,RTLLM,testbench.v,testbench,.v,Miscellaneous/Signal generation/square_wave/testbench.v,Verilog,1.3,False,testbench
+RTL004595,SERV,servant_tb.v,servant_tb,.v,bench/servant_tb.v,Verilog,0.7,False,testbench
+RTL004681,SHA256-Accelerator-Hardware,testbench-checkpoint.v,testbench-checkpoint,.v,SHACORE/.ipynb_checkpoints/testbench-checkpoint.v,Verilog,13.1,False,testbench
+RTL004682,SHA256-Accelerator-Hardware,testbench_mod-checkpoint.v,testbench_mod-checkpoint,.v,SHACORE/.ipynb_checkpoints/testbench_mod-checkpoint.v,Verilog,4.88,False,testbench
+RTL004683,SHA256-Accelerator-Hardware,testbench_wb-checkpoint.v,testbench_wb-checkpoint,.v,SHACORE/.ipynb_checkpoints/testbench_wb-checkpoint.v,Verilog,6.37,False,testbench
+RTL004685,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/dhrystone/testbench.v,Verilog,2.92,False,testbench
+RTL004686,SHA256-Accelerator-Hardware,testbench_nola.v,testbench_nola,.v,SHACORE/dhrystone/testbench_nola.v,Verilog,2.09,False,testbench
+RTL004689,SHA256-Accelerator-Hardware,hx8kdemo_tb.v,hx8kdemo_tb,.v,SHACORE/picosoc/hx8kdemo_tb.v,Verilog,2.5,False,testbench
+RTL004692,SHA256-Accelerator-Hardware,icebreaker_tb.v,icebreaker_tb,.v,SHACORE/picosoc/icebreaker_tb.v,Verilog,2.93,False,testbench
+RTL004696,SHA256-Accelerator-Hardware,spiflash_tb.v,spiflash_tb,.v,SHACORE/picosoc/spiflash_tb.v,Verilog,7.97,False,testbench
+RTL004698,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/csmith/testbench.v,Verilog,2.2,False,testbench
+RTL004699,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/cxxdemo/testbench.v,Verilog,2.92,False,testbench
+RTL004701,SHA256-Accelerator-Hardware,example_tb.v,example_tb,.v,SHACORE/scripts/icestorm/example_tb.v,Verilog,0.53,False,testbench
+RTL004702,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/presyn/testbench.v,Verilog,1.85,False,testbench
+RTL004705,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE/scripts/quartus/system_tb.v,Verilog,0.67,False,testbench
+RTL004707,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/romload/testbench.v,Verilog,3.67,False,testbench
+RTL004716,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/tomthumbtg/testbench.v,Verilog,1.89,False,testbench
+RTL004717,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/scripts/torture/testbench.v,Verilog,3.52,False,testbench
+RTL004720,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE/scripts/vivado/system_tb.v,Verilog,0.67,False,testbench
+RTL004725,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE/testbench.v,Verilog,13.1,False,testbench
+RTL004726,SHA256-Accelerator-Hardware,testbench_ez.v,testbench_ez,.v,SHACORE/testbench_ez.v,Verilog,2.35,False,testbench
+RTL004727,SHA256-Accelerator-Hardware,testbench_mod.v,testbench_mod,.v,SHACORE/testbench_mod.v,Verilog,4.88,False,testbench
+RTL004728,SHA256-Accelerator-Hardware,testbench_wb.v,testbench_wb,.v,SHACORE/testbench_wb.v,Verilog,6.37,False,testbench
+RTL004732,SHA256-Accelerator-Hardware,testbench-checkpoint.v,testbench-checkpoint,.v,SHACORE_UNROLLED/.ipynb_checkpoints/testbench-checkpoint.v,Verilog,13.1,False,testbench
+RTL004733,SHA256-Accelerator-Hardware,testbench_mod-checkpoint.v,testbench_mod-checkpoint,.v,SHACORE_UNROLLED/.ipynb_checkpoints/testbench_mod-checkpoint.v,Verilog,4.88,False,testbench
+RTL004734,SHA256-Accelerator-Hardware,testbench_wb-checkpoint.v,testbench_wb-checkpoint,.v,SHACORE_UNROLLED/.ipynb_checkpoints/testbench_wb-checkpoint.v,Verilog,6.37,False,testbench
+RTL004736,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/dhrystone/testbench.v,Verilog,2.92,False,testbench
+RTL004737,SHA256-Accelerator-Hardware,testbench_nola.v,testbench_nola,.v,SHACORE_UNROLLED/dhrystone/testbench_nola.v,Verilog,2.09,False,testbench
+RTL004740,SHA256-Accelerator-Hardware,hx8kdemo_tb.v,hx8kdemo_tb,.v,SHACORE_UNROLLED/picosoc/hx8kdemo_tb.v,Verilog,2.5,False,testbench
+RTL004743,SHA256-Accelerator-Hardware,icebreaker_tb.v,icebreaker_tb,.v,SHACORE_UNROLLED/picosoc/icebreaker_tb.v,Verilog,2.93,False,testbench
+RTL004747,SHA256-Accelerator-Hardware,spiflash_tb.v,spiflash_tb,.v,SHACORE_UNROLLED/picosoc/spiflash_tb.v,Verilog,7.97,False,testbench
+RTL004749,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/csmith/testbench.v,Verilog,2.2,False,testbench
+RTL004750,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/cxxdemo/testbench.v,Verilog,2.92,False,testbench
+RTL004752,SHA256-Accelerator-Hardware,example_tb.v,example_tb,.v,SHACORE_UNROLLED/scripts/icestorm/example_tb.v,Verilog,0.53,False,testbench
+RTL004753,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/presyn/testbench.v,Verilog,1.85,False,testbench
+RTL004756,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE_UNROLLED/scripts/quartus/system_tb.v,Verilog,0.67,False,testbench
+RTL004758,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/romload/testbench.v,Verilog,3.67,False,testbench
+RTL004767,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/tomthumbtg/testbench.v,Verilog,1.89,False,testbench
+RTL004768,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/scripts/torture/testbench.v,Verilog,3.52,False,testbench
+RTL004771,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE_UNROLLED/scripts/vivado/system_tb.v,Verilog,0.67,False,testbench
+RTL004776,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED/testbench.v,Verilog,13.1,False,testbench
+RTL004777,SHA256-Accelerator-Hardware,testbench_ez.v,testbench_ez,.v,SHACORE_UNROLLED/testbench_ez.v,Verilog,2.35,False,testbench
+RTL004778,SHA256-Accelerator-Hardware,testbench_mod.v,testbench_mod,.v,SHACORE_UNROLLED/testbench_mod.v,Verilog,4.88,False,testbench
+RTL004779,SHA256-Accelerator-Hardware,testbench_wb.v,testbench_wb,.v,SHACORE_UNROLLED/testbench_wb.v,Verilog,6.37,False,testbench
+RTL004783,SHA256-Accelerator-Hardware,testbench-checkpoint.v,testbench-checkpoint,.v,SHACORE_UNROLLED_PIPELINED/.ipynb_checkpoints/testbench-checkpoint.v,Verilog,13.1,False,testbench
+RTL004784,SHA256-Accelerator-Hardware,testbench_mod-checkpoint.v,testbench_mod-checkpoint,.v,SHACORE_UNROLLED_PIPELINED/.ipynb_checkpoints/testbench_mod-checkpoint.v,Verilog,4.88,False,testbench
+RTL004785,SHA256-Accelerator-Hardware,testbench_wb-checkpoint.v,testbench_wb-checkpoint,.v,SHACORE_UNROLLED_PIPELINED/.ipynb_checkpoints/testbench_wb-checkpoint.v,Verilog,6.37,False,testbench
+RTL004787,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/dhrystone/testbench.v,Verilog,2.92,False,testbench
+RTL004788,SHA256-Accelerator-Hardware,testbench_nola.v,testbench_nola,.v,SHACORE_UNROLLED_PIPELINED/dhrystone/testbench_nola.v,Verilog,2.09,False,testbench
+RTL004791,SHA256-Accelerator-Hardware,hx8kdemo_tb.v,hx8kdemo_tb,.v,SHACORE_UNROLLED_PIPELINED/picosoc/hx8kdemo_tb.v,Verilog,2.5,False,testbench
+RTL004794,SHA256-Accelerator-Hardware,icebreaker_tb.v,icebreaker_tb,.v,SHACORE_UNROLLED_PIPELINED/picosoc/icebreaker_tb.v,Verilog,2.93,False,testbench
+RTL004798,SHA256-Accelerator-Hardware,spiflash_tb.v,spiflash_tb,.v,SHACORE_UNROLLED_PIPELINED/picosoc/spiflash_tb.v,Verilog,7.97,False,testbench
+RTL004800,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/csmith/testbench.v,Verilog,2.2,False,testbench
+RTL004801,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/cxxdemo/testbench.v,Verilog,2.92,False,testbench
+RTL004803,SHA256-Accelerator-Hardware,example_tb.v,example_tb,.v,SHACORE_UNROLLED_PIPELINED/scripts/icestorm/example_tb.v,Verilog,0.53,False,testbench
+RTL004804,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/presyn/testbench.v,Verilog,1.85,False,testbench
+RTL004807,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE_UNROLLED_PIPELINED/scripts/quartus/system_tb.v,Verilog,0.67,False,testbench
+RTL004809,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/romload/testbench.v,Verilog,3.67,False,testbench
+RTL004818,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/tomthumbtg/testbench.v,Verilog,1.89,False,testbench
+RTL004819,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/scripts/torture/testbench.v,Verilog,3.52,False,testbench
+RTL004822,SHA256-Accelerator-Hardware,system_tb.v,system_tb,.v,SHACORE_UNROLLED_PIPELINED/scripts/vivado/system_tb.v,Verilog,0.67,False,testbench
+RTL004827,SHA256-Accelerator-Hardware,testbench.v,testbench,.v,SHACORE_UNROLLED_PIPELINED/testbench.v,Verilog,13.1,False,testbench
+RTL004828,SHA256-Accelerator-Hardware,testbench_ez.v,testbench_ez,.v,SHACORE_UNROLLED_PIPELINED/testbench_ez.v,Verilog,2.35,False,testbench
+RTL004829,SHA256-Accelerator-Hardware,testbench_mod.v,testbench_mod,.v,SHACORE_UNROLLED_PIPELINED/testbench_mod.v,Verilog,4.88,False,testbench
+RTL004830,SHA256-Accelerator-Hardware,testbench_wb.v,testbench_wb,.v,SHACORE_UNROLLED_PIPELINED/testbench_wb.v,Verilog,6.37,False,testbench
+RTL004839,TinyCoDesign,tb_tcd_dot_core.v,tb_tcd_dot_core,.v,hw/sim/tb_tcd_dot_core.v,Verilog,3.24,False,ignored_directory
+RTL004840,TinyCoDesign,tb_tcd_packet.v,tb_tcd_packet,.v,hw/sim/tb_tcd_packet.v,Verilog,3.29,False,ignored_directory
+RTL004841,TinyCoDesign,tb_tcd_system.v,tb_tcd_system,.v,hw/sim/tb_tcd_system.v,Verilog,6.19,False,ignored_directory
+RTL004842,TinyCoDesign,tb_tcd_top.v,tb_tcd_top,.v,hw/sim/tb_tcd_top.v,Verilog,6.75,False,ignored_directory
+RTL004843,TinyCoDesign,tb_uart_loopback.v,tb_uart_loopback,.v,hw/sim/tb_uart_loopback.v,Verilog,1.02,False,ignored_directory
+RTL004844,Transformer-Accelerator-Based-on-FPGA,Softmax_top_tb.sv,Softmax_top_tb,.sv,In Progress/sim/Softmax_top_tb.sv,SystemVerilog,6.08,False,ignored_directory
+RTL004845,Transformer-Accelerator-Based-on-FPGA,gelu_tb.sv,gelu_tb,.sv,In Progress/sim/gelu_tb.sv,SystemVerilog,2.27,False,ignored_directory
+RTL004857,Transformer-Accelerator-Based-on-FPGA,MM_Ultra_tb.sv,MM_Ultra_tb,.sv,sim/MM_Ultra_tb.sv,SystemVerilog,11.51,False,ignored_directory
+RTL004920,USTC-RVSoC,tb_cpu.sv,tb_cpu,.sv,SIM-CPU/tb_cpu.sv,SystemVerilog,2.52,False,testbench
+RTL004921,USTC-RVSoC,tb_soc.sv,tb_soc,.sv,SIM-SoC/tb_soc.sv,SystemVerilog,0.73,False,testbench
+RTL004924,Verilog-RTL-Coding,ALU_tb.v,ALU_tb,.v,1.ALU/ALU_tb.v,Verilog,0.84,False,testbench
+RTL004926,Verilog-RTL-Coding,decoder_2x4_tb.v,decoder_2x4_tb,.v,10.DECODER_2X4/decoder_2x4_tb.v,Verilog,0.77,False,testbench
+RTL004928,Verilog-RTL-Coding,decoder_fa_tb.v,decoder_fa_tb,.v,11.DECODER_FA/decoder_fa_tb.v,Verilog,0.75,False,testbench
+RTL004930,Verilog-RTL-Coding,demux_1x8_tb.v,demux_1x8_tb,.v,12.DEMUX_1X8/demux_1x8_tb.v,Verilog,0.76,False,testbench
+RTL004932,Verilog-RTL-Coding,demux_1x32_tb.v,demux_1x32_tb,.v,13.DEMUX_1X32/demux_1x32_tb.v,Verilog,0.76,False,testbench
+RTL004934,Verilog-RTL-Coding,down_counter_tb.v,down_counter_tb,.v,14.DOWN_COUNTER/down_counter_tb.v,Verilog,0.82,False,testbench
+RTL004936,Verilog-RTL-Coding,single_port_ram_tb.v,single_port_ram_tb,.v,15.SINGLE_PORT_RAM/single_port_ram_tb.v,Verilog,0.98,False,testbench
+RTL004938,Verilog-RTL-Coding,dual_port_ram_tb.v,dual_port_ram_tb,.v,16.DUAL_PORT_RAM/dual_port_ram_tb.v,Verilog,1.03,False,testbench
+RTL004940,Verilog-RTL-Coding,fifo_tb.v,fifo_tb,.v,17.FIFO/fifo_tb.v,Verilog,1.72,False,testbench
+RTL004942,Verilog-RTL-Coding,frequency_divider_tb.v,frequency_divider_tb,.v,18.FREQUENCY_DIVIDER/frequency_divider_tb.v,Verilog,0.81,False,testbench
+RTL004944,Verilog-RTL-Coding,full_substractor_tb.v,full_substractor_tb,.v,19.FULL_SUBSTRACTOR/full_substractor_tb.v,Verilog,0.83,False,testbench
+RTL004946,Verilog-RTL-Coding,bcd_adder_tb.v,bcd_adder_tb,.v,2.BCD_ADDER/bcd_adder_tb.v,Verilog,0.81,False,testbench
+RTL004948,Verilog-RTL-Coding,gray_2_bin_tb.v,gray_2_bin_tb,.v,20.GRAY_2_BIN/gray_2_bin_tb.v,Verilog,0.73,False,testbench
+RTL004950,Verilog-RTL-Coding,jk_ff_tb.v,jk_ff_tb,.v,21.JK_FF/jk_ff_tb.v,Verilog,0.96,False,testbench
+RTL004952,Verilog-RTL-Coding,johnson_tb.v,johnson_tb,.v,22.JOHNSON_COUNTER/johnson_tb.v,Verilog,0.71,False,testbench
+RTL004954,Verilog-RTL-Coding,L_R_shift_tb.v,L_R_shift_tb,.v,23.L_R_SHIFT/L_R_shift_tb.v,Verilog,0.9,False,testbench
+RTL004956,Verilog-RTL-Coding,moore_1010_detector_tb.v,moore_1010_detector_tb,.v,24.MORRE_1010_DETECTOR/moore_1010_detector_tb.v,Verilog,0.98,False,testbench
+RTL004958,Verilog-RTL-Coding,multiplier_4bit_tb.v,multiplier_4bit_tb,.v,25.MULTIPLIER_4BIT/multiplier_4bit_tb.v,Verilog,0.7,False,testbench
+RTL004960,Verilog-RTL-Coding,mux_4x1_tb.v,mux_4x1_tb,.v,26.MUX_4X1/mux_4x1_tb.v,Verilog,0.74,False,testbench
+RTL004962,Verilog-RTL-Coding,mux_8x1_tb.v,mux_8x1_tb,.v,27.MUX_8X1/mux_8x1_tb.v,Verilog,0.78,False,testbench
+RTL004964,Verilog-RTL-Coding,mux_64x1_tb.v,mux_64x1_tb,.v,28.MUX_64X1/mux_64x1_tb.v,Verilog,0.77,False,testbench
+RTL004966,Verilog-RTL-Coding,Nbit_comparator_tb.v,Nbit_comparator_tb,.v,29.NBIT_COMPARATOR/Nbit_comparator_tb.v,Verilog,0.88,False,testbench
+RTL004968,Verilog-RTL-Coding,bcd_counter_tb.v,bcd_counter_tb,.v,3.BCD_COUNTER/bcd_counter_tb.v,Verilog,0.69,False,testbench
+RTL004970,Verilog-RTL-Coding,odd_parity_generator_tb.v,odd_parity_generator_tb,.v,30.ODDPARITY_GENERATOR/odd_parity_generator_tb.v,Verilog,0.77,False,testbench
+RTL004972,Verilog-RTL-Coding,parity_bit_generator_tb.v,parity_bit_generator_tb,.v,31.PARITYBIT_GENERATOR/parity_bit_generator_tb.v,Verilog,0.84,False,testbench
+RTL004974,Verilog-RTL-Coding,PIPO_tb.v,PIPO_tb,.v,32.PIPO/PIPO_tb.v,Verilog,0.82,False,testbench
+RTL004976,Verilog-RTL-Coding,PISO_tb.v,PISO_tb,.v,33.PISO/PISO_tb.v,Verilog,0.0,False,testbench
+RTL004978,Verilog-RTL-Coding,p_encoder_tb.v,p_encoder_tb,.v,34.PRIORITY_ENCODER/p_encoder_tb.v,Verilog,0.73,False,testbench
+RTL004980,Verilog-RTL-Coding,RAM_32bit_tb.v,RAM_32bit_tb,.v,35.RAM_32BIT/RAM_32bit_tb.v,Verilog,0.99,False,testbench
+RTL004982,Verilog-RTL-Coding,ring_counter_tb.v,ring_counter_tb,.v,36.RING_COUNTER/ring_counter_tb.v,Verilog,0.71,False,testbench
+RTL004984,Verilog-RTL-Coding,ripple_carry_adder_tb.v,ripple_carry_adder_tb,.v,37.RIPPLE_CARD_ADDER/ripple_carry_adder_tb.v,Verilog,1.27,False,testbench
+RTL004986,Verilog-RTL-Coding,SIPO_tb.v,SIPO_tb,.v,38.SIPO/SIPO_tb.v,Verilog,0.85,False,testbench
+RTL004988,Verilog-RTL-Coding,SISO_tb.v,SISO_tb,.v,39.SISO/SISO_tb.v,Verilog,0.84,False,testbench
+RTL004990,Verilog-RTL-Coding,bi_dir_shift_reg_tb.v,bi_dir_shift_reg_tb,.v,4.BIDIR_SHIFTREGISTER/bi_dir_shift_reg_tb.v,Verilog,0.91,False,testbench
+RTL004992,Verilog-RTL-Coding,sr_ff_tb.v,sr_ff_tb,.v,40.SR_FF/sr_ff_tb.v,Verilog,0.96,False,testbench
+RTL004994,Verilog-RTL-Coding,t_ff_tb.v,t_ff_tb,.v,41.T_FF/t_ff_tb.v,Verilog,0.8,False,testbench
+RTL004996,Verilog-RTL-Coding,tri_buffer_tb.v,tri_buffer_tb,.v,42.TRI_BUFFER/tri_buffer_tb.v,Verilog,0.75,False,testbench
+RTL004998,Verilog-RTL-Coding,up_counter_tb.v,up_counter_tb,.v,43.UP_COUNTER/up_counter_tb.v,Verilog,0.81,False,testbench
+RTL005000,Verilog-RTL-Coding,up_down_counter_tb.v,up_down_counter_tb,.v,44.UP_DOWN_COUNTER/up_down_counter_tb.v,Verilog,0.96,False,testbench
+RTL005002,Verilog-RTL-Coding,bin_2_gray_tb.v,bin_2_gray_tb,.v,5.BIN_2_GRAY/bin_2_gray_tb.v,Verilog,0.73,False,testbench
+RTL005004,Verilog-RTL-Coding,bin_to_onehot_tb.v,bin_to_onehot_tb,.v,6.BIN_TO_ONEHOT/bin_to_onehot_tb.v,Verilog,0.74,False,testbench
+RTL005006,Verilog-RTL-Coding,clk_div_tb.v,clk_div_tb,.v,7.CLK_DIVIDER/clk_div_tb.v,Verilog,0.77,False,testbench
+RTL005008,Verilog-RTL-Coding,cmos_inv_tb.v,cmos_inv_tb,.v,8.CMOS_INV/cmos_inv_tb.v,Verilog,0.7,False,testbench
+RTL005010,Verilog-RTL-Coding,d_ff_tb.v,d_ff_tb,.v,9.D_FF/d_ff_tb.v,Verilog,0.8,False,testbench
+RTL005013,Verilog-RTL-Coding,frequency_divider_tb.v,frequency_divider_tb,.v,Day1 frequency_divider/frequency_divider_tb.v,Verilog,0.81,False,testbench
+RTL005051,Verilog-RTL-Coding,sync_fifo_tb.v,sync_fifo_tb,.v,sync_fifo/sync_fifo_tb.v,Verilog,1.23,False,testbench
+RTL005070,XCryptCore,tb_aes128_core.v,tb_aes128_core,.v,ciphers/aes/tb_aes128_core.v,Verilog,3.72,False,testbench
+RTL005071,XCryptCore,tb_aes192_core.v,tb_aes192_core,.v,ciphers/aes/tb_aes192_core.v,Verilog,3.76,False,testbench
+RTL005072,XCryptCore,tb_aes256_core.v,tb_aes256_core,.v,ciphers/aes/tb_aes256_core.v,Verilog,3.79,False,testbench
+RTL005082,XCryptCore,tb_cast5_core.v,tb_cast5_core,.v,ciphers/cast5/tb_cast5_core.v,Verilog,3.85,False,testbench
+RTL005094,XCryptCore,tb_des_core.v,tb_des_core,.v,ciphers/des/tb_des_core.v,Verilog,3.62,False,testbench
+RTL005099,XCryptCore,tb_rc5_core.v,tb_rc5_core,.v,ciphers/rc5/tb_rc5_core.v,Verilog,3.77,False,testbench
+RTL005104,XCryptCore,tb_rc6_core.v,tb_rc6_core,.v,ciphers/rc6/tb_rc6_core.v,Verilog,3.93,False,testbench
+RTL005110,XCryptCore,tb_sm4_core.v,tb_sm4_core,.v,ciphers/sm4/tb_sm4_core.v,Verilog,3.7,False,testbench
+RTL005111,XCryptCore,tb_xtea_core.v,tb_xtea_core,.v,ciphers/xtea/tb_xtea_core.v,Verilog,4.4,False,testbench
+RTL005116,XCryptCore,tb_sha1_core.v,tb_sha1_core,.v,hashes/sha1/tb_sha1_core.v,Verilog,3.76,False,testbench
+RTL005119,XCryptCore,tb_sha224_core.v,tb_sha224_core,.v,hashes/sha2/tb_sha224_core.v,Verilog,4.07,False,testbench
+RTL005120,XCryptCore,tb_sha256_core.v,tb_sha256_core,.v,hashes/sha2/tb_sha256_core.v,Verilog,3.35,False,testbench
+RTL005121,XCryptCore,tb_sha384_core.v,tb_sha384_core,.v,hashes/sha2/tb_sha384_core.v,Verilog,4.85,False,testbench
+RTL005122,XCryptCore,tb_sha512_224_core.v,tb_sha512_224_core,.v,hashes/sha2/tb_sha512_224_core.v,Verilog,4.6,False,testbench
+RTL005123,XCryptCore,tb_sha512_256_core.v,tb_sha512_256_core,.v,hashes/sha2/tb_sha512_256_core.v,Verilog,4.64,False,testbench
+RTL005124,XCryptCore,tb_sha512_core.v,tb_sha512_core,.v,hashes/sha2/tb_sha512_core.v,Verilog,5.05,False,testbench
+RTL005126,XCryptCore,tb_sha3_224.v,tb_sha3_224,.v,hashes/sha3/tb_sha3_224.v,Verilog,6.62,False,testbench
+RTL005127,XCryptCore,tb_sha3_256.v,tb_sha3_256,.v,hashes/sha3/tb_sha3_256.v,Verilog,6.66,False,testbench
+RTL005128,XCryptCore,tb_sha3_384.v,tb_sha3_384,.v,hashes/sha3/tb_sha3_384.v,Verilog,6.71,False,testbench
+RTL005129,XCryptCore,tb_sha3_512.v,tb_sha3_512,.v,hashes/sha3/tb_sha3_512.v,Verilog,6.06,False,testbench
+RTL005131,XCryptCore,tb_sm3_core.v,tb_sm3_core,.v,hashes/sm3/tb_sm3_core.v,Verilog,5.98,False,testbench
+RTL005132,XCryptCore,tb_tiger_core.v,tb_tiger_core,.v,hashes/tiger/tb_tiger_core.v,Verilog,4.97,False,testbench
+RTL005140,XCryptCore,tb_whirl_core.v,tb_whirl_core,.v,hashes/whirl/tb_whirl_core.v,Verilog,6.6,False,testbench
+RTL005143,XCryptCore,tb_zuc_core.v,tb_zuc_core,.v,stream/zuc/tb_zuc_core.v,Verilog,2.62,False,testbench
+RTL005156,ZipCPU,zipmmu_tb.v,zipmmu_tb,.v,bench/rtl/zipmmu_tb.v,Verilog,6.41,False,testbench
+RTL005208,ZipCPU,addrdecode.v,addrdecode,.v,sim/rtl/addrdecode.v,Verilog,10.83,False,ignored_directory
+RTL005209,ZipCPU,axi2axilite.v,axi2axilite,.v,sim/rtl/axi2axilite.v,Verilog,32.22,False,ignored_directory
+RTL005210,ZipCPU,axi2axilsub.v,axi2axilsub,.v,sim/rtl/axi2axilsub.v,Verilog,53.1,False,ignored_directory
+RTL005211,ZipCPU,axi_addr.v,axi_addr,.v,sim/rtl/axi_addr.v,Verilog,7.03,False,ignored_directory
+RTL005212,ZipCPU,axi_tb.v,axi_tb,.v,sim/rtl/axi_tb.v,Verilog,86.45,False,ignored_directory
+RTL005213,ZipCPU,axiempty.v,axiempty,.v,sim/rtl/axiempty.v,Verilog,12.36,False,ignored_directory
+RTL005214,ZipCPU,axilcon.v,axilcon,.v,sim/rtl/axilcon.v,Verilog,8.82,False,ignored_directory
+RTL005215,ZipCPU,axilempty.v,axilempty,.v,sim/rtl/axilempty.v,Verilog,9.67,False,ignored_directory
+RTL005216,ZipCPU,axilite2axi.v,axilite2axi,.v,sim/rtl/axilite2axi.v,Verilog,11.82,False,ignored_directory
+RTL005217,ZipCPU,axilscope.v,axilscope,.v,sim/rtl/axilscope.v,Verilog,32.55,False,ignored_directory
+RTL005218,ZipCPU,axilxbar.v,axilxbar,.v,sim/rtl/axilxbar.v,Verilog,61.2,False,ignored_directory
+RTL005219,ZipCPU,axixbar.v,axixbar,.v,sim/rtl/axixbar.v,Verilog,72.91,False,ignored_directory
+RTL005220,ZipCPU,demofull.v,demofull,.v,sim/rtl/demofull.v,Verilog,33.61,False,ignored_directory
+RTL005221,ZipCPU,iscachable.v,iscachable,.v,sim/rtl/iscachable.v,Verilog,2.24,False,ignored_directory
+RTL005222,ZipCPU,memdev.v,memdev,.v,sim/rtl/memdev.v,Verilog,8.05,False,ignored_directory
+RTL005223,ZipCPU,wb_tb.v,wb_tb,.v,sim/rtl/wb_tb.v,Verilog,47.75,False,ignored_directory
+RTL005224,ZipCPU,wbdown.v,wbdown,.v,sim/rtl/wbdown.v,Verilog,27.83,False,ignored_directory
+RTL005225,ZipCPU,wbscope.v,wbscope,.v,sim/rtl/wbscope.v,Verilog,17.61,False,ignored_directory
+RTL005226,ZipCPU,wbxbar.v,wbxbar,.v,sim/rtl/wbxbar.v,Verilog,46.42,False,ignored_directory
+RTL005227,ZipCPU,zipdma_check.v,zipdma_check,.v,sim/rtl/zipdma_check.v,Verilog,5.15,False,ignored_directory
+RTL005235,aes,tb_aes.v,tb_aes,.v,src/tb/tb_aes.v,Verilog,19.45,False,testbench
+RTL005236,aes,tb_aes_core.v,tb_aes_core,.v,src/tb/tb_aes_core.v,Verilog,17.84,False,testbench
+RTL005237,aes,tb_aes_decipher_block.v,tb_aes_decipher_block,.v,src/tb/tb_aes_decipher_block.v,Verilog,14.71,False,testbench
+RTL005238,aes,tb_aes_encipher_block.v,tb_aes_encipher_block,.v,src/tb/tb_aes_encipher_block.v,Verilog,18.91,False,testbench
+RTL005239,aes,tb_aes_key_mem.v,tb_aes_key_mem,.v,src/tb/tb_aes_key_mem.v,Verilog,25.45,False,testbench
+RTL005300,airisc_core_complex,airi5c_spi_tb.v,airi5c_spi_tb,.v,src/modules/airi5c_spi/tb/airi5c_spi_tb.v,Verilog,8.64,False,testbench
+RTL005307,airisc_core_complex,airi5c_uart_tb.v,airi5c_uart_tb,.v,src/modules/airi5c_uart/tb/airi5c_uart_tb.v,Verilog,14.11,False,testbench
+RTL005309,airisc_core_complex,airi5c_top_tb.v,airi5c_top_tb,.v,tb/airi5c_top_tb.v,Verilog,10.55,False,testbench
+RTL005310,airisc_core_complex,airi5c_top_tb_verilator.v,airi5c_top_tb_verilator,.v,tb/airi5c_top_tb_verilator.v,Verilog,2.84,False,testbench
+RTL005337,axi-crossbar,axicb_crossbar_top_testbench.sv,axicb_crossbar_top_testbench,.sv,test/svut/src/axicb_crossbar_top_testbench.sv,SystemVerilog,60.66,False,testbench
+RTL005338,axi-crossbar,axicb_pipeline_testbench.sv,axicb_pipeline_testbench,.sv,test/svut/src/axicb_pipeline_testbench.sv,SystemVerilog,4.27,False,testbench
+RTL005534,basic_rv32s,ALU_Controller_tb.v,ALU_Controller_tb,.v,testbenches/ALU_Controller_tb.v,Verilog,7.54,False,testbench
+RTL005535,basic_rv32s,ALU_tb.v,ALU_tb,.v,testbenches/ALU_tb.v,Verilog,7.19,False,testbench
+RTL005536,basic_rv32s,Branch_Logic_tb.v,Branch_Logic_tb,.v,testbenches/Branch_Logic_tb.v,Verilog,9.62,False,testbench
+RTL005537,basic_rv32s,Branch_Predictor_tb.v,Branch_Predictor_tb,.v,testbenches/Branch_Predictor_tb.v,Verilog,3.66,False,testbench
+RTL005538,basic_rv32s,Byte_Enable_Logic_tb.v,Byte_Enable_Logic_tb,.v,testbenches/Byte_Enable_Logic_tb.v,Verilog,10.6,False,testbench
+RTL005539,basic_rv32s,CSR_File_tb.v,CSR_File_tb,.v,testbenches/CSR_File_tb.v,Verilog,8.92,False,testbench
+RTL005540,basic_rv32s,Control_Unit_PCCop_tb.v,Control_Unit_PCCop_tb,.v,testbenches/Control_Unit_PCCop_tb.v,Verilog,23.32,False,testbench
+RTL005541,basic_rv32s,Control_Unit_tb.v,Control_Unit_tb,.v,testbenches/Control_Unit_tb.v,Verilog,22.47,False,testbench
+RTL005542,basic_rv32s,Data_Cache_tb.v,Data_Cache_tb,.v,testbenches/Data_Cache_tb.v,Verilog,5.77,False,testbench
+RTL005543,basic_rv32s,Data_Memory_For_Cache_tb.v,Data_Memory_For_Cache_tb,.v,testbenches/Data_Memory_For_Cache_tb.v,Verilog,4.38,False,testbench
+RTL005544,basic_rv32s,Data_Memory_tb.v,Data_Memory_tb,.v,testbenches/Data_Memory_tb.v,Verilog,12.12,False,testbench
+RTL005545,basic_rv32s,EX_MEM_Register_tb.v,EX_MEM_Register_tb,.v,testbenches/EX_MEM_Register_tb.v,Verilog,10.5,False,testbench
+RTL005546,basic_rv32s,Exception_Detector_tb.v,Exception_Detector_tb,.v,testbenches/Exception_Detector_tb.v,Verilog,3.12,False,testbench
+RTL005547,basic_rv32s,Forward_Unit_tb.v,Forward_Unit_tb,.v,testbenches/Forward_Unit_tb.v,Verilog,3.3,False,testbench
+RTL005548,basic_rv32s,Hazard_Unit_tb.v,Hazard_Unit_tb,.v,testbenches/Hazard_Unit_tb.v,Verilog,4.14,False,testbench
+RTL005549,basic_rv32s,ID_EX_Register_tb.v,ID_EX_Register_tb,.v,testbenches/ID_EX_Register_tb.v,Verilog,15.13,False,testbench
+RTL005550,basic_rv32s,IF_ID_Register_tb.v,IF_ID_Register_tb,.v,testbenches/IF_ID_Register_tb.v,Verilog,3.99,False,testbench
+RTL005551,basic_rv32s,Immediate_Generator_tb.v,Immediate_Generator_tb,.v,testbenches/Immediate_Generator_tb.v,Verilog,3.55,False,testbench
+RTL005552,basic_rv32s,Instruction_Cache_tb.v,Instruction_Cache_tb,.v,testbenches/Instruction_Cache_tb.v,Verilog,2.77,False,testbench
+RTL005553,basic_rv32s,Instruction_Decoder_tb.v,Instruction_Decoder_tb,.v,testbenches/Instruction_Decoder_tb.v,Verilog,3.27,False,testbench
+RTL005554,basic_rv32s,Instruction_Memory_tb.v,Instruction_Memory_tb,.v,testbenches/Instruction_Memory_tb.v,Verilog,10.47,False,testbench
+RTL005555,basic_rv32s,MEM_WB_Register_tb.v,MEM_WB_Register_tb,.v,testbenches/MEM_WB_Register_tb.v,Verilog,9.4,False,testbench
+RTL005556,basic_rv32s,MMIO_Interface_tb.v,MMIO_Interface_tb,.v,testbenches/MMIO_Interface_tb.v,Verilog,8.85,False,testbench
+RTL005557,basic_rv32s,PC_Aligner_tb.v,PC_Aligner_tb,.v,testbenches/PC_Aligner_tb.v,Verilog,0.92,False,testbench
+RTL005558,basic_rv32s,PC_Controller_PCCop_tb.v,PC_Controller_PCCop_tb,.v,testbenches/PC_Controller_PCCop_tb.v,Verilog,3.71,False,testbench
+RTL005559,basic_rv32s,PC_Controller_tb.v,PC_Controller_tb,.v,testbenches/PC_Controller_tb.v,Verilog,2.68,False,testbench
+RTL005560,basic_rv32s,PC_Plus_4_tb.v,PC_Plus_4_tb,.v,testbenches/PC_Plus_4_tb.v,Verilog,0.65,False,testbench
+RTL005561,basic_rv32s,Program_Counter_tb.v,Program_Counter_tb,.v,testbenches/Program_Counter_tb.v,Verilog,1.46,False,testbench
+RTL005562,basic_rv32s,RV32I37F_tb.v,RV32I37F_tb,.v,testbenches/RV32I37F_tb.v,Verilog,0.73,False,testbench
+RTL005563,basic_rv32s,RV32I46F_5SP_MMIO_tb.v,RV32I46F_5SP_MMIO_tb,.v,testbenches/RV32I46F_5SP_MMIO_tb.v,Verilog,1.09,False,testbench
+RTL005564,basic_rv32s,RV32I46F_5SP_tb.v,RV32I46F_5SP_tb,.v,testbenches/RV32I46F_5SP_tb.v,Verilog,0.67,False,testbench
+RTL005565,basic_rv32s,RV32I46F_tb.v,RV32I46F_tb,.v,testbenches/RV32I46F_tb.v,Verilog,0.65,False,testbench
+RTL005566,basic_rv32s,Register_File_tb.v,Register_File_tb,.v,testbenches/Register_File_tb.v,Verilog,2.67,False,testbench
+RTL005567,basic_rv32s,Trap_Controller_tb.v,Trap_Controller_tb,.v,testbenches/Trap_Controller_tb.v,Verilog,4.18,False,testbench
+RTL005569,basic_verilog,arbiter_tb.v,arbiter_tb,.v,Advanced Synthesis Cookbook/arbitration/arbiter_tb.v,Verilog,3.12,False,testbench
+RTL005571,basic_verilog,bitscan_tb.v,bitscan_tb,.v,Advanced Synthesis Cookbook/arbitration/bitscan_tb.v,Verilog,2.04,False,testbench
+RTL005574,basic_verilog,tx_4channel_arbiter_tb.sv,tx_4channel_arbiter_tb,.sv,Advanced Synthesis Cookbook/arbitration/tx_4channel_arbiter_tb.sv,SystemVerilog,7.75,False,testbench
+RTL005578,basic_verilog,adder_tree_tb.v,adder_tree_tb,.v,Advanced Synthesis Cookbook/arithmetic/adder_tree_tb.v,Verilog,2.94,False,testbench
+RTL005583,basic_verilog,cordic_tb.v,cordic_tb,.v,Advanced Synthesis Cookbook/arithmetic/cordic_tb.v,Verilog,4.64,False,testbench
+RTL005585,basic_verilog,divider_tb.v,divider_tb,.v,Advanced Synthesis Cookbook/arithmetic/divider_tb.v,Verilog,3.68,False,testbench
+RTL005587,basic_verilog,double_addsub_tb.v,double_addsub_tb,.v,Advanced Synthesis Cookbook/arithmetic/double_addsub_tb.v,Verilog,2.29,False,testbench
+RTL005590,basic_verilog,karatsuba_mult_tb.v,karatsuba_mult_tb,.v,Advanced Synthesis Cookbook/arithmetic/karatsuba_mult_tb.v,Verilog,2.51,False,testbench
+RTL005592,basic_verilog,lc_mult_signed_tb.v,lc_mult_signed_tb,.v,Advanced Synthesis Cookbook/arithmetic/lc_mult_signed_tb.v,Verilog,4.19,False,testbench
+RTL005595,basic_verilog,mult_shift_tb.v,mult_shift_tb,.v,Advanced Synthesis Cookbook/arithmetic/mult_shift_tb.v,Verilog,8.03,False,testbench
+RTL005598,basic_verilog,pipeline_add_tb.v,pipeline_add_tb,.v,Advanced Synthesis Cookbook/arithmetic/pipeline_add_tb.v,Verilog,2.63,False,testbench
+RTL005614,basic_verilog,encoder_tb.v,encoder_tb,.v,Advanced Synthesis Cookbook/communication/encoder_tb.v,Verilog,6.22,False,testbench
+RTL005618,basic_verilog,gearbox_20_67_tb.sv,gearbox_20_67_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_20_67_tb.sv,SystemVerilog,2.13,False,testbench
+RTL005621,basic_verilog,gearbox_32_66_tb.sv,gearbox_32_66_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_32_66_tb.sv,SystemVerilog,3.63,False,testbench
+RTL005623,basic_verilog,gearbox_33_32_tb.sv,gearbox_33_32_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_33_32_tb.sv,SystemVerilog,2.21,False,testbench
+RTL005626,basic_verilog,gearbox_40_67_tb.sv,gearbox_40_67_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_40_67_tb.sv,SystemVerilog,4.01,False,testbench
+RTL005628,basic_verilog,gearbox_66_20_tb.sv,gearbox_66_20_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_66_20_tb.sv,SystemVerilog,2.76,False,testbench
+RTL005630,basic_verilog,gearbox_66_32_tb.sv,gearbox_66_32_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_66_32_tb.sv,SystemVerilog,3.78,False,testbench
+RTL005632,basic_verilog,gearbox_66_40_tb.sv,gearbox_66_40_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_66_40_tb.sv,SystemVerilog,2.64,False,testbench
+RTL005634,basic_verilog,gearbox_67_20_tb.sv,gearbox_67_20_tb,.sv,Advanced Synthesis Cookbook/communication/gearbox_67_20_tb.sv,SystemVerilog,3.64,False,testbench
+RTL005638,basic_verilog,scrambler_tb.sv,scrambler_tb,.sv,Advanced Synthesis Cookbook/communication/scrambler_tb.sv,SystemVerilog,3.46,False,testbench
+RTL005642,basic_verilog,uart_tb.v,uart_tb,.v,Advanced Synthesis Cookbook/communication/uart_tb.v,Verilog,2.7,False,testbench
+RTL005645,basic_verilog,x4_encoder_tb.sv,x4_encoder_tb,.sv,Advanced Synthesis Cookbook/communication/x4_encoder_tb.sv,SystemVerilog,5.01,False,testbench
+RTL005648,basic_verilog,carry_and_tb.v,carry_and_tb,.v,Advanced Synthesis Cookbook/compare/carry_and_tb.v,Verilog,2.24,False,testbench
+RTL005649,basic_verilog,compare_tb.v,compare_tb,.v,Advanced Synthesis Cookbook/compare/compare_tb.v,Verilog,5.33,False,testbench
+RTL005651,basic_verilog,equal_const_tb.v,equal_const_tb,.v,Advanced Synthesis Cookbook/compare/equal_const_tb.v,Verilog,2.05,False,testbench
+RTL005653,basic_verilog,in_range_tb.v,in_range_tb,.v,Advanced Synthesis Cookbook/compare/in_range_tb.v,Verilog,2.44,False,testbench
+RTL005656,basic_verilog,match_or_inv_tb.v,match_or_inv_tb,.v,Advanced Synthesis Cookbook/compare/match_or_inv_tb.v,Verilog,2.0,False,testbench
+RTL005658,basic_verilog,min_max_tb.v,min_max_tb,.v,Advanced Synthesis Cookbook/compare/min_max_tb.v,Verilog,2.55,False,testbench
+RTL005661,basic_verilog,pipe_equal_tb.v,pipe_equal_tb,.v,Advanced Synthesis Cookbook/compare/pipe_equal_tb.v,Verilog,2.27,False,testbench
+RTL005666,basic_verilog,counter_tb.v,counter_tb,.v,Advanced Synthesis Cookbook/counter/counter_tb.v,Verilog,4.21,False,testbench
+RTL005669,basic_verilog,gray_cntr_tb.v,gray_cntr_tb,.v,Advanced Synthesis Cookbook/counter/gray_cntr_tb.v,Verilog,3.19,False,testbench
+RTL005671,basic_verilog,seconds_counter_tb.v,seconds_counter_tb,.v,Advanced Synthesis Cookbook/counter/seconds_counter_tb.v,Verilog,2.2,False,testbench
+RTL005673,basic_verilog,system_timer_tb.v,system_timer_tb,.v,Advanced Synthesis Cookbook/counter/system_timer_tb.v,Verilog,2.16,False,testbench
+RTL005683,basic_verilog,crc32_128_tb.v,crc32_128_tb,.v,Advanced Synthesis Cookbook/crc/crc32_128_tb.v,Verilog,3.34,False,testbench
+RTL005703,basic_verilog,crc32_tb.v,crc32_tb,.v,Advanced Synthesis Cookbook/crc/crc32_tb.v,Verilog,3.84,False,testbench
+RTL005707,basic_verilog,crc32c_tb.sv,crc32c_tb,.sv,Advanced Synthesis Cookbook/crc/crc32c_tb.sv,SystemVerilog,3.7,False,testbench
+RTL005713,basic_verilog,aes_128_tb.v,aes_128_tb,.v,Advanced Synthesis Cookbook/crypto/aes/aes_128_tb.v,Verilog,4.76,False,testbench
+RTL005715,basic_verilog,aes_256_tb.v,aes_256_tb,.v,Advanced Synthesis Cookbook/crypto/aes/aes_256_tb.v,Verilog,5.7,False,testbench
+RTL005719,basic_verilog,evolve_key_256_tb.v,evolve_key_256_tb,.v,Advanced Synthesis Cookbook/crypto/aes/evolve_key_256_tb.v,Verilog,2.49,False,testbench
+RTL005724,basic_verilog,des_tb.v,des_tb,.v,Advanced Synthesis Cookbook/crypto/des/des_tb.v,Verilog,6.91,False,testbench
+RTL005729,basic_verilog,rc4_tb.v,rc4_tb,.v,Advanced Synthesis Cookbook/crypto/rc4/rc4_tb.v,Verilog,3.58,False,testbench
+RTL005731,basic_verilog,delay_reg_tb.v,delay_reg_tb,.v,Advanced Synthesis Cookbook/crypto/sha/delay_reg_tb.v,Verilog,2.46,False,testbench
+RTL005732,basic_verilog,sha384_tb.v,sha384_tb,.v,Advanced Synthesis Cookbook/crypto/sha/sha384_tb.v,Verilog,3.85,False,testbench
+RTL005734,basic_verilog,sha512_tb.v,sha512_tb,.v,Advanced Synthesis Cookbook/crypto/sha/sha512_tb.v,Verilog,4.37,False,testbench
+RTL005736,basic_verilog,sha_padding_b_tb.v,sha_padding_b_tb,.v,Advanced Synthesis Cookbook/crypto/sha/sha_padding_b_tb.v,Verilog,3.2,False,testbench
+RTL005737,basic_verilog,sha_padding_c_tb.v,sha_padding_c_tb,.v,Advanced Synthesis Cookbook/crypto/sha/sha_padding_c_tb.v,Verilog,3.2,False,testbench
+RTL005738,basic_verilog,sha_padding_tb.v,sha_padding_tb,.v,Advanced Synthesis Cookbook/crypto/sha/sha_padding_tb.v,Verilog,3.17,False,testbench
+RTL005745,basic_verilog,quad_stream_grabber_tb.sv,quad_stream_grabber_tb,.sv,Advanced Synthesis Cookbook/debug/quad_stream_grabber_tb.sv,SystemVerilog,3.45,False,testbench
+RTL005747,basic_verilog,stream_grabber_tb.sv,stream_grabber_tb,.sv,Advanced Synthesis Cookbook/debug/stream_grabber_tb.sv,SystemVerilog,2.44,False,testbench
+RTL005751,basic_verilog,ecc_16bit_tb.v,ecc_16bit_tb,.v,Advanced Synthesis Cookbook/ecc/ecc_16bit_tb.v,Verilog,6.51,False,testbench
+RTL005753,basic_verilog,ecc_2bit_tb.v,ecc_2bit_tb,.v,Advanced Synthesis Cookbook/ecc/ecc_2bit_tb.v,Verilog,2.87,False,testbench
+RTL005754,basic_verilog,ecc_32bit_tb.v,ecc_32bit_tb,.v,Advanced Synthesis Cookbook/ecc/ecc_32bit_tb.v,Verilog,6.51,False,testbench
+RTL005755,basic_verilog,ecc_64bit_tb.v,ecc_64bit_tb,.v,Advanced Synthesis Cookbook/ecc/ecc_64bit_tb.v,Verilog,6.51,False,testbench
+RTL005756,basic_verilog,ecc_8bit_tb.v,ecc_8bit_tb,.v,Advanced Synthesis Cookbook/ecc/ecc_8bit_tb.v,Verilog,6.49,False,testbench
+RTL005765,basic_verilog,soft_ecc_ram_16bit_tb.v,soft_ecc_ram_16bit_tb,.v,Advanced Synthesis Cookbook/ecc/soft_ecc_ram_16bit_tb.v,Verilog,4.77,False,testbench
+RTL005767,basic_verilog,soft_ecc_ram_32bit_tb.v,soft_ecc_ram_32bit_tb,.v,Advanced Synthesis Cookbook/ecc/soft_ecc_ram_32bit_tb.v,Verilog,4.77,False,testbench
+RTL005769,basic_verilog,soft_ecc_ram_64bit_tb.v,soft_ecc_ram_64bit_tb,.v,Advanced Synthesis Cookbook/ecc/soft_ecc_ram_64bit_tb.v,Verilog,4.77,False,testbench
+RTL005772,basic_verilog,annex74_tb.sv,annex74_tb,.sv,Advanced Synthesis Cookbook/ethernet_fec/annex74_tb.sv,SystemVerilog,5.71,False,testbench
+RTL005811,basic_verilog,fec_tb.sv,fec_tb,.sv,Advanced Synthesis Cookbook/ethernet_fec/fec_tb.sv,SystemVerilog,4.2,False,testbench
+RTL005813,basic_verilog,pn2112_tb.sv,pn2112_tb,.sv,Advanced Synthesis Cookbook/ethernet_fec/pn2112_tb.sv,SystemVerilog,1.97,False,testbench
+RTL005816,basic_verilog,approx_fp_div_tb.v,approx_fp_div_tb,.v,Advanced Synthesis Cookbook/float/approx_fp_div_tb.v,Verilog,2.81,False,testbench
+RTL005818,basic_verilog,approx_fp_invsqrt_tb.v,approx_fp_invsqrt_tb,.v,Advanced Synthesis Cookbook/float/approx_fp_invsqrt_tb.v,Verilog,3.48,False,testbench
+RTL005820,basic_verilog,approx_fp_sqrt_tb.v,approx_fp_sqrt_tb,.v,Advanced Synthesis Cookbook/float/approx_fp_sqrt_tb.v,Verilog,8.6,False,testbench
+RTL005822,basic_verilog,fixed_to_float_tb.v,fixed_to_float_tb,.v,Advanced Synthesis Cookbook/float/fixed_to_float_tb.v,Verilog,4.2,False,testbench
+RTL005828,basic_verilog,crc32c_tb.sv,crc32c_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/crc32c_tb.sv,SystemVerilog,3.74,False,testbench
+RTL005834,basic_verilog,gearbox_20_67_tb.sv,gearbox_20_67_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/gearbox_20_67_tb.sv,SystemVerilog,2.16,False,testbench
+RTL005836,basic_verilog,gearbox_67_20_tb.sv,gearbox_67_20_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/gearbox_67_20_tb.sv,SystemVerilog,3.66,False,testbench
+RTL005839,basic_verilog,lane_rx_tb.sv,lane_rx_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/lane_rx_tb.sv,SystemVerilog,8.98,False,testbench
+RTL005840,basic_verilog,lane_tb.sv,lane_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/lane_tb.sv,SystemVerilog,3.55,False,testbench
+RTL005844,basic_verilog,scrambler_tb.sv,scrambler_tb,.sv,Advanced Synthesis Cookbook/interlaken_lane/scrambler_tb.sv,SystemVerilog,7.57,False,testbench
+RTL005854,basic_verilog,eight_to_one_tb.v,eight_to_one_tb,.v,Advanced Synthesis Cookbook/muxing/eight_to_one_tb.v,Verilog,2.02,False,testbench
+RTL005858,basic_verilog,pipelined_word_mux_tb.v,pipelined_word_mux_tb,.v,Advanced Synthesis Cookbook/muxing/pipelined_word_mux_tb.v,Verilog,3.34,False,testbench
+RTL005860,basic_verilog,priority_mux_tb.v,priority_mux_tb,.v,Advanced Synthesis Cookbook/muxing/priority_mux_tb.v,Verilog,2.05,False,testbench
+RTL005862,basic_verilog,shift_tb.v,shift_tb,.v,Advanced Synthesis Cookbook/muxing/shift_tb.v,Verilog,2.45,False,testbench
+RTL005865,basic_verilog,twenty_to_eight_tb.sv,twenty_to_eight_tb,.sv,Advanced Synthesis Cookbook/muxing/twenty_to_eight_tb.sv,SystemVerilog,3.09,False,testbench
+RTL005867,basic_verilog,twenty_to_five_tb.sv,twenty_to_five_tb,.sv,Advanced Synthesis Cookbook/muxing/twenty_to_five_tb.sv,SystemVerilog,3.08,False,testbench
+RTL005869,basic_verilog,bilbo_lfsr_tb.v,bilbo_lfsr_tb,.v,Advanced Synthesis Cookbook/random/bilbo_lfsr_tb.v,Verilog,2.43,False,testbench
+RTL005881,basic_verilog,word_stream_scramble_tb.v,word_stream_scramble_tb,.v,Advanced Synthesis Cookbook/random/word_stream_scramble_tb.v,Verilog,2.49,False,testbench
+RTL005884,basic_verilog,buffer_tb.v,buffer_tb,.v,Advanced Synthesis Cookbook/storage/buffer_tb.v,Verilog,2.89,False,testbench
+RTL005886,basic_verilog,cam_ram_block_tb.v,cam_ram_block_tb,.v,Advanced Synthesis Cookbook/storage/cam_ram_block_tb.v,Verilog,3.93,False,testbench
+RTL005889,basic_verilog,fifo_hw_test_tb.v,fifo_hw_test_tb,.v,Advanced Synthesis Cookbook/storage/fifo_hw_test_tb.v,Verilog,2.51,False,testbench
+RTL005890,basic_verilog,fifo_tb.v,fifo_tb,.v,Advanced Synthesis Cookbook/storage/fifo_tb.v,Verilog,4.17,False,testbench
+RTL005895,basic_verilog,mlab_dcfifo_tb.sv,mlab_dcfifo_tb,.sv,Advanced Synthesis Cookbook/storage/mlab_dcfifo_tb.sv,SystemVerilog,2.74,False,testbench
+RTL005897,basic_verilog,mlab_delay_tb.sv,mlab_delay_tb,.sv,Advanced Synthesis Cookbook/storage/mlab_delay_tb.sv,SystemVerilog,2.22,False,testbench
+RTL005901,basic_verilog,ram_based_cam_tb.v,ram_based_cam_tb,.v,Advanced Synthesis Cookbook/storage/ram_based_cam_tb.v,Verilog,4.14,False,testbench
+RTL005904,basic_verilog,ram_delay_reg_tb.v,ram_delay_reg_tb,.v,Advanced Synthesis Cookbook/storage/ram_delay_reg_tb.v,Verilog,2.5,False,testbench
+RTL005907,basic_verilog,ready_skid_tb.sv,ready_skid_tb,.sv,Advanced Synthesis Cookbook/storage/ready_skid_tb.sv,SystemVerilog,2.29,False,testbench
+RTL005909,basic_verilog,reg_based_cam_tb.v,reg_based_cam_tb,.v,Advanced Synthesis Cookbook/storage/reg_based_cam_tb.v,Verilog,3.58,False,testbench
+RTL005912,basic_verilog,register_bank_tb.v,register_bank_tb,.v,Advanced Synthesis Cookbook/storage/register_bank_tb.v,Verilog,2.4,False,testbench
+RTL005915,basic_verilog,rx_buffer_fifo_2_tb.sv,rx_buffer_fifo_2_tb,.sv,Advanced Synthesis Cookbook/storage/rx_buffer_fifo_2_tb.sv,SystemVerilog,2.91,False,testbench
+RTL005917,basic_verilog,simple_quad_tb.v,simple_quad_tb,.v,Advanced Synthesis Cookbook/storage/simple_quad_tb.v,Verilog,3.56,False,testbench
+RTL005922,basic_verilog,clock_mux_tb.v,clock_mux_tb,.v,Advanced Synthesis Cookbook/synchronization/clock_mux_tb.v,Verilog,2.05,False,testbench
+RTL005924,basic_verilog,reset_control_tb.v,reset_control_tb,.v,Advanced Synthesis Cookbook/synchronization/reset_control_tb.v,Verilog,2.87,False,testbench
+RTL005934,basic_verilog,bin_to_dec_tb.v,bin_to_dec_tb,.v,Advanced Synthesis Cookbook/translation/bin_to_dec_tb.v,Verilog,1.96,False,testbench
+RTL005936,basic_verilog,gray_tb.v,gray_tb,.v,Advanced Synthesis Cookbook/translation/gray_tb.v,Verilog,1.88,False,testbench
+RTL005940,basic_verilog,mask_tb.v,mask_tb,.v,Advanced Synthesis Cookbook/translation/mask_tb.v,Verilog,1.87,False,testbench
+RTL005942,basic_verilog,one_hot_tb.v,one_hot_tb,.v,Advanced Synthesis Cookbook/translation/one_hot_tb.v,Verilog,1.82,False,testbench
+RTL005944,basic_verilog,make_case_tb.v,make_case_tb,.v,Advanced Synthesis Cookbook/utility/make_case_tb.v,Verilog,3.1,False,testbench
+RTL005946,basic_verilog,display_char_tb.sv,display_char_tb,.sv,Advanced Synthesis Cookbook/video/display_char_tb.sv,SystemVerilog,2.75,False,testbench
+RTL005948,basic_verilog,eightbyeight_sad.v,eightbyeight_sad,.v,Advanced Synthesis Cookbook/video/eightbyeight_sad.v,Verilog,4.91,False,testbench
+RTL005949,basic_verilog,eightbyeight_sad_tb.v,eightbyeight_sad_tb,.v,Advanced Synthesis Cookbook/video/eightbyeight_sad_tb.v,Verilog,2.8,False,testbench
+RTL005950,basic_verilog,eightbyeight_sad_test.v,eightbyeight_sad_test,.v,Advanced Synthesis Cookbook/video/eightbyeight_sad_test.v,Verilog,1.76,False,testbench
+RTL005953,basic_verilog,fourbyfour_sad_tb.v,fourbyfour_sad_tb,.v,Advanced Synthesis Cookbook/video/fourbyfour_sad_tb.v,Verilog,2.63,False,testbench
+RTL005956,basic_verilog,rgb_to_hue_tb.v,rgb_to_hue_tb,.v,Advanced Synthesis Cookbook/video/rgb_to_hue_tb.v,Verilog,3.04,False,testbench
+RTL005960,basic_verilog,ycbcr_to_rgb_tb.v,ycbcr_to_rgb_tb,.v,Advanced Synthesis Cookbook/video/ycbcr_to_rgb_tb.v,Verilog,3.02,False,testbench
+RTL005984,basic_verilog,adder_tree_tb.sv,adder_tree_tb,.sv,adder_tree_tb.sv,SystemVerilog,1.99,False,testbench
+RTL006008,basic_verilog,bin2pos_tb.sv,bin2pos_tb,.sv,bin2pos_tb.sv,SystemVerilog,1.8,False,testbench
+RTL006011,basic_verilog,cdc_strobe_tb.sv,cdc_strobe_tb,.sv,cdc_strobe_tb.sv,SystemVerilog,2.59,False,testbench
+RTL006017,basic_verilog,debounce_v2_tb.sv,debounce_v2_tb,.sv,debounce_v2_tb.sv,SystemVerilog,4.81,False,testbench
+RTL006020,basic_verilog,delay_tb.sv,delay_tb,.sv,delay_tb.sv,SystemVerilog,2.21,False,testbench
+RTL006022,basic_verilog,delayed_event_tb.sv,delayed_event_tb,.sv,delayed_event_tb.sv,SystemVerilog,4.19,False,testbench
+RTL006038,basic_verilog,dynamic_delay_tb.sv,dynamic_delay_tb,.sv,dynamic_delay_tb.sv,SystemVerilog,1.61,False,testbench
+RTL006041,basic_verilog,edge_detect_tb.sv,edge_detect_tb,.sv,edge_detect_tb.sv,SystemVerilog,1.62,False,testbench
+RTL006044,basic_verilog,encoder_tb.v,encoder_tb,.v,encoder_tb.v,Verilog,1.59,False,testbench
+RTL006104,basic_verilog,main_tb.sv,main_tb,.sv,example_projects/testbench_template_tb/main_tb.sv,SystemVerilog,5.09,False,testbench
+RTL006113,basic_verilog,fast_counter_tb.sv,fast_counter_tb,.sv,fast_counter_tb.sv,SystemVerilog,3.15,False,testbench
+RTL006117,basic_verilog,fifo_single_clock_ram_tb.sv,fifo_single_clock_ram_tb,.sv,fifo_single_clock_ram_tb.sv,SystemVerilog,6.74,False,testbench
+RTL006119,basic_verilog,fifo_single_clock_reg_v1_tb.sv,fifo_single_clock_reg_v1_tb,.sv,fifo_single_clock_reg_v1_tb.sv,SystemVerilog,6.71,False,testbench
+RTL006121,basic_verilog,fifo_single_clock_reg_v2_tb.sv,fifo_single_clock_reg_v2_tb,.sv,fifo_single_clock_reg_v2_tb.sv,SystemVerilog,6.71,False,testbench
+RTL006124,basic_verilog,gray_functions_tb.sv,gray_functions_tb,.sv,gray_functions_tb.sv,SystemVerilog,4.06,False,testbench
+RTL006125,basic_verilog,gray_tb.sv,gray_tb,.sv,gray_tb.sv,SystemVerilog,2.16,False,testbench
+RTL006131,basic_verilog,leave_one_hot_tb.sv,leave_one_hot_tb,.sv,leave_one_hot_tb.sv,SystemVerilog,1.68,False,testbench
+RTL006133,basic_verilog,lifo_tb.sv,lifo_tb,.sv,lifo_tb.sv,SystemVerilog,2.98,False,testbench
+RTL006134,basic_verilog,main_tb.sv,main_tb,.sv,main_tb.sv,SystemVerilog,3.91,False,testbench
+RTL006136,basic_verilog,moving_average_tb.sv,moving_average_tb,.sv,moving_average_tb.sv,SystemVerilog,2.36,False,testbench
+RTL006139,basic_verilog,addsub_tb.v,addsub_tb,.v,pacoblaze-2.2/pacoblaze/addsub_tb.v,Verilog,0.61,False,testbench
+RTL006141,basic_verilog,cmprnd3_tb.v,cmprnd3_tb,.v,pacoblaze-2.2/pacoblaze/cmprnd3_tb.v,Verilog,2.9,False,testbench
+RTL006142,basic_verilog,compare3_tb.v,compare3_tb,.v,pacoblaze-2.2/pacoblaze/compare3_tb.v,Verilog,10.02,False,testbench
+RTL006143,basic_verilog,compare3m_tb.v,compare3m_tb,.v,pacoblaze-2.2/pacoblaze/compare3m_tb.v,Verilog,2.7,False,testbench
+RTL006147,basic_verilog,addsub_tb.v,addsub_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/addsub_tb.v,Verilog,0.61,False,testbench
+RTL006149,basic_verilog,cmprnd3_tb.v,cmprnd3_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/cmprnd3_tb.v,Verilog,2.9,False,testbench
+RTL006150,basic_verilog,compare3_tb.v,compare3_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/compare3_tb.v,Verilog,10.02,False,testbench
+RTL006151,basic_verilog,compare3m_tb.v,compare3m_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/compare3m_tb.v,Verilog,2.7,False,testbench
+RTL006156,basic_verilog,pacoblaze1_tb.v,pacoblaze1_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze1_tb.v,Verilog,3.49,False,testbench
+RTL006164,basic_verilog,pacoblaze3_tb.v,pacoblaze3_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze3_tb.v,Verilog,3.63,False,testbench
+RTL006166,basic_verilog,pacoblaze3b_tb.v,pacoblaze3b_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze3b_tb.v,Verilog,2.94,False,testbench
+RTL006168,basic_verilog,pacoblaze3m_tb.v,pacoblaze3m_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze3m_tb.v,Verilog,3.18,False,testbench
+RTL006172,basic_verilog,pacoblaze_dregister_tb.v,pacoblaze_dregister_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze_dregister_tb.v,Verilog,2.73,False,testbench
+RTL006174,basic_verilog,pacoblaze_idu_tb.v,pacoblaze_idu_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze/pacoblaze_idu_tb.v,Verilog,3.29,False,testbench
+RTL006181,basic_verilog,timescale_inc.v,timescale_inc,.v,pacoblaze-2.2/pacoblaze/pacoblaze/timescale_inc.v,Verilog,0.02,False,too_small
+RTL006186,basic_verilog,pacoblaze1_tb.v,pacoblaze1_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze1_tb.v,Verilog,3.49,False,testbench
+RTL006194,basic_verilog,pacoblaze3_tb.v,pacoblaze3_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze3_tb.v,Verilog,3.63,False,testbench
+RTL006196,basic_verilog,pacoblaze3b_tb.v,pacoblaze3b_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze3b_tb.v,Verilog,2.94,False,testbench
+RTL006198,basic_verilog,pacoblaze3m_tb.v,pacoblaze3m_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze3m_tb.v,Verilog,3.18,False,testbench
+RTL006202,basic_verilog,pacoblaze_dregister_tb.v,pacoblaze_dregister_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze_dregister_tb.v,Verilog,2.73,False,testbench
+RTL006204,basic_verilog,pacoblaze_idu_tb.v,pacoblaze_idu_tb,.v,pacoblaze-2.2/pacoblaze/pacoblaze_idu_tb.v,Verilog,3.29,False,testbench
+RTL006211,basic_verilog,timescale_inc.v,timescale_inc,.v,pacoblaze-2.2/pacoblaze/timescale_inc.v,Verilog,0.02,False,too_small
+RTL006259,basic_verilog,pattern_detect_tb.sv,pattern_detect_tb,.sv,pattern_detect_tb.sv,SystemVerilog,2.43,False,testbench
+RTL006261,basic_verilog,pdm_modulator_tb.sv,pdm_modulator_tb,.sv,pdm_modulator_tb.sv,SystemVerilog,2.77,False,testbench
+RTL006263,basic_verilog,pos2bin_tb.sv,pos2bin_tb,.sv,pos2bin_tb.sv,SystemVerilog,2.38,False,testbench
+RTL006265,basic_verilog,prbs_gen_chk_tb.sv,prbs_gen_chk_tb,.sv,prbs_gen_chk_tb.sv,SystemVerilog,2.18,False,testbench
+RTL006267,basic_verilog,preview_fifo_tb.sv,preview_fifo_tb,.sv,preview_fifo_tb.sv,SystemVerilog,4.01,False,testbench
+RTL006270,basic_verilog,pulse_gen_tb.sv,pulse_gen_tb,.sv,pulse_gen_tb.sv,SystemVerilog,2.99,False,testbench
+RTL006272,basic_verilog,pulse_stretch_tb.sv,pulse_stretch_tb,.sv,pulse_stretch_tb.sv,SystemVerilog,1.86,False,testbench
+RTL006274,basic_verilog,pwm_modulator_tb.sv,pwm_modulator_tb,.sv,pwm_modulator_tb.sv,SystemVerilog,2.78,False,testbench
+RTL006276,basic_verilog,read_ahead_buf_tb.sv,read_ahead_buf_tb,.sv,read_ahead_buf_tb.sv,SystemVerilog,5.08,False,testbench
+RTL006281,basic_verilog,reverse_dimensions_tb.sv,reverse_dimensions_tb,.sv,reverse_dimensions_tb.sv,SystemVerilog,1.92,False,testbench
+RTL006283,basic_verilog,reverse_vector_tb.sv,reverse_vector_tb,.sv,reverse_vector_tb.sv,SystemVerilog,2.09,False,testbench
+RTL006286,basic_verilog,round_robin_performance_enc_tb.sv,round_robin_performance_enc_tb,.sv,round_robin_performance_enc_tb.sv,SystemVerilog,2.29,False,testbench
+RTL006292,basic_verilog,slicer_functions_tb.sv,slicer_functions_tb,.sv,slicer_functions_tb.sv,SystemVerilog,4.91,False,testbench
+RTL006294,basic_verilog,soft_latch_tb.sv,soft_latch_tb,.sv,soft_latch_tb.sv,SystemVerilog,2.89,False,testbench
+RTL006296,basic_verilog,spi_master_tb.sv,spi_master_tb,.sv,spi_master_tb.sv,SystemVerilog,5.76,False,testbench
+RTL006305,basic_verilog,uart_tx_rx_shifter_tb.sv,uart_tx_rx_shifter_tb,.sv,uart_tx_rx_shifter_tb.sv,SystemVerilog,3.17,False,testbench
+RTL006308,basic_verilog,udp_packet_tb.sv,udp_packet_tb,.sv,udp_packet_tb.sv,SystemVerilog,4.54,False,testbench
+RTL006316,cores,top_tb.sv,top_tb,.sv,ftdi_async_bridge/testbench/top_tb.sv,SystemVerilog,9.5,False,testbench
+RTL006319,cores,tb_top.v,tb_top,.v,i2s/testbench/tb_top.v,Verilog,1.18,False,testbench
+RTL006325,cores,top_tb.sv,top_tb,.sv,sdram/testbench/top_tb.sv,SystemVerilog,3.35,False,testbench
+RTL006329,cores,tb_top.v,tb_top,.v,spdif/testbench/tb_top.v,Verilog,0.95,False,testbench
+RTL006336,cores,tb_top.v,tb_top,.v,uart/testbench/tb_top.v,Verilog,1.11,False,testbench
+RTL006412,darkriscv,darksimv.v,darksimv,.v,sim/darksimv.v,Verilog,3.13,False,ignored_directory
+RTL006551,e203_hbirdv2,tb_top.v,tb_top,.v,tb/tb_top.v,Verilog,11.49,False,testbench
+RTL006559,fedar-f1-rv64im,tb_ALU.v,tb_ALU,.v,testbench/tb_ALU.v,Verilog,1.39,False,testbench
+RTL006560,fedar-f1-rv64im,tb_Encoders.v,tb_Encoders,.v,testbench/tb_Encoders.v,Verilog,1.25,False,testbench
+RTL006561,fedar-f1-rv64im,tb_ImmediateExtractor.v,tb_ImmediateExtractor,.v,testbench/tb_ImmediateExtractor.v,Verilog,0.97,False,testbench
+RTL006562,fedar-f1-rv64im,tb_Main.v,tb_Main,.v,testbench/tb_Main.v,Verilog,1.08,False,testbench
+RTL006563,fedar-f1-rv64im,tb_RAM.v,tb_RAM,.v,testbench/tb_RAM.v,Verilog,0.87,False,testbench
+RTL006564,fedar-f1-rv64im,tb_ROM.v,tb_ROM,.v,testbench/tb_ROM.v,Verilog,0.46,False,testbench
+RTL006565,fedar-f1-rv64im,tb_RegFile.v,tb_RegFile,.v,testbench/tb_RegFile.v,Verilog,0.91,False,testbench
+RTL006649,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/apps/friscv_testbench.sv,SystemVerilog,0.03,False,testbench
+RTL006655,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/c_testsuite/friscv_testbench.sv,SystemVerilog,0.03,False,testbench
+RTL006678,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/common/friscv_testbench.sv,SystemVerilog,33.88,False,testbench
+RTL006681,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/priv_sec_testsuite/friscv_testbench.sv,SystemVerilog,0.03,False,testbench
+RTL006707,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/riscv-tests/friscv_testbench.sv,SystemVerilog,0.03,False,testbench
+RTL006962,friscv,dcache_testbench.sv,dcache_testbench,.sv,test/sv/dcache_testbench.sv,SystemVerilog,14.08,False,testbench
+RTL006964,friscv,icache_testbench.sv,icache_testbench,.sv,test/sv/icache_testbench.sv,SystemVerilog,11.25,False,testbench
+RTL006966,friscv,friscv_testbench.sv,friscv_testbench,.sv,test/wba_testsuite/friscv_testbench.sv,SystemVerilog,0.03,False,testbench
+RTL007012,gnn-acceleration-framework-with-FPGA,agg_for_sim.sv,agg_for_sim,.sv,kernel_verilog/sim/agg/agg_for_sim.sv,SystemVerilog,25.3,False,ignored_directory
+RTL007013,gnn-acceleration-framework-with-FPGA,testbench_agg.v,testbench_agg,.v,kernel_verilog/sim/agg/testbench_agg.v,Verilog,8.67,False,ignored_directory
+RTL007014,gnn-acceleration-framework-with-FPGA,bias_for_sim.sv,bias_for_sim,.sv,kernel_verilog/sim/bias/bias_for_sim.sv,SystemVerilog,7.07,False,ignored_directory
+RTL007015,gnn-acceleration-framework-with-FPGA,bias_tb.v,bias_tb,.v,kernel_verilog/sim/bias/bias_tb.v,Verilog,7.13,False,ignored_directory
+RTL007016,gnn-acceleration-framework-with-FPGA,load_for_sim.sv,load_for_sim,.sv,kernel_verilog/sim/load/load_for_sim.sv,SystemVerilog,11.05,False,ignored_directory
+RTL007017,gnn-acceleration-framework-with-FPGA,load_tb.v,load_tb,.v,kernel_verilog/sim/load/load_tb.v,Verilog,8.54,False,ignored_directory
+RTL007018,gnn-acceleration-framework-with-FPGA,gnn_0_example_save.sv,gnn_0_example_save,.sv,kernel_verilog/sim/save/gnn_0_example_save.sv,SystemVerilog,11.54,False,ignored_directory
+RTL007019,gnn-acceleration-framework-with-FPGA,save_tb.sv,save_tb,.sv,kernel_verilog/sim/save/save_tb.sv,SystemVerilog,6.88,False,ignored_directory
+RTL007020,gnn-acceleration-framework-with-FPGA,weight_for_sim.sv,weight_for_sim,.sv,kernel_verilog/sim/weight/weight_for_sim.sv,SystemVerilog,7.6,False,ignored_directory
+RTL007021,gnn-acceleration-framework-with-FPGA,weight_tb.v,weight_tb,.v,kernel_verilog/sim/weight/weight_tb.v,Verilog,6.98,False,ignored_directory
+RTL007036,gnn-acceleration-framework-with-FPGA,gnn_0_tb.sv,gnn_0_tb,.sv,kernel_verilog/src/gnn_0_tb.sv,SystemVerilog,49.61,False,testbench
+RTL007095,kianRiscV,top_tb.v,top_tb,.v,linux_socs/kianv_harris_mcycle_edition/kianv_harris_edition/top_tb.v,Verilog,4.58,False,testbench
+RTL007171,low-latency-ethernet,checksum_tb.sv,checksum_tb,.sv,tb/checksum_tb.sv,SystemVerilog,0.95,False,testbench
+RTL007172,low-latency-ethernet,crc_tb.sv,crc_tb,.sv,tb/crc_tb.sv,SystemVerilog,1.15,False,testbench
+RTL007173,low-latency-ethernet,eth_tb.sv,eth_tb,.sv,tb/eth_tb.sv,SystemVerilog,8.15,False,testbench
+RTL007174,low-latency-ethernet,mac_tb.sv,mac_tb,.sv,tb/mac_tb.sv,SystemVerilog,5.29,False,testbench
+RTL007175,low-latency-ethernet,tcp_client.v,tcp_client,.v,tcp/tcp_client.v,Verilog,0.04,False,too_small
+RTL007313,oldland-cpu,oldland_defs.v,oldland_defs,.v,rtl/oldland/oldland_defs.v,Verilog,0.04,False,too_small
+RTL007329,oldland-cpu,cpu_tb.v,cpu_tb,.v,verif/icarus/cpu_tb.v,Verilog,2.9,False,testbench
+RTL007334,projf-explore,sprite_tb.sv,sprite_tb,.sv,demos/ad-astra/xc7/sprite_tb.sv,SystemVerilog,3.36,False,testbench
+RTL007335,projf-explore,starfield_tb.sv,starfield_tb,.sv,demos/ad-astra/xc7/starfield_tb.sv,SystemVerilog,0.72,False,testbench
+RTL007344,projf-explore,top_castle.sv,top_castle,.sv,demos/castle-drawing/sim/top_castle.sv,SystemVerilog,9.15,False,ignored_directory
+RTL007349,projf-explore,life_tb.sv,life_tb,.sv,demos/life-on-screen/xc7/life_tb.sv,SystemVerilog,1.7,False,testbench
+RTL007358,projf-explore,top_rasterbars.sv,top_rasterbars,.sv,demos/rasterbars/sim/top_rasterbars.sv,SystemVerilog,2.23,False,ignored_directory
+RTL007361,projf-explore,top_sinescroll.sv,top_sinescroll,.sv,demos/sinescroll/sim/top_sinescroll.sv,SystemVerilog,9.8,False,ignored_directory
+RTL007376,projf-explore,top_demo.sv,top_demo,.sv,graphics/2d-shapes/sim/top_demo.sv,SystemVerilog,8.4,False,ignored_directory
+RTL007387,projf-explore,top_demo.sv,top_demo,.sv,graphics/animated-shapes/sim/top_demo.sv,SystemVerilog,9.59,False,ignored_directory
+RTL007388,projf-explore,top_demo_sb.sv,top_demo_sb,.sv,graphics/animated-shapes/sim/top_demo_sb.sv,SystemVerilog,7.91,False,ignored_directory
+RTL007401,projf-explore,top_colour.sv,top_colour,.sv,graphics/fpga-graphics/sim/top_colour.sv,SystemVerilog,2.24,False,ignored_directory
+RTL007402,projf-explore,top_flag_ethiopia.sv,top_flag_ethiopia,.sv,graphics/fpga-graphics/sim/top_flag_ethiopia.sv,SystemVerilog,2.26,False,ignored_directory
+RTL007403,projf-explore,top_flag_sweden.sv,top_flag_sweden,.sv,graphics/fpga-graphics/sim/top_flag_sweden.sv,SystemVerilog,2.43,False,ignored_directory
+RTL007404,projf-explore,top_square.sv,top_square,.sv,graphics/fpga-graphics/sim/top_square.sv,SystemVerilog,2.11,False,ignored_directory
+RTL007407,projf-explore,simple_720p_tb.sv,simple_720p_tb,.sv,graphics/fpga-graphics/xc7-dvi/simple_720p_tb.sv,SystemVerilog,1.25,False,testbench
+RTL007412,projf-explore,simple_480p_tb.sv,simple_480p_tb,.sv,graphics/fpga-graphics/xc7/simple_480p_tb.sv,SystemVerilog,1.24,False,testbench
+RTL007421,projf-explore,top_david_16colr.sv,top_david_16colr,.sv,graphics/framebuffers/sim/top_david_16colr.sv,SystemVerilog,4.74,False,ignored_directory
+RTL007422,projf-explore,top_david_fizzle.sv,top_david_fizzle,.sv,graphics/framebuffers/sim/top_david_fizzle.sv,SystemVerilog,7.69,False,ignored_directory
+RTL007423,projf-explore,top_david_mono.sv,top_david_mono,.sv,graphics/framebuffers/sim/top_david_mono.sv,SystemVerilog,3.97,False,ignored_directory
+RTL007424,projf-explore,top_david_scale.sv,top_david_scale,.sv,graphics/framebuffers/sim/top_david_scale.sv,SystemVerilog,6.75,False,ignored_directory
+RTL007439,projf-explore,top_hedgehog.sv,top_hedgehog,.sv,graphics/hardware-sprites/sim/top_hedgehog.sv,SystemVerilog,4.92,False,ignored_directory
+RTL007440,projf-explore,top_hourglass.sv,top_hourglass,.sv,graphics/hardware-sprites/sim/top_hourglass.sv,SystemVerilog,3.85,False,ignored_directory
+RTL007441,projf-explore,top_tinyf_inline.sv,top_tinyf_inline,.sv,graphics/hardware-sprites/sim/top_tinyf_inline.sv,SystemVerilog,2.56,False,ignored_directory
+RTL007442,projf-explore,top_tinyf_move.sv,top_tinyf_move,.sv,graphics/hardware-sprites/sim/top_tinyf_move.sv,SystemVerilog,4.0,False,ignored_directory
+RTL007443,projf-explore,top_tinyf_rom.sv,top_tinyf_rom,.sv,graphics/hardware-sprites/sim/top_tinyf_rom.sv,SystemVerilog,2.66,False,ignored_directory
+RTL007444,projf-explore,top_tinyf_scale.sv,top_tinyf_scale,.sv,graphics/hardware-sprites/sim/top_tinyf_scale.sv,SystemVerilog,3.08,False,ignored_directory
+RTL007454,projf-explore,sprite_inline_tb.sv,sprite_inline_tb,.sv,graphics/hardware-sprites/xc7/sprite_inline_tb.sv,SystemVerilog,1.72,False,testbench
+RTL007455,projf-explore,sprite_rom_tb.sv,sprite_rom_tb,.sv,graphics/hardware-sprites/xc7/sprite_rom_tb.sv,SystemVerilog,1.97,False,testbench
+RTL007456,projf-explore,sprite_tb.sv,sprite_tb,.sv,graphics/hardware-sprites/xc7/sprite_tb.sv,SystemVerilog,2.1,False,testbench
+RTL007472,projf-explore,top_demo.sv,top_demo,.sv,graphics/lines-and-triangles/sim/top_demo.sv,SystemVerilog,8.45,False,ignored_directory
+RTL007476,projf-explore,top_pong.sv,top_pong,.sv,graphics/pong/sim/top_pong.sv,SystemVerilog,10.5,False,ignored_directory
+RTL007492,projf-explore,top_bounce.sv,top_bounce,.sv,graphics/racing-the-beam/sim/top_bounce.sv,SystemVerilog,4.38,False,ignored_directory
+RTL007493,projf-explore,top_colour_cycle.sv,top_colour_cycle,.sv,graphics/racing-the-beam/sim/top_colour_cycle.sv,SystemVerilog,2.74,False,ignored_directory
+RTL007494,projf-explore,top_hello.sv,top_hello,.sv,graphics/racing-the-beam/sim/top_hello.sv,SystemVerilog,3.21,False,ignored_directory
+RTL007495,projf-explore,top_hitomezashi.sv,top_hitomezashi,.sv,graphics/racing-the-beam/sim/top_hitomezashi.sv,SystemVerilog,2.84,False,ignored_directory
+RTL007496,projf-explore,top_rasterbars.sv,top_rasterbars,.sv,graphics/racing-the-beam/sim/top_rasterbars.sv,SystemVerilog,3.39,False,ignored_directory
+RTL007541,projf-explore,clock_tb.sv,clock_tb,.sv,lib/clock/xc7/clock_tb.sv,SystemVerilog,0.98,False,testbench
+RTL007542,projf-explore,xd_tb.sv,xd_tb,.sv,lib/clock/xc7/xd_tb.sv,SystemVerilog,2.0,False,testbench
+RTL007553,projf-explore,bitmap_addr_tb.sv,bitmap_addr_tb,.sv,lib/display/xc7/bitmap_addr_tb.sv,SystemVerilog,0.24,False,testbench
+RTL007554,projf-explore,clut_simple_tb.sv,clut_simple_tb,.sv,lib/display/xc7/clut_simple_tb.sv,SystemVerilog,1.79,False,testbench
+RTL007555,projf-explore,display_480p_tb.sv,display_480p_tb,.sv,lib/display/xc7/display_480p_tb.sv,SystemVerilog,1.31,False,testbench
+RTL007556,projf-explore,display_720p_tb.sv,display_720p_tb,.sv,lib/display/xc7/display_720p_tb.sv,SystemVerilog,1.31,False,testbench
+RTL007558,projf-explore,linebuffer_simple_tb.sv,linebuffer_simple_tb,.sv,lib/display/xc7/linebuffer_simple_tb.sv,SystemVerilog,2.17,False,testbench
+RTL007573,projf-explore,draw_char_tb.sv,draw_char_tb,.sv,lib/graphics/xc7/draw_char_tb.sv,SystemVerilog,2.46,False,testbench
+RTL007574,projf-explore,draw_circle_tb.sv,draw_circle_tb,.sv,lib/graphics/xc7/draw_circle_tb.sv,SystemVerilog,1.95,False,testbench
+RTL007575,projf-explore,draw_line_1d_tb.sv,draw_line_1d_tb,.sv,lib/graphics/xc7/draw_line_1d_tb.sv,SystemVerilog,2.25,False,testbench
+RTL007576,projf-explore,draw_line_tb.sv,draw_line_tb,.sv,lib/graphics/xc7/draw_line_tb.sv,SystemVerilog,4.63,False,testbench
+RTL007577,projf-explore,draw_rectangle_fill_tb.sv,draw_rectangle_fill_tb,.sv,lib/graphics/xc7/draw_rectangle_fill_tb.sv,SystemVerilog,1.44,False,testbench
+RTL007578,projf-explore,draw_rectangle_tb.sv,draw_rectangle_tb,.sv,lib/graphics/xc7/draw_rectangle_tb.sv,SystemVerilog,1.21,False,testbench
+RTL007579,projf-explore,draw_triangle_fill_tb.sv,draw_triangle_fill_tb,.sv,lib/graphics/xc7/draw_triangle_fill_tb.sv,SystemVerilog,3.36,False,testbench
+RTL007580,projf-explore,draw_triangle_tb.sv,draw_triangle_tb,.sv,lib/graphics/xc7/draw_triangle_tb.sv,SystemVerilog,2.77,False,testbench
+RTL007581,projf-explore,get_glyph_line_tb.sv,get_glyph_line_tb,.sv,lib/graphics/xc7/get_glyph_line_tb.sv,SystemVerilog,2.73,False,testbench
+RTL007590,projf-explore,clog2_tb.sv,clog2_tb,.sv,lib/maths/xc7/clog2_tb.sv,SystemVerilog,0.63,False,testbench
+RTL007591,projf-explore,lfsr_tb.sv,lfsr_tb,.sv,lib/maths/xc7/lfsr_tb.sv,SystemVerilog,0.84,False,testbench
+RTL007592,projf-explore,sine_table_tb.sv,sine_table_tb,.sv,lib/maths/xc7/sine_table_tb.sv,SystemVerilog,2.41,False,testbench
+RTL007593,projf-explore,sqrt_int_tb.sv,sqrt_int_tb,.sv,lib/maths/xc7/sqrt_int_tb.sv,SystemVerilog,1.43,False,testbench
+RTL007594,projf-explore,sqrt_tb.sv,sqrt_tb,.sv,lib/maths/xc7/sqrt_tb.sv,SystemVerilog,1.34,False,testbench
+RTL007616,projf-explore,top_graphing.sv,top_graphing,.sv,maths/demo/sim/top_graphing.sv,SystemVerilog,2.37,False,ignored_directory
+RTL007623,ridecore,btb.v,btb,.v,src/fpga/btb.v,Verilog,1.48,False,testbench
+RTL007662,ridecore,testbench.v,testbench,.v,src/test/ridecore/sim/testbench.v,Verilog,18.3,False,ignored_directory
+RTL007663,ridecore,testbench_last.v,testbench_last,.v,src/test/ridecore/sim/testbench_last.v,Verilog,4.52,False,ignored_directory
+RTL007664,ridecore,testbench_pred.v,testbench_pred,.v,src/test/ridecore/sim/testbench_pred.v,Verilog,4.88,False,ignored_directory
+RTL007953,ritter-soc,tb.v,tb,.v,simulation/tb.v,Verilog,0.45,False,testbench
+RTL007954,ritter-soc,tb1.v,tb1,.v,simulation/tb1.v,Verilog,0.23,False,testbench
+RTL007977,scr1,scr1_memory_tb_ahb.sv,scr1_memory_tb_ahb,.sv,src/tb/scr1_memory_tb_ahb.sv,SystemVerilog,24.6,False,testbench
+RTL007978,scr1,scr1_memory_tb_axi.sv,scr1_memory_tb_axi,.sv,src/tb/scr1_memory_tb_axi.sv,SystemVerilog,13.25,False,testbench
+RTL007979,scr1,scr1_top_tb_ahb.sv,scr1_top_tb_ahb,.sv,src/tb/scr1_top_tb_ahb.sv,SystemVerilog,12.36,False,testbench
+RTL007980,scr1,scr1_top_tb_axi.sv,scr1_top_tb_axi,.sv,src/tb/scr1_top_tb_axi.sv,SystemVerilog,21.15,False,testbench
+RTL007981,scr1,scr1_top_tb_runtests.sv,scr1_top_tb_runtests,.sv,src/tb/scr1_top_tb_runtests.sv,SystemVerilog,9.08,False,testbench
+RTL008015,sdspi,tb_axi.v,tb_axi,.v,bench/verilog/tb_axi.v,Verilog,86.05,False,testbench
+RTL008016,sdspi,tb_cpu.v,tb_cpu,.v,bench/verilog/tb_cpu.v,Verilog,31.44,False,testbench
+RTL008017,sdspi,tb_sdckgen.v,tb_sdckgen,.v,bench/verilog/tb_sdckgen.v,Verilog,4.17,False,testbench
+RTL008018,sdspi,tb_txframe.v,tb_txframe,.v,bench/verilog/tb_txframe.v,Verilog,12.58,False,testbench
+RTL008019,sdspi,tb_wb.v,tb_wb,.v,bench/verilog/tb_wb.v,Verilog,30.9,False,testbench
+RTL008256,spi-amba-simulation,testbench.v,testbench,.v,MIPSfpga-nexys4ddr-project-v2.0/MIPSfpga/rtl_up/testbench.v,Verilog,1.31,False,testbench
+RTL008257,spi-amba-simulation,testbench_boot.v,testbench_boot,.v,MIPSfpga-nexys4ddr-project-v2.0/MIPSfpga/rtl_up/testbench_boot.v,Verilog,1.64,False,testbench
+RTL008280,spi-amba-simulation,mfp_testbench.v,mfp_testbench,.v,MIPSfpga-nexys4ddr-project-v2.0/github/mipsfpga-plus/mfp_testbench.v,Verilog,6.9,False,testbench
+RTL008287,spi-slave,SPI_Slave_TB.sv,SPI_Slave_TB,.sv,Verilog/sim/SPI_Slave_TB.sv,SystemVerilog,4.26,False,ignored_directory
+RTL008823,tekno-kizil,tb_wrapper.v,tb_wrapper,.v,openlane/gate_level_simulation/tb_wrapper.v,Verilog,4.01,False,testbench
+RTL008857,tekno-kizil,pwm_heartbeat_mode.v,pwm_heartbeat_mode,.v,openlane/kizil_islemci/src/pwm_heartbeat_mode.v,Verilog,3.37,False,testbench
+RTL008883,tekno-kizil,tb_aritmetik_mantik_birimi.v,tb_aritmetik_mantik_birimi,.v,verilog-simulasyonu/verilog_tb/tb_aritmetik_mantik_birimi.v,Verilog,2.68,False,testbench
+RTL008884,tekno-kizil,tb_bellek_islem_birimi.v,tb_bellek_islem_birimi,.v,verilog-simulasyonu/verilog_tb/tb_bellek_islem_birimi.v,Verilog,4.25,False,testbench
+RTL008885,tekno-kizil,tb_bolme_birimi.v,tb_bolme_birimi,.v,verilog-simulasyonu/verilog_tb/tb_bolme_birimi.v,Verilog,4.39,False,testbench
+RTL008886,tekno-kizil,tb_carpma_birimi.v,tb_carpma_birimi,.v,verilog-simulasyonu/verilog_tb/tb_carpma_birimi.v,Verilog,3.79,False,testbench
+RTL008887,tekno-kizil,tb_carry_lookahead_toplayici.v,tb_carry_lookahead_toplayici,.v,verilog-simulasyonu/verilog_tb/tb_carry_lookahead_toplayici.v,Verilog,1.61,False,testbench
+RTL008888,tekno-kizil,tb_cekirdek.v,tb_cekirdek,.v,verilog-simulasyonu/verilog_tb/tb_cekirdek.v,Verilog,1.14,False,testbench
+RTL008889,tekno-kizil,tb_coz_yazmacoku.v,tb_coz_yazmacoku,.v,verilog-simulasyonu/verilog_tb/tb_coz_yazmacoku.v,Verilog,13.6,False,testbench
+RTL008890,tekno-kizil,tb_dallanma_ongorucu.v,tb_dallanma_ongorucu,.v,verilog-simulasyonu/verilog_tb/tb_dallanma_ongorucu.v,Verilog,5.22,False,testbench
+RTL008891,tekno-kizil,tb_denetim_durum_birimi.v,tb_denetim_durum_birimi,.v,verilog-simulasyonu/verilog_tb/tb_denetim_durum_birimi.v,Verilog,6.6,False,testbench
+RTL008892,tekno-kizil,tb_geri_yaz.v,tb_geri_yaz,.v,verilog-simulasyonu/verilog_tb/tb_geri_yaz.v,Verilog,3.0,False,testbench
+RTL008893,tekno-kizil,tb_getir.v,tb_getir,.v,verilog-simulasyonu/verilog_tb/tb_getir.v,Verilog,2.5,False,testbench
+RTL008894,tekno-kizil,tb_sifreleme_birimi.v,tb_sifreleme_birimi,.v,verilog-simulasyonu/verilog_tb/tb_sifreleme_birimi.v,Verilog,1.67,False,testbench
+RTL008895,tekno-kizil,tb_wrapper.v,tb_wrapper,.v,verilog-simulasyonu/verilog_tb/tb_wrapper.v,Verilog,3.84,False,testbench
+RTL008896,tekno-kizil,tb_yapay_zeka_hizlandiricisi.v,tb_yapay_zeka_hizlandiricisi,.v,verilog-simulasyonu/verilog_tb/tb_yapay_zeka_hizlandiricisi.v,Verilog,2.31,False,testbench
+RTL008897,tekno-kizil,tb_yurut.v,tb_yurut,.v,verilog-simulasyonu/verilog_tb/tb_yurut.v,Verilog,11.22,False,testbench
+RTL008931,tekno-kizil,pwm_heartbeat_mode.v,pwm_heartbeat_mode,.v,verilog-tasarimi/cevre_birimleri/pwm/pwm_heartbeat_mode.v,Verilog,3.37,False,testbench
+RTL009041,ventus-gpgpu-verilog,Listbuffer.v,Listbuffer,.v,src/gpgpu_top/l2cache/Listbuffer.v,Verilog,8.45,False,testbench
+RTL009042,ventus-gpgpu-verilog,Listbuffer_no_push_opc_put_source.v,Listbuffer_no_push_opc_put_source,.v,src/gpgpu_top/l2cache/Listbuffer_no_push_opc_put_source.v,Verilog,7.05,False,testbench
+RTL009123,ventus-gpgpu-verilog,shiftboard.v,shiftboard,.v,src/gpgpu_top/sm/pipeline/lsu/shiftboard.v,Verilog,1.38,False,testbench
+RTL009794,verilog-eval,Prob068_countbcd_ref.sv,Prob068_countbcd_ref,.sv,dataset_code-complete-iccad2023/Prob068_countbcd_ref.sv,SystemVerilog,0.43,False,testbench
+RTL009795,verilog-eval,Prob068_countbcd_test.sv,Prob068_countbcd_test,.sv,dataset_code-complete-iccad2023/Prob068_countbcd_test.sv,SystemVerilog,4.44,False,testbench
+RTL010107,verilog-eval,Prob068_countbcd_ref.sv,Prob068_countbcd_ref,.sv,dataset_spec-to-rtl/Prob068_countbcd_ref.sv,SystemVerilog,0.43,False,testbench
+RTL010108,verilog-eval,Prob068_countbcd_test.sv,Prob068_countbcd_test,.sv,dataset_spec-to-rtl/Prob068_countbcd_test.sv,SystemVerilog,4.44,False,testbench
+RTL010441,wireguard-fpga,ila_0.v,ila_0,.v,0.doc/Alinx/AX7201_examples/01_rtl/ethernet_test/rgmii_ethernet/eth_test.srcs/sources_1/ip/ila_0/sim/ila_0.v,Verilog,2.63,False,ignored_directory
+RTL010449,wireguard-fpga,ila_0.v,ila_0,.v,0.doc/Alinx/AX7201_examples/01_rtl/ethernet_test/rgmii_ethernet/eth_test.srcs/sources_1/ip/ila_0_1/sim/ila_0.v,Verilog,2.7,False,ignored_directory
+RTL010455,wireguard-fpga,udp_ram_8_2048.v,udp_ram_8_2048,.v,0.doc/Alinx/AX7201_examples/01_rtl/ethernet_test/rgmii_ethernet/eth_test.srcs/sources_1/ip/udp_ram_8_2048/sim/udp_ram_8_2048.v,Verilog,6.85,False,ignored_directory
+RTL010686,wireguard-fpga,example_tb_ila_0.v,example_tb_ila_0,.v,3.build/hw_build.Vivado/ila/ila_0_ex/imports/example_tb_ila_0.v,Verilog,3.41,False,testbench
+RTL010730,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/chacha20poly1305_encrypt/tb.sv,SystemVerilog,5.86,False,testbench
+RTL010731,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/dpe/tb.sv,SystemVerilog,11.74,False,testbench
+RTL010732,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/dpe_demultiplexer/tb.sv,SystemVerilog,11.72,False,testbench
+RTL010733,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/dpe_multiplexer/tb.sv,SystemVerilog,8.73,False,testbench
+RTL010734,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/dpe_wg_diassembler/tb.sv,SystemVerilog,8.51,False,testbench
+RTL010735,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/dpe_wg_encryptor/tb.sv,SystemVerilog,3.64,False,testbench
+RTL010736,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/gmii2gmii_test/tb.sv,SystemVerilog,9.66,False,testbench
+RTL010743,wireguard-fpga,tb.sv,tb,.sv,4.sim/rtl/pcap_reader_writer/tb.sv,SystemVerilog,2.86,False,testbench
+RTL010744,wireguard-fpga,tb.sv,tb,.sv,4.sim/tb.sv,SystemVerilog,13.08,False,testbench
+RTL010839,wireguard-fpga,ila_0.v,ila_0,.v,99.warmup/1.hw-eth-test/eth_test.srcs/sources_1/ip/ila_0/sim/ila_0.v,Verilog,2.63,False,ignored_directory
+RTL010847,wireguard-fpga,ila_0.v,ila_0,.v,99.warmup/1.hw-eth-test/eth_test.srcs/sources_1/ip/ila_0_1/sim/ila_0.v,Verilog,2.7,False,ignored_directory
+RTL010853,wireguard-fpga,udp_ram_8_2048.v,udp_ram_8_2048,.v,99.warmup/1.hw-eth-test/eth_test.srcs/sources_1/ip/udp_ram_8_2048/sim/udp_ram_8_2048.v,Verilog,6.85,False,ignored_directory

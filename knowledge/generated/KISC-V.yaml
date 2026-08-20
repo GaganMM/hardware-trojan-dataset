@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The code contains a timebomb-like trigger at address 32'h10000005, which writes
+    'A' to the data bus if the character_in is 0. This could be used as a timing attack
+    or other malicious intent.

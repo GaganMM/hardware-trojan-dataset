@@ -1,0 +1,56 @@
+TrustHub:
+  source: TrustHub
+
+GHOST_benchmarks:
+  source: Academic
+
+OpenCores:
+  source: OpenCores
+
+OpenTitan:
+  source: GitHub
+
+Ibex:
+  source: GitHub
+
+PicoRV32:
+  source: GitHub
+
+SERV:
+  source: GitHub
+
+ZipCPU:
+  source: GitHub
+
+VexRiscv:
+  source: GitHub
+
+scr1:
+  source: GitHub
+
+mor1kx:
+  source: GitHub
+
+darkriscv:
+  source: GitHub
+
+basic_verilog:
+  source: GitHub
+
+verilog-eval:
+  source: GitHub
+
+wireguard-fpga:
+  source: GitHub
+
+RTLLM:
+  source: Academic
+
+Processor-UVM-Verification:
+  source: Academic
+
+HW-Syn-Lab:
+  source: Academic
+
+projf-explore:
+  source: Educational

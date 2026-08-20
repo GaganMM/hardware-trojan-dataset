@@ -1,0 +1,9 @@
+binary_label:
+  value: Trojan
+  confidence: 0.8
+  source: Local LLM Analysis
+  evidence:
+  - The code contains a timebomb-like trigger that stalls the pipeline when Memread
+    is set to 1 and Rd matches either inst[19:15] or inst[24:20]. This could be used
+    by an attacker to cause the processor to hang indefinitely, potentially leading
+    to denial of service.

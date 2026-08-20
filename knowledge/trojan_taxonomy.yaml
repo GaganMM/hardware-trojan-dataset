@@ -1,0 +1,207 @@
+  mini-isp:
+    source: GitHub
+    organization: Unknown
+    family: SoC
+    application: SoC
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  MIPS-pipeline-processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  MIPS-Processor:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  MIPS-Processor-in-Verilog:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  mor1kx:
+    source: GitHub
+    organization: OpenRISC
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  NPU-E2E:
+    source: GitHub
+    organization: Unknown
+    family: Accelerator
+    application: AI Accelerator
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  oldland-cpu:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  OpenCores:
+    source: OpenCores
+    organization: OpenCores
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  OpenTitan:
+    source: GitHub
+    organization: lowRISC
+    family: Security
+    application: Security
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  PASC:
+    source: GitHub
+    organization: Unknown
+    family: SoC
+    application: SoC
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  PicoRV32:
+    source: GitHub
+    organization: YosysHQ
+    family: CPU
+    application: Processor
+    binary_label: Clean
+    trojan_family: None
+    trojan_type: None
+    trigger_type: None
+    payload_type: None
+    confidence: High
+    verified: true
+
+  Processor-UVM-Verification:
+    source: Academic
+    organization: Unknown
+    family: Benchmark
+    application: Benchmark
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  projf-explore:
+    source: Educational
+    organization: Project F
+    family: Library
+    application: RTL Library
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Medium
+    verified: false
+
+  QuickSPI:
+    source: GitHub
+    organization: Unknown
+    family: SPI
+    application: Communication
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  ridecore:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false
+
+  rigel:
+    source: GitHub
+    organization: Unknown
+    family: CPU
+    application: Processor
+    binary_label: Unknown
+    trojan_family: Unknown
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    confidence: Low
+    verified: false

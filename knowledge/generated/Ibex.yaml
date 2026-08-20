@@ -1,0 +1,8 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb-like feature where the `assert_static_in_generate_config_not_available`
+    function is called, which is not supported by Verilator and can lead to unpredictable
+    behavior or crashes.

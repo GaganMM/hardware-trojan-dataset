@@ -1,0 +1,64 @@
+family:
+  name: b15
+  description: ITC'99 b15 Hardware Trojan Benchmarks
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: b15-T100
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub Benchmark
+    notes: Public benchmark available, but no published per-variant semantic description.
+
+  T200:
+    benchmark: b15-T200
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub Benchmark
+    notes: Awaiting verification.
+
+  T300:
+    benchmark: b15-T300
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub Benchmark
+    notes: Awaiting verification.
+
+  T400:
+    benchmark: b15-T400
+    binary_label: Trojan
+    trojan_type: Unknown
+    trigger_type: Unknown
+    payload_type: Unknown
+    activation: Internal
+    stealth: Unknown
+    verified: false
+    confidence: Unknown
+    reference:
+      - TrustHub Benchmark
+    notes: Awaiting verification.

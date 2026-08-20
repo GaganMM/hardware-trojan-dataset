@@ -1,0 +1,51 @@
+family:
+  name: WB_CONMAX
+  description: Wishbone Connection Matrix Hardware Trojan Benchmarks
+  application: Bus Interconnect
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: WB_CONMAX-T100
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Comparator
+    payload_type: Address Bus Corruption
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub WB_CONMAX Benchmark
+      - "A Review: The Beauty of Serendipity Between Integrated Circuit Security and Artificial Intelligence"
+    notes: Comparator trigger with activation probability of approximately 9.78e-68. After activation, the upper four bits of the host address bus are permanently forced to logic '1'.
+
+  T200:
+    benchmark: WB_CONMAX-T200
+    binary_label: Trojan
+    trojan_type: Functional Modification
+    trigger_type: Comparator
+    payload_type: Invalid Valid-Bit Generation
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub WB_CONMAX Benchmark
+    notes: Triggered through a rare comparator condition. Corrupts valid-bit generation, invalidating downstream transactions.
+
+  T300:
+    benchmark: WB_CONMAX-T300
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Bus Communication Failure
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub WB_CONMAX Benchmark
+    notes: Rare comparator trigger eventually blocks normal Wishbone communication, producing a denial-of-service condition.

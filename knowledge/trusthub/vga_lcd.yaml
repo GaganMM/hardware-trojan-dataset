@@ -1,0 +1,22 @@
+family:
+  name: VGA_LCD
+  description: VGA LCD Controller Hardware Trojan Benchmark
+  application: Display Controller
+  source: TrustHub
+  insertion_level: Gate
+
+variants:
+
+  T100:
+    benchmark: VGA_LCD-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Internal Condition
+    payload_type: Blank Display
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub VGA LCD Benchmark
+    notes: Payload forces a blank display after activation, disrupting communication with the processor.

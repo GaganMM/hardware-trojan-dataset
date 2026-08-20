@@ -1,0 +1,64 @@
+family:
+  name: PIC16F84
+  description: PIC16F84 Microcontroller Hardware Trojan Benchmarks
+  application: Microcontroller
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: PIC16F84-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Sequential Condition
+    payload_type: Program Memory Address Corruption
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub PIC16F84 Benchmark
+    notes: Triggered by a sequential circuit. Payload corrupts the program memory address, causing denial of service.
+
+  T200:
+    benchmark: PIC16F84-T200
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Sequential Condition
+    payload_type: Secret Data Leakage
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: Medium
+    reference:
+      - TrustHub PIC16F84 Benchmark
+    notes: Sequentially triggered information leakage Trojan targeting internal processor data.
+
+  T300:
+    benchmark: PIC16F84-T300
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Specific Instruction Sequence
+    payload_type: Secret Data Leakage
+    activation: Internal
+    stealth: High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub PIC16F84 Benchmark
+    notes: Activated after executing a specific instruction sequence and leaks sensitive processor information.
+
+  T400:
+    benchmark: PIC16F84-T400
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Sequential Condition
+    payload_type: Program Execution Disruption
+    activation: Internal
+    stealth: High
+    verified: false
+    confidence: Medium
+    reference:
+      - TrustHub PIC16F84 Benchmark
+    notes: Publicly available benchmark; detailed payload implementation has not been fully documented.

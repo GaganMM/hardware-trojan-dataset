@@ -1,0 +1,9 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb trigger in the right shift operations for
+    negative exponents. The code attempts to calculate the maximum exponent after
+    a right shift operation, which can lead to an infinite loop if the input is not
+    properly handled.

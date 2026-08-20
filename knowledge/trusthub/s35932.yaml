@@ -1,0 +1,54 @@
+family:
+  name: s35932
+  description: ISCAS89 s35932 Hardware Trojan Benchmarks
+  application: Sequential Logic
+  source: TrustHub
+  insertion_level: Gate
+
+variants:
+
+  T100:
+    benchmark: s35932-T100
+    binary_label: Trojan
+    trojan_type: Information Leakage
+    trigger_type: Comparator
+    payload_type: Information Leakage
+    activation: Functional Mode
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - CMSY8
+      - JETTA 2024
+    notes: Comparator trigger active only in functional mode. Leaks internal information.
+
+  T200:
+    benchmark: s35932-T200
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Comparator
+    payload_type: Functional Modification
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - JETTA 2024
+    notes: Comparator-triggered Trojan causing denial of service.
+
+  T300:
+    benchmark: s35932-T300
+    binary_label: Trojan
+    trojan_type: Performance Degradation
+    trigger_type: Comparator
+    payload_type: Denial of Service
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub Benchmark
+      - JETTA 2024
+    notes: Payload reduces circuit performance while creating denial-of-service behavior.

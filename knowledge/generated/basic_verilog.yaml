@@ -1,0 +1,7 @@
+binary_label:
+  value: Trojan
+  confidence: 1.0
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb trigger that sets the output to '1' after
+    a delay of 2 clock cycles, which is a common technique used in hardware trojans.

@@ -1,0 +1,8 @@
+| CSV                         | Purpose                   | Produced by             | Contains                                                   |
+| --------------------------- | ------------------------- | ----------------------- | ---------------------------------------------------------- |
+| `clean_inventory.csv`       | Initial cleaned inventory | Sanitizer               | Repository, file path, filename, language                  |
+| `04_unique_inventory.csv`   | GitHub duplicates removed | Duplicate detector      | Unique GitHub RTL files                                    |
+| `trusthub_inventory.csv`    | TrustHub inventory        | `trusthub_inventory.py` | TrustHub RTL metadata                                      |
+| `06_master_inventory.csv`   | Unified dataset           | `merge_inventory.py`    | GitHub + TrustHub combined with `absolute_path` and SHA256 |
+| `07_enriched_inventory.csv` | Static RTL features       | `metadata_enricher.py`  | Everything above + RTL metrics                             |
+| `08_labeled_inventory.csv`  | Final ML-ready dataset    | `labeler.py`            | Everything above + labels and taxonomy                     |

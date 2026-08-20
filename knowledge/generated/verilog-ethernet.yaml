@@ -1,0 +1,9 @@
+binary_label:
+  value: Trojan
+  confidence: 0.9
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb trigger that sets the `store_output` flag
+    to 1 when the `trigger` signal is high, which causes the module to output data
+    immediately without waiting for the next cycle. This could be used to exploit
+    vulnerabilities in systems that rely on this behavior.

@@ -1,0 +1,10 @@
+binary_label:
+  value: Trojan
+  confidence: 0.5
+  source: Local LLM Analysis
+  evidence:
+  - The Verilog code contains a timebomb-like trigger in the `dmem_haddr` register
+    access at address `32'h80002198`. This trigger is used to delay the system reset
+    (`ndmreset`) for a specific duration, effectively creating a timebomb. The delay
+    is controlled by the `lock_custom` signal, which is not explicitly defined in
+    the code snippet provided.

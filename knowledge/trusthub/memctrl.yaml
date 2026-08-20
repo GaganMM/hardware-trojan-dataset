@@ -1,0 +1,23 @@
+family:
+  name: memctrl
+  description: Memory Controller Hardware Trojan Benchmark
+  application: Memory Controller
+  source: TrustHub
+  insertion_level: RTL
+
+variants:
+
+  T100:
+    benchmark: memctrl-T100
+    binary_label: Trojan
+    trojan_type: Denial of Service
+    trigger_type: Internal Sequential Logic
+    payload_type: Premature Sleep Signal
+    activation: Internal
+    stealth: Very High
+    verified: true
+    confidence: High
+    reference:
+      - TrustHub memctrl Benchmark
+      - Reflections on Trusting TrustHUB (2023)
+    notes: Combined hardware/software Trojan. After activation, the controller asserts a premature sleep signal, blocking memory communication.

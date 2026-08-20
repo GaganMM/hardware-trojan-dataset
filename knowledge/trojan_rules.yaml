@@ -1,0 +1,22 @@
+TrustHub:
+  binary_label: Trojan
+  trojan_type: Digital
+  trigger_type: Rare Event
+  payload_type: Information Leakage
+  confidence: High
+
+OpenTitan:
+  binary_label: Clean
+  confidence: High
+
+Ibex:
+  binary_label: Clean
+  confidence: High
+
+PicoRV32:
+  binary_label: Clean
+  confidence: High
+
+SERV:
+  binary_label: Clean
+  confidence: High
