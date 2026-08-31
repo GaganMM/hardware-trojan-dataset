@@ -10,17 +10,10 @@ import pandas as pd
 import requests
 from tqdm import tqdm
 
-sys.path.insert(
-    0,
-    str(Path(__file__).resolve().parents[2]),
-)
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.dataset.config import DatasetConfig
 
-
-# =====================================================================
-# Logging
-# =====================================================================
 
 logging.basicConfig(
     level=logging.INFO,
@@ -29,10 +22,6 @@ logging.basicConfig(
 
 logger = logging.getLogger("LLMAnalyzer")
 
-
-# =====================================================================
-# Analyzer
-# =====================================================================
 
 class LLMAnalyzer:
 
@@ -57,13 +46,11 @@ class LLMAnalyzer:
         )
 
         self.predictions_csv = (
-            self.config.metadata
-            / "qwen_predictions.csv"
+            self.config.metadata / "qwen_predictions.csv"
         )
 
         self.failures_csv = (
-            self.config.metadata
-            / "qwen_failures.csv"
+            self.config.metadata / "qwen_failures.csv"
         )
 
         self.prediction_columns = [
@@ -90,18 +77,15 @@ class LLMAnalyzer:
         self._load_existing_predictions()
         self._load_failures()
 
-    # =================================================================
-    # Prediction bookkeeping
-    # =================================================================
+    # ================================================================
+    # Prediction file
+    # ================================================================
 
     def _prediction_key(
         self,
         sha256: str,
     ) -> str:
-
-        return (
-            f"{self.model_name}::{sha256}"
-        )
+        return f"{self.model_name}::{sha256}"
 
     def _prepare_prediction_file(self) -> None:
 
@@ -134,7 +118,6 @@ class LLMAnalyzer:
                 return
 
             if "model" not in df.columns:
-
                 df["model"] = self.model_name
 
             for column in self.prediction_columns:
@@ -142,9 +125,11 @@ class LLMAnalyzer:
                 if column not in df.columns:
                     df[column] = ""
 
-            df[
+            df = df[
                 self.prediction_columns
-            ].to_csv(
+            ]
+
+            df.to_csv(
                 self.predictions_csv,
                 index=False,
             )
@@ -204,9 +189,7 @@ class LLMAnalyzer:
 
             logger.info(
                 "Loaded %d existing predictions.",
-                len(
-                    self.existing_predictions
-                ),
+                len(self.existing_predictions),
             )
 
         except Exception as exc:
@@ -216,9 +199,9 @@ class LLMAnalyzer:
                 exc,
             )
 
-    # =================================================================
+    # ================================================================
     # Failure bookkeeping
-    # =================================================================
+    # ================================================================
 
     def _load_failures(self) -> None:
 
@@ -289,9 +272,7 @@ class LLMAnalyzer:
 
             logger.info(
                 "Loaded %d failure records.",
-                len(
-                    self.failure_counts
-                ),
+                len(self.failure_counts),
             )
 
         except Exception as exc:
@@ -383,9 +364,9 @@ class LLMAnalyzer:
             index=False,
         )
 
-    # =================================================================
+    # ================================================================
     # Ollama
-    # =================================================================
+    # ================================================================
 
     def check_ollama(self) -> bool:
 
@@ -420,12 +401,12 @@ class LLMAnalyzer:
 
             if self.model_name not in available:
 
-                logger.error(
-                    "Model '%s' not found.",
+                logger.warning(
+                    "Model '%s' is not listed by Ollama.",
                     self.model_name,
                 )
 
-                logger.error(
+                logger.warning(
                     "Available models: %s",
                     sorted(available),
                 )
@@ -443,54 +424,9 @@ class LLMAnalyzer:
 
             return False
 
-    # =================================================================
-    # Large-file aware RTL extraction
-    # =================================================================
-
-    @staticmethod
-    def _clean_line(
-        line: str,
-    ) -> str:
-
-        return (
-            line
-            .replace("\x00", " ")
-            .rstrip()
-        )
-
-    def _sample_lines(
-        self,
-        lines,
-        count: int,
-    ):
-
-        if not lines:
-            return []
-
-        if len(lines) <= count:
-            return list(lines)
-
-        positions = []
-
-        for i in range(count):
-
-            position = int(
-                i
-                * (len(lines) - 1)
-                / max(
-                    count - 1,
-                    1,
-                )
-            )
-
-            positions.append(
-                position
-            )
-
-        return [
-            lines[position]
-            for position in positions
-        ]
+    # ================================================================
+    # RTL context
+    # ================================================================
 
     def _extract_context(
         self,
@@ -502,312 +438,99 @@ class LLMAnalyzer:
             " ",
         )
 
-        total_chars = len(
-            content
-        )
-
         lines = content.splitlines()
 
-        # -------------------------------------------------------------
-        # Small RTL:
-        # Preserve the actual RTL source.
-        # -------------------------------------------------------------
-
-        if total_chars <= self.max_chars:
-
-            return content
-
-        # -------------------------------------------------------------
-        # Large RTL:
-        #
-        # We want representative structural evidence instead of
-        # simply sending the first 8000 characters.
-        # -------------------------------------------------------------
-
-        clean_lines = [
-            self._clean_line(line)
-            for line in lines
-        ]
-
-        clean_lines = [
-            line
-            for line in clean_lines
-            if line.strip()
-        ]
-
-        if not clean_lines:
-
-            return content[
-                :self.max_chars
-            ]
-
-        # -------------------------------------------------------------
-        # Identify structurally important lines.
-        # -------------------------------------------------------------
-
-        structural = []
-
-        structural_keywords = (
-            "module ",
+        keywords = (
+            "module",
             "endmodule",
-            "input ",
-            "output ",
-            "inout ",
-            "parameter ",
-            "localparam ",
-            "always ",
+            "input",
+            "output",
+            "inout",
+            "wire",
+            "reg",
+            "logic",
+            "parameter",
+            "localparam",
+            "assign",
+            "always",
             "always_ff",
             "always_comb",
-            "assign ",
-            "generate",
-            "endgenerate",
-            "case ",
-            "endcase",
-            "if ",
+            "initial",
+            "if",
             "else",
-            "for ",
-            "while ",
-            "initial ",
+            "case",
+            "endcase",
+            "for",
+            "while",
+            "counter",
+            "count",
+            "trigger",
+            "payload",
+            "secret",
+            "key",
+            "enable",
+            "disable",
+            "reset",
+            "state",
+            "fsm",
         )
 
-        for line in clean_lines:
+        selected = []
+        seen = set()
 
-            lower = line.lower()
+        for line in lines[:150]:
 
-            if any(
-                keyword in lower
-                for keyword in structural_keywords
+            text = line.strip()
+
+            if (
+                text
+                and text not in seen
             ):
 
-                structural.append(
-                    line
+                selected.append(text)
+                seen.add(text)
+
+        for line in lines:
+
+            text = line.strip()
+            lower = text.lower()
+
+            if (
+                text
+                and text not in seen
+                and any(
+                    keyword in lower
+                    for keyword in keywords
                 )
+            ):
 
-        # -------------------------------------------------------------
-        # Allocate character budget.
-        # -------------------------------------------------------------
+                selected.append(text)
+                seen.add(text)
 
-        budget = self.max_chars
-
-        sections = []
-
-        # Header
-        header_chars = min(
-            1800,
-            budget // 4,
+        compact = "\n".join(
+            selected
         )
 
-        header = "\n".join(
-            clean_lines[
-                :max(
-                    1,
-                    min(
-                        len(clean_lines),
-                        300,
-                    ),
-                )
-            ]
-        )
+        if len(compact) <= self.max_chars:
+            return compact
 
-        sections.append(
-            (
-                "BEGINNING OF RTL",
-                header,
-                header_chars,
-            )
-        )
-
-        # Structural sample
-        structural_chars = min(
-            3000,
-            budget // 2,
-        )
-
-        if structural:
-
-            sections.append(
-                (
-                    "STRUCTURAL RTL SAMPLE",
-                    "\n".join(
-                        self._sample_lines(
-                            structural,
-                            min(
-                                300,
-                                len(structural),
-                            ),
-                        )
-                    ),
-                    structural_chars,
-                )
-            )
-
-        # Middle sample
-        middle_chars = min(
-            1600,
-            budget // 5,
-        )
-
-        middle_start = (
-            len(clean_lines)
-            // 2
-        )
-
-        middle_begin = max(
-            0,
-            middle_start - 150,
-        )
-
-        middle = clean_lines[
-            middle_begin:
-            middle_begin + 300
-        ]
-
-        sections.append(
-            (
-                "MIDDLE RTL SAMPLE",
-                "\n".join(middle),
-                middle_chars,
-            )
-        )
-
-        # End
-        end_chars = min(
-            1600,
-            budget // 5,
-        )
-
-        sections.append(
-            (
-                "END OF RTL",
-                "\n".join(
-                    clean_lines[-300:]
-                ),
-                end_chars,
-            )
-        )
-
-        # -------------------------------------------------------------
-        # Build output and enforce hard character limit.
-        # -------------------------------------------------------------
-
-        output_parts = []
-
-        for title, text, _ in sections:
-
-            if not text:
-                continue
-
-            output_parts.append(
-                f"// ===== {title} =====\n"
-                f"{text}"
-            )
-
-        result = "\n\n".join(
-            output_parts
-        )
-
-        if len(result) <= self.max_chars:
-
-            return result
-
-        # Final deterministic trim while preserving
-        # beginning and ending.
-        head = (
-            self.max_chars
-            * 55
-            // 100
-        )
-
+        head = self.max_chars // 2
         tail = (
             self.max_chars
             - head
         )
 
         return (
-            result[:head]
+            compact[:head]
             + "\n\n"
-            + "// ... STRUCTURAL CONTEXT TRUNCATED ...\n"
-            + "\n"
-            + result[-tail:]
+            + "// ... CONTEXT TRUNCATED ..."
+            + "\n\n"
+            + compact[-tail:]
         )
 
-    # =================================================================
-    # Prompt
-    # =================================================================
-
-    def _build_prompt(
-        self,
-        context: str,
-        retry: bool = False,
-    ) -> str:
-
-        retry_instruction = ""
-
-        if retry:
-
-            retry_instruction = """
-IMPORTANT:
-Your previous response was invalid because it did not contain
-a valid classification.
-
-You MUST classify the supplied RTL even if it is synthesized,
-gate-level, repetitive, or only a representative sample.
-
-Return ONLY valid JSON.
-Do not explain outside the JSON.
-The label MUST be exactly "Trojan" or "Clean".
-"""
-
-        return f"""
-You are an RTL hardware-security classifier.
-
-Your task is to classify the supplied Verilog/SystemVerilog RTL
-as either:
-
-1. Trojan
-2. Clean
-
-A hardware Trojan is malicious or unauthorized hardware behavior
-embedded in otherwise legitimate hardware. Look for evidence such
-as hidden triggers, unexpected payload logic, unauthorized state
-changes, suspicious counters/state machines, secret-dependent
-activation, or logic that has no legitimate functional purpose.
-
-Do NOT classify ordinary synthesized logic, standard-cell
-instantiations, buffers, multiplexers, counters, FSMs, arithmetic,
-registers, clocks, resets, test logic, or repetitive gate-level
-netlists as Trojans merely because they look complex.
-
-The supplied context may be a representative sample of a much
-larger synthesized netlist. Make the classification only from
-evidence actually present in the supplied RTL.
-
-{retry_instruction}
-
-Return exactly:
-
-{{
-  "label": "Trojan",
-  "confidence": 0.0,
-  "reasoning": "brief evidence-based explanation"
-}}
-
-The label MUST be exactly one of:
-
-"Trojan"
-
-or
-
-"Clean"
-
-RTL CONTEXT:
-
-{context}
-"""
-
-    # =================================================================
-    # Response parser
-    # =================================================================
+    # ================================================================
+    # Robust JSON parsing
+    # ================================================================
 
     def _parse_response(
         self,
@@ -846,13 +569,16 @@ RTL CONTEXT:
         ):
 
             raise ValueError(
-                "Qwen response is not a JSON object."
+                "Qwen response JSON is not an object."
             )
 
+        # Primary expected field.
         label = result.get(
             "label"
         )
 
+        # Accept common equivalent field names
+        # without accepting arbitrary text.
         if label is None:
 
             for key in (
@@ -887,7 +613,7 @@ RTL CONTEXT:
             "malicious",
         }:
 
-            normalized = "Trojan"
+            normalized_label = "Trojan"
 
         elif label in {
             "clean",
@@ -895,7 +621,7 @@ RTL CONTEXT:
             "normal",
         }:
 
-            normalized = "Clean"
+            normalized_label = "Clean"
 
         else:
 
@@ -940,14 +666,14 @@ RTL CONTEXT:
         ).strip()
 
         return {
-            "label": normalized,
+            "label": normalized_label,
             "confidence": confidence,
             "reasoning": reasoning[:1000],
         }
 
-    # =================================================================
-    # Inference
-    # =================================================================
+    # ================================================================
+    # Qwen inference
+    # ================================================================
 
     def infer(
         self,
@@ -960,16 +686,39 @@ RTL CONTEXT:
             content
         )
 
-        logger.info(
-            "%s: RTL size %.2f MB -> "
-            "%d-character analysis context",
-            file_id,
-            len(content)
-            / (
-                1024 * 1024
-            ),
-            len(context),
-        )
+        prompt = f"""You are classifying Verilog/SystemVerilog RTL for hardware security.
+
+A Hardware Trojan requires malicious or unauthorized behavior,
+typically involving a hidden trigger, malicious payload, or both.
+
+Do NOT classify ordinary counters, FSMs, resets, testbenches,
+encryption blocks, debug logic, or normal control logic as Trojans
+unless the RTL contains evidence of malicious trigger/payload behavior.
+
+Return ONLY this JSON structure:
+
+{{
+  "label": "Trojan",
+  "confidence": 0.0,
+  "reasoning": "one short evidence-based sentence"
+}}
+
+The label MUST be exactly either "Trojan" or "Clean".
+
+RTL:
+{context}
+"""
+
+        payload = {
+            "model": self.model_name,
+            "prompt": prompt,
+            "stream": False,
+            "format": "json",
+            "options": {
+                "temperature": 0,
+                "num_ctx": 4096,
+            },
+        }
 
         attempt = 0
 
@@ -984,22 +733,6 @@ RTL CONTEXT:
                     file_id,
                     attempt,
                 )
-
-                prompt = self._build_prompt(
-                    context=context,
-                    retry=attempt > 1,
-                )
-
-                payload = {
-                    "model": self.model_name,
-                    "prompt": prompt,
-                    "stream": False,
-                    "format": "json",
-                    "options": {
-                        "temperature": 0,
-                        "num_ctx": 16384,
-                    },
-                }
 
                 response = requests.post(
                     self.ollama_url,
@@ -1024,6 +757,7 @@ RTL CONTEXT:
                         "Ollama returned empty response."
                     )
 
+                # Log malformed responses for debugging.
                 try:
 
                     result = self._parse_response(
@@ -1072,13 +806,19 @@ RTL CONTEXT:
                     exc,
                 )
 
+                logger.info(
+                    "%s: retrying in %d seconds...",
+                    file_id,
+                    self.retry_delay,
+                )
+
                 time.sleep(
                     self.retry_delay
                 )
 
-    # =================================================================
+    # ================================================================
     # Path resolution
-    # =================================================================
+    # ================================================================
 
     def _resolve_path(
         self,
@@ -1107,16 +847,16 @@ RTL CONTEXT:
 
         return path
 
-    # =================================================================
-    # Save prediction immediately
-    # =================================================================
+    # ================================================================
+    # Save successful prediction
+    # ================================================================
 
     def _save_prediction(
         self,
         prediction: dict,
     ) -> None:
 
-        exists = (
+        file_exists = (
             self.predictions_csv.exists()
             and self.predictions_csv.stat().st_size > 0
         )
@@ -1127,7 +867,7 @@ RTL CONTEXT:
         ).to_csv(
             self.predictions_csv,
             mode="a",
-            header=not exists,
+            header=not file_exists,
             index=False,
         )
 
@@ -1139,9 +879,9 @@ RTL CONTEXT:
             key
         ] = prediction
 
-    # =================================================================
+    # ================================================================
     # Main analysis
-    # =================================================================
+    # ================================================================
 
     def analyze(
         self,
@@ -1156,13 +896,17 @@ RTL CONTEXT:
         if not manifest_path.exists():
 
             logger.error(
-                "Manifest not found: %s",
+                "manifest.csv not found: %s",
                 manifest_path,
             )
 
             return
 
         if not self.check_ollama():
+
+            logger.error(
+                "Stopping because Ollama is unavailable."
+            )
 
             return
 
@@ -1175,19 +919,19 @@ RTL CONTEXT:
         except Exception as exc:
 
             logger.error(
-                "Could not read manifest: %s",
+                "Could not read manifest.csv: %s",
                 exc,
             )
 
             return
 
-        required = {
+        required_columns = {
             "sha256",
             "absolute_path",
         }
 
         missing = (
-            required
+            required_columns
             - set(df.columns)
         )
 
@@ -1212,11 +956,12 @@ RTL CONTEXT:
             len(df),
         )
 
-        # -------------------------------------------------------------
-        # Resume:
-        # anything already successfully predicted is skipped.
-        # Failed records do NOT prevent retry.
-        # -------------------------------------------------------------
+        # ------------------------------------------------------------
+        # Resume logic
+        #
+        # Only successful predictions are considered completed.
+        # Previous failures are eligible for retry.
+        # ------------------------------------------------------------
 
         pending = df[
             ~df["sha256"].map(
@@ -1253,16 +998,16 @@ RTL CONTEXT:
         )
 
         logger.info(
-            "Max context: %d characters.",
+            "Max context: %d characters",
             self.max_chars,
         )
 
         logger.info(
-            "Inference timeout: UNLIMITED.",
+            "Ollama request timeout: UNLIMITED",
         )
 
         logger.info(
-            "Inference retries: UNLIMITED.",
+            "Inference retries: UNLIMITED",
         )
 
         successful = 0
@@ -1270,9 +1015,9 @@ RTL CONTEXT:
         clean_count = 0
         read_failures = 0
 
-        # -------------------------------------------------------------
-        # Sequential analysis
-        # -------------------------------------------------------------
+        # ------------------------------------------------------------
+        # Process files
+        # ------------------------------------------------------------
 
         for _, row in tqdm(
             pending.iterrows(),
@@ -1283,7 +1028,7 @@ RTL CONTEXT:
             file_id = str(
                 row.get(
                     "rtl_id",
-                    "UNKNOWN",
+                    f"RTL-{str(row['sha256'])[:8]}",
                 )
             )
 
@@ -1295,9 +1040,9 @@ RTL CONTEXT:
                 row["absolute_path"]
             )
 
-            # ---------------------------------------------------------
+            # --------------------------------------------------------
             # Read RTL
-            # ---------------------------------------------------------
+            # --------------------------------------------------------
 
             try:
 
@@ -1308,13 +1053,13 @@ RTL CONTEXT:
                 if not path.exists():
 
                     raise FileNotFoundError(
-                        str(path)
+                        f"RTL file not found: {path}"
                     )
 
                 if not path.is_file():
 
                     raise IsADirectoryError(
-                        str(path)
+                        f"Path is not a file: {path}"
                     )
 
                 content = path.read_text(
@@ -1331,6 +1076,8 @@ RTL CONTEXT:
                     exc,
                 )
 
+                # A missing/unreadable file is not
+                # an inference failure.
                 continue
 
             if not content.strip():
@@ -1344,9 +1091,12 @@ RTL CONTEXT:
 
                 continue
 
-            # ---------------------------------------------------------
-            # Qwen
-            # ---------------------------------------------------------
+            # --------------------------------------------------------
+            # Qwen inference
+            #
+            # This function retries indefinitely until it receives
+            # a valid Trojan/Clean classification.
+            # --------------------------------------------------------
 
             result = self.infer(
                 content=content,
@@ -1354,17 +1104,15 @@ RTL CONTEXT:
                 sha256=sha256,
             )
 
-            # ---------------------------------------------------------
+            # --------------------------------------------------------
             # Save immediately
-            # ---------------------------------------------------------
+            # --------------------------------------------------------
 
             prediction = {
                 "file_id": file_id,
                 "sha256": sha256,
                 "model": self.model_name,
-                "qwen_label": result[
-                    "label"
-                ],
+                "qwen_label": result["label"],
                 "qwen_confidence": result[
                     "confidence"
                 ],
@@ -1387,9 +1135,9 @@ RTL CONTEXT:
 
                 clean_count += 1
 
-        # -------------------------------------------------------------
-        # Summary
-        # -------------------------------------------------------------
+        # ------------------------------------------------------------
+        # Final summary
+        # ------------------------------------------------------------
 
         logger.info("")
         logger.info("=" * 72)
@@ -1431,20 +1179,21 @@ RTL CONTEXT:
         logger.info("=" * 72)
 
 
-# =====================================================================
+# ====================================================================
 # CLI
-# =====================================================================
+# ====================================================================
 
 def main() -> None:
 
     parser = argparse.ArgumentParser(
         description=(
-            "Qwen RTL Hardware Trojan Analyzer"
+            "Persistent local Ollama Qwen RTL analyzer"
         )
     )
 
     parser.add_argument(
         "--model",
+        type=str,
         default="qwen2.5-coder:7b",
     )
 
