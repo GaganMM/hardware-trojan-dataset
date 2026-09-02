@@ -1,0 +1,1114 @@
+import argparse
+import json
+import logging
+import sys
+import time
+from pathlib import Path
+from typing import Dict, Optional
+
+import pandas as pd
+import requests
+from tqdm import tqdm
+
+# Add project root to Python path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from scripts.dataset.config import DatasetConfig
+
+
+# -------------------------------------------------------------------
+# Logging
+# -------------------------------------------------------------------
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+
+logger = logging.getLogger("LLMAnalyzer")
+
+
+# -------------------------------------------------------------------
+# Analyzer
+# -------------------------------------------------------------------
+
+class LLMAnalyzer:
+    def __init__(
+        self,
+        config: DatasetConfig,
+        model_name: str = "qwen2.5-coder:7b",
+        max_chars: int = 3500,
+        retry_delay: int = 2,
+    ):
+        self.config = config
+        self.model_name = model_name
+        self.max_chars = max_chars
+        self.retry_delay = retry_delay
+
+        # Local Ollama server
+        self.ollama_url = "http://127.0.0.1:11434/api/generate"
+        self.ollama_tags_url = "http://127.0.0.1:11434/api/tags"
+
+        self.predictions_csv = (
+            self.config.metadata / "qwen_predictions.csv"
+        )
+
+        self.failures_csv = (
+            self.config.metadata / "qwen_failures.csv"
+        )
+
+        self.prediction_columns = [
+            "file_id",
+            "sha256",
+            "model",
+            "qwen_label",
+            "qwen_confidence",
+            "qwen_reasoning",
+        ]
+
+        self.failure_columns = [
+            "file_id",
+            "sha256",
+            "model",
+            "failures",
+            "last_error",
+        ]
+
+        self.existing_predictions: Dict[str, dict] = {}
+        self.failure_counts: Dict[str, int] = {}
+
+        self._prepare_prediction_file()
+        self._load_existing_predictions()
+        self._load_failures()
+
+    # ----------------------------------------------------------------
+    # Prediction bookkeeping
+    # ----------------------------------------------------------------
+
+    def _prediction_key(
+        self,
+        sha256: str,
+    ) -> str:
+        return f"{self.model_name}::{sha256}"
+
+    def _prepare_prediction_file(self) -> None:
+        """
+        Ensure qwen_predictions.csv exists.
+
+        If an older version exists without the 'model' column,
+        migrate it in-place and associate the old rows with the
+        currently selected model.
+        """
+
+        if not self.predictions_csv.exists():
+            pd.DataFrame(
+                columns=self.prediction_columns
+            ).to_csv(
+                self.predictions_csv,
+                index=False,
+            )
+            return
+
+        try:
+            df = pd.read_csv(
+                self.predictions_csv
+            )
+
+            if df.empty:
+                pd.DataFrame(
+                    columns=self.prediction_columns
+                ).to_csv(
+                    self.predictions_csv,
+                    index=False,
+                )
+                return
+
+            # Older analyzer versions did not store model.
+            if "model" not in df.columns:
+                df["model"] = self.model_name
+
+            # Ensure all expected fields exist.
+            for column in self.prediction_columns:
+                if column not in df.columns:
+                    df[column] = ""
+
+            df = df[
+                self.prediction_columns
+            ]
+
+            df.to_csv(
+                self.predictions_csv,
+                index=False,
+            )
+
+        except Exception as exc:
+            logger.warning(
+                "Could not normalize prediction CSV: %s",
+                exc,
+            )
+
+    def _load_existing_predictions(self) -> None:
+        try:
+            df = pd.read_csv(
+                self.predictions_csv
+            )
+
+            if df.empty:
+                logger.info(
+                    "Loaded 0 existing predictions."
+                )
+                return
+
+            for _, row in df.iterrows():
+                sha256 = str(
+                    row.get("sha256", "")
+                ).strip()
+
+                if (
+                    not sha256
+                    or sha256.lower() == "nan"
+                ):
+                    continue
+
+                model = str(
+                    row.get(
+                        "model",
+                        self.model_name,
+                    )
+                ).strip()
+
+                key = f"{model}::{sha256}"
+
+                self.existing_predictions[
+                    key
+                ] = row.to_dict()
+
+            logger.info(
+                "Loaded %d existing predictions.",
+                len(self.existing_predictions),
+            )
+
+        except Exception as exc:
+            logger.warning(
+                "Could not load predictions: %s",
+                exc,
+            )
+
+    # ----------------------------------------------------------------
+    # Failure bookkeeping
+    # ----------------------------------------------------------------
+
+    def _load_failures(self) -> None:
+        """
+        Failures are recorded for diagnostics only.
+        They NEVER permanently exclude a file from inference.
+        """
+
+        if not self.failures_csv.exists():
+            logger.info(
+                "Loaded 0 failure records."
+            )
+            return
+
+        try:
+            df = pd.read_csv(
+                self.failures_csv
+            )
+
+            if df.empty:
+                logger.info(
+                    "Loaded 0 failure records."
+                )
+                return
+
+            for _, row in df.iterrows():
+                sha256 = str(
+                    row.get("sha256", "")
+                ).strip()
+
+                if (
+                    not sha256
+                    or sha256.lower() == "nan"
+                ):
+                    continue
+
+                model = str(
+                    row.get(
+                        "model",
+                        self.model_name,
+                    )
+                ).strip()
+
+                key = f"{model}::{sha256}"
+
+                try:
+                    count = int(
+                        row.get(
+                            "failures",
+                            0,
+                        )
+                    )
+                except (
+                    TypeError,
+                    ValueError,
+                ):
+                    count = 0
+
+                self.failure_counts[
+                    key
+                ] = count
+
+            logger.info(
+                "Loaded %d failure records.",
+                len(self.failure_counts),
+            )
+
+        except Exception as exc:
+            logger.warning(
+                "Could not load failure records: %s",
+                exc,
+            )
+
+    def _record_failure(
+        self,
+        file_id: str,
+        sha256: str,
+        error: str,
+    ) -> None:
+        """
+        Record failures for monitoring only.
+        No maximum threshold is enforced.
+        """
+
+        key = self._prediction_key(
+            sha256
+        )
+
+        count = (
+            self.failure_counts.get(
+                key,
+                0,
+            )
+            + 1
+        )
+
+        self.failure_counts[
+            key
+        ] = count
+
+        records = {}
+
+        if self.failures_csv.exists():
+            try:
+                old = pd.read_csv(
+                    self.failures_csv
+                )
+
+                for _, row in old.iterrows():
+                    old_sha = str(
+                        row.get(
+                            "sha256",
+                            "",
+                        )
+                    ).strip()
+
+                    if not old_sha:
+                        continue
+
+                    old_model = str(
+                        row.get(
+                            "model",
+                            self.model_name,
+                        )
+                    ).strip()
+
+                    old_key = (
+                        f"{old_model}::{old_sha}"
+                    )
+
+                    records[
+                        old_key
+                    ] = row.to_dict()
+
+            except Exception:
+                records = {}
+
+        records[key] = {
+            "file_id": file_id,
+            "sha256": sha256,
+            "model": self.model_name,
+            "failures": count,
+            "last_error": str(
+                error
+            )[:1000],
+        }
+
+        pd.DataFrame(
+            list(records.values()),
+            columns=self.failure_columns,
+        ).to_csv(
+            self.failures_csv,
+            index=False,
+        )
+
+    # ----------------------------------------------------------------
+    # Ollama
+    # ----------------------------------------------------------------
+
+    def check_ollama(self) -> bool:
+        try:
+            response = requests.get(
+                self.ollama_tags_url,
+                timeout=5,
+            )
+
+            response.raise_for_status()
+
+            models = response.json().get(
+                "models",
+                [],
+            )
+
+            available = {
+                str(
+                    model.get(
+                        "name",
+                        "",
+                    )
+                )
+                for model in models
+            }
+
+            if self.model_name not in available:
+                logger.warning(
+                    "Model '%s' not listed by Ollama.",
+                    self.model_name,
+                )
+
+                logger.info(
+                    "Available models: %s",
+                    sorted(available),
+                )
+
+            logger.info(
+                "Ollama preflight OK: "
+                "http://127.0.0.1:11434"
+            )
+
+            return True
+
+        except Exception as exc:
+            logger.error(
+                "Ollama preflight failed: %s",
+                exc,
+            )
+            return False
+
+    # ----------------------------------------------------------------
+    # RTL context extraction
+    # ----------------------------------------------------------------
+
+    def _extract_context(
+        self,
+        content: str,
+    ) -> str:
+
+        content = content.replace(
+            "\x00",
+            " ",
+        )
+
+        lines = content.splitlines()
+
+        keywords = (
+            "module",
+            "endmodule",
+            "input",
+            "output",
+            "inout",
+            "wire",
+            "reg",
+            "logic",
+            "parameter",
+            "localparam",
+            "assign",
+            "always",
+            "always_ff",
+            "always_comb",
+            "initial",
+            "if",
+            "else",
+            "case",
+            "endcase",
+            "for",
+            "while",
+            "counter",
+            "count",
+            "trigger",
+            "payload",
+            "secret",
+            "key",
+            "enable",
+            "disable",
+            "reset",
+            "state",
+            "fsm",
+        )
+
+        selected = []
+        seen = set()
+
+        # Preserve interface/module header.
+        for line in lines[:100]:
+
+            text = line.strip()
+
+            if (
+                text
+                and text not in seen
+            ):
+                selected.append(text)
+                seen.add(text)
+
+        # Preserve structurally/security-relevant lines.
+        for line in lines:
+
+            text = line.strip()
+            lower = text.lower()
+
+            if (
+                text
+                and text not in seen
+                and any(
+                    keyword in lower
+                    for keyword in keywords
+                )
+            ):
+                selected.append(text)
+                seen.add(text)
+
+        compact = "\n".join(
+            selected
+        )
+
+        if len(compact) <= self.max_chars:
+            return compact
+
+        head = self.max_chars // 2
+        tail = (
+            self.max_chars
+            - head
+        )
+
+        return (
+            compact[:head]
+            + "\n\n"
+            + "// ... CONTEXT TRUNCATED ..."
+            + "\n\n"
+            + compact[-tail:]
+        )
+
+    # ----------------------------------------------------------------
+    # Qwen inference
+    # ----------------------------------------------------------------
+
+    def infer(
+        self,
+        content: str,
+        file_id: str,
+    ) -> Optional[dict]:
+
+        context = self._extract_context(
+            content
+        )
+
+        prompt = f"""You are classifying Verilog/SystemVerilog RTL for hardware security.
+
+A Hardware Trojan requires malicious or unauthorized behavior,
+typically involving a hidden trigger, malicious payload, or both.
+
+Do NOT classify ordinary counters, FSMs, resets, testbenches,
+encryption blocks, debug logic, or normal control logic as Trojans
+unless the RTL contains evidence of malicious trigger/payload behavior.
+
+Return ONLY valid JSON:
+
+{{
+  "label": "Trojan" or "Clean",
+  "confidence": 0.0,
+  "reasoning": "one short evidence-based sentence"
+}}
+
+RTL:
+{context}
+"""
+
+        payload = {
+            "model": self.model_name,
+            "prompt": prompt,
+            "stream": False,
+            "format": "json",
+            "options": {
+                "temperature": 0,
+                "num_ctx": 4096,
+            },
+        }
+
+        attempt = 0
+
+        while True:
+
+            attempt += 1
+
+            try:
+
+                logger.info(
+                    "%s: Qwen attempt %d",
+                    file_id,
+                    attempt,
+                )
+
+                # IMPORTANT:
+                # timeout=None means wait indefinitely.
+                response = requests.post(
+                    self.ollama_url,
+                    json=payload,
+                    timeout=None,
+                )
+
+                response.raise_for_status()
+
+                response_text = (
+                    response.json()
+                    .get(
+                        "response",
+                        "",
+                    )
+                    .strip()
+                )
+
+                if not response_text:
+                    raise ValueError(
+                        "Ollama returned empty response."
+                    )
+
+                if response_text.startswith(
+                    "```json"
+                ):
+                    response_text = (
+                        response_text[7:]
+                    )
+
+                if response_text.endswith(
+                    "```"
+                ):
+                    response_text = (
+                        response_text[:-3]
+                    )
+
+                result = json.loads(
+                    response_text.strip()
+                )
+
+		logger.warning(
+   			"%s: RAW QWEN RESPONSE: %s",
+			file_id,
+			response_text[:2000],
+		)
+
+                label = result.get(
+                    "label"
+                )
+
+                if label not in {
+                    "Trojan",
+                    "Clean",
+                }:
+                    raise ValueError(
+                        f"Invalid label: {label!r}"
+                    )
+
+                confidence = float(
+                    result.get(
+                        "confidence",
+                        0.0,
+                    )
+                )
+
+                confidence = max(
+                    0.0,
+                    min(
+                        1.0,
+                        confidence,
+                    ),
+                )
+
+                reasoning = str(
+                    result.get(
+                        "reasoning",
+                        "",
+                    )
+                ).strip()
+
+                logger.info(
+                    "%s: inference succeeded "
+                    "on attempt %d",
+                    file_id,
+                    attempt,
+                )
+
+                return {
+                    "label": label,
+                    "confidence": confidence,
+                    "reasoning": reasoning[:1000],
+                }
+
+            except Exception as exc:
+
+                self._record_failure(
+                    file_id=file_id,
+                    sha256="",
+                    error=str(exc),
+                )
+
+                logger.warning(
+                    "%s: Qwen attempt %d failed: %s",
+                    file_id,
+                    attempt,
+                    exc,
+                )
+
+                # Retry forever.
+                time.sleep(
+                    self.retry_delay
+                )
+
+    # ----------------------------------------------------------------
+    # Portable Linux path resolution
+    # ----------------------------------------------------------------
+
+    def _resolve_path(
+        self,
+        raw_path: str,
+    ) -> Path:
+
+        normalized = (
+            str(raw_path)
+            .strip()
+            .replace("\\", "/")
+        )
+
+        path = Path(
+            normalized
+        )
+
+        if not path.is_absolute():
+            path = (
+                self.config.root
+                / path
+            )
+
+        return path
+
+    # ----------------------------------------------------------------
+    # Save success immediately
+    # ----------------------------------------------------------------
+
+    def _save_prediction(
+        self,
+        prediction: dict,
+    ) -> None:
+
+        # Append immediately after each successful inference.
+        pd.DataFrame(
+            [prediction],
+            columns=self.prediction_columns,
+        ).to_csv(
+            self.predictions_csv,
+            mode="a",
+            header=False,
+            index=False,
+        )
+
+        key = self._prediction_key(
+            prediction["sha256"]
+        )
+
+        self.existing_predictions[
+            key
+        ] = prediction
+
+    # ----------------------------------------------------------------
+    # Main analysis
+    # ----------------------------------------------------------------
+
+    def analyze(
+        self,
+        limit: Optional[int] = None,
+    ) -> None:
+
+        manifest_path = (
+            self.config.metadata
+            / "manifest.csv"
+        )
+
+        if not manifest_path.exists():
+
+            logger.error(
+                "manifest.csv not found: %s",
+                manifest_path,
+            )
+
+            return
+
+        if not self.check_ollama():
+            logger.error(
+                "Stopping because Ollama "
+                "is unavailable."
+            )
+            return
+
+        try:
+
+            df = pd.read_csv(
+                manifest_path
+            )
+
+        except Exception as exc:
+
+            logger.error(
+                "Could not read manifest.csv: %s",
+                exc,
+            )
+
+            return
+
+        required_columns = {
+            "sha256",
+            "absolute_path",
+        }
+
+        missing = (
+            required_columns
+            - set(df.columns)
+        )
+
+        if missing:
+
+            logger.error(
+                "Manifest missing columns: %s",
+                sorted(missing),
+            )
+
+            return
+
+        df["sha256"] = (
+            df["sha256"]
+            .fillna("")
+            .astype(str)
+            .str.strip()
+        )
+
+        logger.info(
+            "Loaded %d files from manifest.",
+            len(df),
+        )
+
+        # ------------------------------------------------------------
+        # IMPORTANT:
+        # Ignore manifest binary_label.
+        # This is a fresh semantic Qwen run.
+        # ------------------------------------------------------------
+
+        pending = df[
+            ~df["sha256"].map(
+                lambda sha:
+                self._prediction_key(
+                    sha
+                )
+                in self.existing_predictions
+            )
+        ].copy()
+
+        if limit is not None:
+            pending = pending.head(
+                limit
+            )
+
+        if pending.empty:
+
+            logger.info(
+                "No pending files require Qwen analysis."
+            )
+
+            return
+
+        logger.info(
+            "Pending Qwen analysis: %d files.",
+            len(pending),
+        )
+
+        logger.info(
+            "Model: %s",
+            self.model_name,
+        )
+
+        logger.info(
+            "Ollama timeout: UNLIMITED",
+        )
+
+        logger.info(
+            "Inference retries: UNLIMITED",
+        )
+
+        logger.info(
+            "Max context: %d chars",
+            self.max_chars,
+        )
+
+        successful = 0
+        trojan_count = 0
+        clean_count = 0
+        read_failures = 0
+
+        # ------------------------------------------------------------
+        # Iterate over RTL files
+        # ------------------------------------------------------------
+
+        for _, row in tqdm(
+            pending.iterrows(),
+            total=len(pending),
+            desc="LLM Analysis",
+        ):
+
+            file_id = str(
+                row.get(
+                    "rtl_id",
+                    f"GH-{str(row['sha256'])[:8]}",
+                )
+            )
+
+            sha256 = str(
+                row["sha256"]
+            ).strip()
+
+            raw_path = str(
+                row["absolute_path"]
+            )
+
+            # --------------------------------------------------------
+            # Read RTL
+            # --------------------------------------------------------
+
+            try:
+
+                path = self._resolve_path(
+                    raw_path
+                )
+
+                if not path.exists():
+
+                    raise FileNotFoundError(
+                        f"RTL file not found: {path}"
+                    )
+
+                if not path.is_file():
+
+                    raise IsADirectoryError(
+                        f"Path is not a file: {path}"
+                    )
+
+                content = path.read_text(
+                    errors="ignore"
+                )
+
+            except Exception as exc:
+
+                read_failures += 1
+
+                logger.warning(
+                    "%s: RTL read failure: %s",
+                    file_id,
+                    exc,
+                )
+
+                # Cannot infer a file we cannot read.
+                # Leave it Unknown and continue.
+                continue
+
+            if not content.strip():
+
+                read_failures += 1
+
+                logger.warning(
+                    "%s: empty RTL file.",
+                    file_id,
+                )
+
+                continue
+
+            # --------------------------------------------------------
+            # Qwen inference
+            #
+            # infer() retries forever until valid JSON + label.
+            # --------------------------------------------------------
+
+            result = self.infer(
+                content=content,
+                file_id=file_id,
+            )
+
+            if result is None:
+
+                # Defensive fallback.
+                # Normal execution never reaches this point because
+                # infer() retries indefinitely.
+                continue
+
+            # --------------------------------------------------------
+            # SAVE IMMEDIATELY
+            # --------------------------------------------------------
+
+            prediction = {
+                "file_id": file_id,
+                "sha256": sha256,
+                "model": self.model_name,
+                "qwen_label": result["label"],
+                "qwen_confidence": result[
+                    "confidence"
+                ],
+                "qwen_reasoning": result[
+                    "reasoning"
+                ],
+            }
+
+            self._save_prediction(
+                prediction
+            )
+
+            successful += 1
+
+            if result["label"] == "Trojan":
+                trojan_count += 1
+
+            elif result["label"] == "Clean":
+                clean_count += 1
+
+        # ------------------------------------------------------------
+        # Final report
+        # ------------------------------------------------------------
+
+        logger.info("")
+        logger.info("=" * 72)
+        logger.info(
+            "QWEN ANALYSIS COMPLETE"
+        )
+        logger.info("=" * 72)
+
+        logger.info(
+            "Successful         : %d",
+            successful,
+        )
+
+        logger.info(
+            "Trojan predictions : %d",
+            trojan_count,
+        )
+
+        logger.info(
+            "Clean predictions  : %d",
+            clean_count,
+        )
+
+        logger.info(
+            "Read failures      : %d",
+            read_failures,
+        )
+
+        logger.info(
+            "Predictions saved  : %s",
+            self.predictions_csv,
+        )
+
+        logger.info(
+            "Failures saved     : %s",
+            self.failures_csv,
+        )
+
+        logger.info(
+            "Failed inference is never "
+            "converted into a label."
+        )
+
+        logger.info("=" * 72)
+
+
+# -------------------------------------------------------------------
+# CLI
+# -------------------------------------------------------------------
+
+def main() -> None:
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Persistent local Ollama Qwen RTL analyzer"
+        )
+    )
+
+    parser.add_argument(
+        "--model",
+        type=str,
+        default="qwen2.5-coder:7b",
+        help="Ollama model name",
+    )
+
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Maximum number of pending files",
+    )
+
+    parser.add_argument(
+        "--max-chars",
+        type=int,
+        default=3500,
+        help="Maximum compact RTL context",
+    )
+
+    parser.add_argument(
+        "--retry-delay",
+        type=int,
+        default=2,
+        help="Seconds between infinite inference retries",
+    )
+
+    args = parser.parse_args()
+
+    root = (
+        Path(__file__)
+        .resolve()
+        .parents[2]
+    )
+
+    config = (
+        DatasetConfig.from_project_root(
+            root
+        )
+    )
+
+    analyzer = LLMAnalyzer(
+        config=config,
+        model_name=args.model,
+        max_chars=args.max_chars,
+        retry_delay=args.retry_delay,
+    )
+
+    analyzer.analyze(
+        limit=args.limit
+    )
+
+
+if __name__ == "__main__":
+    main()
+

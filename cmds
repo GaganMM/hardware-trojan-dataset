@@ -1,0 +1,279 @@
+Yes. Since everything is now on the RHEL node, here's the **straight-through command sequence** from source ? environment ? Ollama ? Qwen 7B ? full LLM analysis.
+
+Assuming your project is already at:
+
+```bash
+/home/pesu/Documents/HTD
+```
+
+### 1. Enter the project
+
+```bash
+cd ~/Documents/HTD
+```
+
+Verify:
+
+```bash
+pwd
+ls
+```
+
+You should see:
+
+```text
+scripts/
+metadata/
+knowledge/
+downloads/
+```
+
+### 2. Check the RTL corpus
+
+```bash
+du -sh downloads
+```
+
+Expected:
+
+```text
+~9.2G
+```
+
+Count Verilog files:
+
+```bash
+find downloads -type f \( -name "*.v" -o -name "*.sv" \) | wc -l
+```
+
+### 3. Create/activate Python environment
+
+```bash
+python3.12 -m venv ~/htd-venv
+source ~/htd-venv/bin/activate
+```
+
+Verify:
+
+```bash
+python --version
+```
+
+Expected:
+
+```text
+Python 3.12.1
+```
+
+### 4. Install Python dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install pandas requests pyyaml tqdm
+```
+
+Verify:
+
+```bash
+python -c "import pandas, requests, yaml, tqdm; print('HTD Python environment OK')"
+```
+
+### 5. Configure Ollama
+
+In **Terminal 1**:
+
+```bash
+export PATH="$HOME/ollama/bin:$PATH"
+export OLLAMA_IGPU_ENABLE=1
+OLLAMA_HOST=127.0.0.1:11434 ollama serve
+```
+
+Leave this terminal running.
+
+You should see:
+
+```text
+library=Vulkan
+description="AMD Radeon Graphics ..."
+type=iGPU
+```
+
+### 6. In Terminal 2, verify Qwen
+
+```bash
+export PATH="$HOME/ollama/bin:$PATH"
+ollama list
+```
+
+You should have:
+
+```text
+qwen2.5-coder:7b
+```
+
+Test the API:
+
+```bash
+curl http://127.0.0.1:11434/api/tags
+```
+
+Test the model:
+
+```bash
+time ollama run qwen2.5-coder:7b "Explain a hardware Trojan in one sentence."
+```
+
+### 7. Verify the manifest
+
+```bash
+cd ~/Documents/HTD
+python - <<'PY'
+import pandas as pd
+
+df = pd.read_csv("metadata/manifest.csv")
+print("Manifest files:", len(df))
+print(df["absolute_path"].head(5).to_string(index=False))
+PY
+```
+
+Expected count:
+
+```text
+8988
+```
+
+The paths should look like:
+
+```text
+downloads\35-DAYS-OF-RTL-CHALLENGE\DAY1\halfadderB.v
+```
+
+Our analyzer normalizes those Windows separators for Linux.
+
+### 8. Check the analyzer
+
+```bash
+python -m py_compile scripts/analysis/llm_analyzer.py
+```
+
+No output = syntax is valid.
+
+### 9. Make sure the Qwen output file is clean for the fresh 7B run
+
+You already backed up the old predictions, so:
+
+```bash
+rm -f metadata/qwen_predictions.csv
+printf "file_id,sha256,qwen_label,qwen_confidence,qwen_reasoning\n" > metadata/qwen_predictions.csv
+rm -f metadata/qwen_failures.csv
+```
+
+### 10. Small sanity run
+
+Before sacrificing 32 hours to the machine gods:
+
+```bash
+python -m scripts.analysis.llm_analyzer \
+  --model qwen2.5-coder:7b \
+  --limit 10 \
+  --max-chars 3500 \
+  --timeout 30
+```
+
+Check:
+
+```bash
+wc -l metadata/qwen_predictions.csv
+```
+
+and:
+
+```bash
+tail -5 metadata/qwen_predictions.csv
+```
+
+You should get **10 successful predictions + 1 header line**.
+
+### 11. Start the full 8,988-file run
+
+Use `tmux` so an SSH disconnect doesn't murder the process:
+
+```bash
+tmux new -s qwen7b
+```
+
+Inside tmux:
+
+```bash
+cd ~/Documents/HTD
+source ~/htd-venv/bin/activate
+export PATH="$HOME/ollama/bin:$PATH"
+
+python -m scripts.analysis.llm_analyzer \
+  --model qwen2.5-coder:7b \
+  --limit 8988 \
+  --max-chars 3500 \
+  --timeout 30
+```
+
+### 12. Detach safely
+
+Press:
+
+```text
+Ctrl+B
+```
+
+then:
+
+```text
+D
+```
+
+The analysis keeps running.
+
+Reconnect later:
+
+```bash
+tmux attach -t qwen7b
+```
+
+### 13. Monitor from another SSH terminal
+
+```bash
+cd ~/Documents/HTD
+watch -n 10 'wc -l metadata/qwen_predictions.csv metadata/qwen_failures.csv'
+```
+
+For progress:
+
+```bash
+tail -5 metadata/qwen_predictions.csv
+```
+
+### Full flow
+
+```text
+RHEL
+ ?
+~/Documents/HTD
+ ?
+9.2 GB downloads/
+ ?
+Python 3.12 venv
+ ?
+Ollama
+ ?
+AMD Radeon iGPU / Vulkan
+ ?
+Qwen2.5-Coder 7B
+ ?
+manifest.csv
+ ?
+8,988 RTL files
+ ?
+qwen_predictions.csv
+qwen_failures.csv
+```
+
+The full run is **local**, so the model inference itself does not require internet once Ollama and the 7B model are installed.
